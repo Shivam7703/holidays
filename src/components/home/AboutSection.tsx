@@ -14,7 +14,7 @@ export default function AboutSection({ data }: any) {
                 src={secImage}
                 alt="About us"
                 fill
-                className="object-contain w-full max-h-max absolute top-0 left-0 z-20"></Image>
+                className="object-contain w-full max-h-max absolute top-0 left-0 z-20"/>
 
       <div className="mx-auto justify-between flex flex-col md:flex-row items-stretch gap-y-4 ">
 

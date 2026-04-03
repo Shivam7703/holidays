@@ -12,9 +12,10 @@ import {
   FaArrowRightLong,
   FaQuoteLeft,
 } from "react-icons/fa6";
+import { secImage } from "@/assets";
 
 export default function Testimonials() {
-  const uniqueId = "servic123";
+  const uniqueId = "test123";
 
   const swiperOptions = {
     slidesPerView: 1,
@@ -28,8 +29,12 @@ export default function Testimonials() {
         slidesPerView: 1,
       },
 
-      1024: {
+      924: {
         slidesPerView: 2,
+      },
+      
+      1124: {
+        slidesPerView: 3,
       },
     },
     speed: 1200,
@@ -42,14 +47,16 @@ export default function Testimonials() {
   };
   // bg-back
   return (
-    <section className=" lg:px-28 md:px-20 sm:p-12 p-6  text-center relative flex flex-col items-center">
-      <div className="w-full text-center flex flex-col items-center gap-y-3 mb-8 ">
-        <p className="text-sm text-center mx-auto font-bold uppercase tracking-[0.22em] text-color2  relative">
-          testimonials
-        </p>
-        <h2 className="font-bold text-center text-3xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto text-color5 relative">
-          Lorem ipsum dolor sit amet{" "}
-          <span className="text-color1">consectetur</span> adipisicing elit.
+    <section className="lg:px-28 md:px-20 sm:p-12 p-6  text-center relative flex flex-col bg-gradient-to-br from-orange-100 via-white to-blue-100 items-center">
+       <Image
+                      src={secImage}
+                      alt="About us"
+                      fill
+                      className="object-contain w-full max-h-max absolute top-0 left-0 z-20"/>
+      <div className="w-full text-center flex flex-col items-center gap-y-3 sm:mb-8 ">
+        <h2 className="font-bold text-center text-3xl md:text-5xl !leading-tight my-6 max-w-3xl mx-auto text-color1 relative">
+          Lorem ipsum dolor{" "}
+          <span className="text-color2">consectetur</span> adipisicing.
         </h2>
       </div>
 
@@ -59,63 +66,62 @@ export default function Testimonials() {
       >
         {" "}
         {data?.testimonials?.map((cards: any) => (
-          <SwiperSlide key={cards.id} className="py-8">
-            <div className="relative group h-full">
-              <div className="relative bg-gradient-to-r from-color2 via-color1 to-color3 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-full">
-                <div className="relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 m-[1px] h-full">
-                  {/* Decorative Quote Icon */}
-                  <div className="absolute top-6 right-6 text-blue-100 opacity-20">
-                    <FaQuoteLeft className="w-12 h-12" />
-                  </div>
+         <SwiperSlide key={cards.id} className="py-8">
+  <div className="relative group h-full">
+    {/* Card */}
+    <div className="relative h-full bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden p-7 flex flex-col gap-5">
 
-                  {/* Profile Section with Premium Design */}
-                  <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start mb-6">
-                    <div className="relative">
-                      {/* Animated Ring */}
-                      <div className="absolute -inset-2 rounded-full border-2 border-dashed border-color5/50" />
+      {/* Large faded quote */}
+      <FaQuoteLeft className="absolute top-1 right-5 text-6xl text-color1/10 group-hover:text-color1/40 transition-colors duration-300" />
 
-                      <div className="relative w-24 h-24 rounded-full overflow-hidden ring-4 ring-white shadow-xl">
-                        <Image
-                          src={cards.img}
-                          alt={cards.title}
-                          width={96}
-                          height={96}
-                          className="w-full h-full object-cover object-center group-hover:scale-110 transition-all duration-500"
-                        />
-                      </div>
-                    </div>
+      {/* Stars */}
+      <div className="flex gap-1">
+        {[...Array(5)].map((_, i) => (
+          <svg key={i} className="w-4 h-4 fill-amber-400" viewBox="0 0 20 20">
+            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+          </svg>
+        ))}
+      </div>
 
-                    <div className="text-center sm:text-left">
-                      <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
-                        {cards.title}
-                      </h3>
-                      <p className="text-blue-500 font-medium text-sm mt-1 flex items-center gap-2 justify-center sm:justify-start">
-                        <span className="w-2 h-2 bg-blue-500 rounded-full" />
-                        Verified Customer
-                      </p>
-                      {/* Star Rating with Animation */}
-                      <div className="flex gap-1 mt-4 justify-center sm:justify-start">
-                        {[...Array(5)].map((_, i) => (
-                          <svg
-                            key={i}
-                            className="w-5 h-5 fill-yellow-500 drop-shadow-md"
-                            viewBox="0 0 20 20"
-                          >
-                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                          </svg>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
+      {/* Testimonial Text */}
+      <p className="text-gray-600 leading-relaxed text-left text-sm flex-1">
+        "{cards.text}"
+      </p>
 
-                  {/* Testimonial Text */}
-                  <p className="text-zinc-900 font-medium leading-relaxed mb-6 italic">
-                    "{cards.text}"
-                  </p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
+      {/* Divider */}
+      <div className="w-full h-px bg-gray-100" />
+
+      {/* Profile */}
+      <div className="flex items-center gap-4">
+        {/* Avatar */}
+        <div className="relative flex-shrink-0">
+          <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 opacity-60 blur-sm group-hover:opacity-90 transition-opacity duration-500" />
+          <div className="relative w-12 h-12 rounded-full overflow-hidden ring-2 ring-white">
+            <Image
+              src={cards.img}
+              alt={cards.title}
+              width={48}
+              height={48}
+              className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
+            />
+          </div>
+        </div>
+
+        {/* Name + badge */}
+        <div>
+          <h3 className="font-bold text-gray-900 text-base leading-tight">
+            {cards.title}
+          </h3>
+          <p className="flex items-center gap-1.5 text-xs text-indigo-500 font-medium mt-0.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 inline-block" />
+            Verified Customer
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</SwiperSlide>
         ))}
       </Swiper>
       <div

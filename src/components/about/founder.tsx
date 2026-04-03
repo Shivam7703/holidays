@@ -47,7 +47,7 @@ export default function CEOMessage() {
         >
         
             {/* Outer ring */}
-            <div className="absolute bottom-0 right-0 w-[300px] h-[300px] sm:w-[380px] sm:h-[380px] md:w-[500px] md:h-[500px] rounded-full border-[3px] border-white/70 !z-[3] bg-gradient-to-b from-orange-200 via-red-400 to-rose-200 "/>
+            <div className="absolute sm:bottom-0 bottom-12 right-0 w-[270px] h-[270px] sm:w-[380px] sm:h-[380px] md:w-[500px] md:h-[500px] rounded-full border-[3px] border-white/70 !z-[3] bg-gradient-to-b from-orange-200 via-red-400 to-rose-200 "/>
              <Image
                 src={bal1}
                 alt="Why choose us"
@@ -88,7 +88,7 @@ export default function CEOMessage() {
  
 
   {/* ── Heading ── */}
-  <h2 className="font-black text-color1 text-3xl sm:text-4xl md:text-5xl leading-[1.15]">
+  <h2 className="font-extrabold text-color1 text-3xl sm:text-4xl md:text-5xl !leading-[1.35]">
    We Made{" "}
     <span className="text-color2">Beautiful{" "}</span>
     Destinations 
@@ -102,10 +102,10 @@ export default function CEOMessage() {
 
   {/* ── Founder quote pull ── */}
   <div className="border-l-[3px] border-color2 bg-white pl-5 py-2.5 shadow-lg rounded-r-2xl">
-    <p className="text-gray-600 italic font-semibold leading-relaxed">
+    <p className="text-black italic font-semibold leading-relaxed">
       "We started with one simple belief — travel should be transparent, reliable, and unforgettable for every single person."
     </p>
-    <p className="text-color1 text-xl font-black text-right mr-5 font1 tracking-widest mt-2">
+    <p className="text-color1 text-xl font-black text-right mr-5 font1 tracking-widest !mt-3">
       — Jonathan A. Mercer, <span className="text-color2 font-medium block text-xs">Founder & CEO</span>
     </p>
   </div>

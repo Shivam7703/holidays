@@ -8,6 +8,7 @@ import Banner from "@/components/global/banner";
 import AboutSection from "@/components/home/AboutSection";
 import Award from "@/components/home/award";
 import CountDown from "@/components/home/Contdown";
+import Partners from "@/components/home/partner";
 import Testimonials from "@/components/home/testimonial";
 import WhychooseSection from "@/components/home/whychoose";
 import { aboutdata2, countDown } from "@/data/homeData";
@@ -26,6 +27,9 @@ export default function About() {
       {/* <AboutSection data ={aboutdata2} /> */}
             <Mission /> 
             <CEOMessage/>
+               <Aboutchoose/>
+               <Partners/>
+               <Testimonials/>
 {/* <OurHistory/>
 
 <CountDown data={countDown}/>
@@ -34,8 +38,8 @@ export default function About() {
 
       {/* 
       <CountDown data={countDown} />
-      <Aboutchoose/>
-      <Testimonials/> */}
+   
+       */}
       
     </>
   );
