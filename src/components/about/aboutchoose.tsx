@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import {banner, banner2} from "@/assets";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 import { whychooseus as data } from "@/data/homeData";
 

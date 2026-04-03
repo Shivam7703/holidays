@@ -29,7 +29,8 @@ export default function FaqSection() {
           <Image
                       src={man2}
                       alt="About us"
-                      className="object-contain h-[95%] object-bottom absolute bottom-0 left-1/4 z-10 max-md:hidden"></Image>
+                      fill
+                      className="object-contain h-full object-bottom absolute bottom-0 left-1/4 z-10 max-md:hidden"></Image>
         <Image
                       src={patta}
                       alt="About us"

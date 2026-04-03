@@ -22,6 +22,7 @@ import bal1 from "@/assets/home/bal1.png";
 import bal2 from "@/assets/home/bal2.png";
 import cloud1 from "@/assets/home/cloud-1.png";
 import cloud2 from "@/assets/home/cloud-2.png";
+import cloud3 from "@/assets/home/cloud-3.png";
 
 
 import plane from "@/assets/home/plane.png";
@@ -76,7 +77,7 @@ import blog1 from "@/assets/home/blog1.jpg";
 import blog2 from "@/assets/home/blog2.jpg";
 import blog3 from "@/assets/home/blog3.jpg";
 
-import ceo from "@/assets/home/ceo.jpg";
+import ceo from "@/assets/home/ceo.png";
 import cl1 from "@/assets/home/cl1.jpg";
 import cl2 from "@/assets/home/cl2.jpg";
 import cl3 from "@/assets/home/cl3.jpg";
@@ -188,7 +189,7 @@ import ukTouristVisa from "@/assets/visa2/UK Tourist Visa.jpg";
 
 
 
-export {bannerImage,secImage,ad1,ad2,pro1,pro2,pro3,pro4,choose, bal1, bal2, cloud1, cloud2,
+export {bannerImage,secImage,ad1,ad2,pro1,pro2,pro3,pro4,choose, bal1, bal2, cloud1, cloud2,cloud3,
     logo , logo2, banner,banner2,banner3 ,back, box1, box2, box3,visa1,process1,usflag, ukflag,canadaflag,  bene2,bene3, bene4,contactb, susbanner,prob,aboutb,careerb, bann, about,about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, com,env ,social,heade, count, famvisa, prvisa, business,touristvisa
  , sus1,sus2, sus3, sus4, choose1, blog1, blog2, blog3, footerImage, plane, patta,patta2, man2, kangaroo, atlanticImmigration, 
   albertaPointsCalculator,faq,ceo,man,

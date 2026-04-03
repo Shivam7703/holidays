@@ -22,7 +22,7 @@ section {
 }
 
 body {    
-  overflow-x: hidden;
+  overflow-x: hidden!important;
   scroll-behavior: smooth!important;
 }
 
@@ -61,81 +61,11 @@ body {
   background-repeat: no-repeat;
 }
 
-.bg-award{
-    background: linear-gradient(0deg, #2b3944d4, #1e3343cc), url(../assets/home/toronto.png);
-background-repeat: repeat;
-background-size: contain;
-}
-
-@keyframes slideX {
-  0%, 100% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(5px);
-  }
-}
-
-.slide-x , .blg:hover .date {
-  position: relative;
-  animation: ripple 1s ease-out infinite;
-}
-
-@keyframes ripple {
-  0% {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2),
-                0 0 0 0 rgba(255, 255, 255, 0.2),
-                0 0 0 0 rgba(255, 255, 255, 0.3);
-  }
-  50% {
-    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.25),
-                0 0 0 20px rgba(255, 255, 255, 0.1),
-                0 0 0 30px rgba(255, 255, 255, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0),
-                0 0 0 40px rgba(255, 255, 255, 0),
-                0 0 0 60px rgba(255, 255, 255, 0);
-  }
-}
-
-/* animation */
-.hover14 {
-  position: relative;
-  overflow: hidden;
-}
-.hover14::before {
-  position: absolute;
-  top: 0;
-  left: -165%;
-  z-index: 2;
-  display: block;
-  content: "";
-  width: 30%;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.568) 100%
-  );
-  transform: skewX(-45deg);
-}
 
 
 
 
 
-.hover14:hover::before {
-  animation: shine 0.85s ease-in-out;
-}
-
-.swiperstyle1 {
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    content: "";
-    background-color: #ffffff !important;
-  }
-}
 .swiper-pagination-bullet {
   height: 11px !important;
   width: 11px !important;
@@ -163,6 +93,33 @@ background-size: contain;
 }
 
 
+.animate-x {
+  animation: fly 10s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(-40%, -5%) rotate(10deg);
+  }
+
+  50% {
+    transform: translate(-5%, -17%) rotate(-10deg);
+  }
+
+  75% {
+    transform: translate(46%, 26%) rotate(2deg);
+  }
+
+  100% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+
 .animate-y {
   animation: bounce 12s infinite;
 }
@@ -171,19 +128,42 @@ background-size: contain;
 
   0%,
   100% {
-    transform: translatey(-25%);
+    transform: translatey(-30%);
   }
 
   50% {
-    transform: translatey(40%);
-  }
-}
-@keyframes shine {
-  100% {
-    left: 165%;
+    transform: translatey(48%);
   }
 }
 
+.marque {
+  animation: mrq 35s linear infinite;
+}
+
+@keyframes mrq {
+  0% {
+    transform: translateX(70vw);
+  }
+
+  100% {
+    transform: translateX(-120vw);
+  }
+}
+
+/* Second animation */
+.aeo {
+  animation: aae 18s linear infinite;
+}
+
+@keyframes aae {
+  0% {
+    transform: scale(0.1) translate(-80vw, 0);
+  }
+
+  100% {
+    transform: scale(1.3) translate(40vw, 30vh);
+  }
+}
 
 .animate-shimmer{
   animation: shimmer 3s ease infinite;
@@ -203,11 +183,11 @@ background-size: contain;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgba(226, 1, 1, 0.897);
+  background-color: rgba(0, 26, 73, 0.897);
   border-radius: 9999px;
   border: 1px solid transparent;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(52, 3, 230, 0.7);
+  background-color: rgba(244, 210, 14, 0.7);
 }

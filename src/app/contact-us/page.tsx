@@ -25,7 +25,7 @@ function Contact() {
         width="100%"
         height="450"
         allowFullScreen={true}
-        loading="lazy"
+        
       ></iframe>
 
       */}

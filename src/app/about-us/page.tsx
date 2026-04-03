@@ -23,13 +23,14 @@ export default function About() {
         }
         slug={"about-us"}
       />
-      <AboutSection data ={aboutdata2} />
+      {/* <AboutSection data ={aboutdata2} /> */}
             <Mission /> 
-<OurHistory/>
-<CEOMessage/>
+            <CEOMessage/>
+{/* <OurHistory/>
+
 <CountDown data={countDown}/>
 <Award/>
-<WhychooseSection/>
+<WhychooseSection/> */}
 
       {/* 
       <CountDown data={countDown} />

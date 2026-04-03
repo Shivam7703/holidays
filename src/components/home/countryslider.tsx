@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -7,132 +7,166 @@ import { Autoplay, Navigation } from "swiper/modules";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
 
-
-export default function Countryslider({data, uniqueId}:any) {
+export default function Countryslider({ data, uniqueId }: any) {
   return (
     <>
-        <div className="relative px-10">
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={16}
-            loop={true}
-            autoplay={{ delay: 4000, disableOnInteraction: false }}
-            navigation={{
-              nextEl: `.${uniqueId}-next`,
-              prevEl: `.${uniqueId}-prev`,
-            }}
-            modules={[Autoplay, Navigation]}
-            breakpoints={{
-              500:  { slidesPerView: 2 },
-              924: { slidesPerView: 3 },
-              1280: { slidesPerView: 4 },
-            }}
-            className={` ${uniqueId}`}
-          >
-            {data?.cards?.map((card: any, index: number) => (
-
+      <div className="relative px-4 md:px-10">
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={20}
+          loop={true}
+          autoplay={{ delay: 3500, disableOnInteraction: false }}
+          navigation={{
+            nextEl: `.${uniqueId}-next`,
+            prevEl: `.${uniqueId}-prev`,
+          }}
+          modules={[Autoplay, Navigation]}
+          breakpoints={{
+            500: { slidesPerView: 2 },
+            924: { slidesPerView: 3 },
+            1280: { slidesPerView: 4 },
+          }}
+        >
+          {data?.map((card: any, index: number) => (
 <SwiperSlide key={card.id ?? index}>
-  <div
-    className="group relative my-6 bg-white rounded-3xl overflow-hidden
-    shadow-lg hover:shadow-2xl 
-    transition-all duration-500"
-  >
+  <div className="group my-8 relative bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-[0_32px_64px_rgba(0,179,136,0.18)] hover:-translate-y-3 transition-all duration-500 border border-gray-100">
 
-   
-
-    {/* IMAGE */}
-    <div className="relative h-48 overflow-hidden">
-
-      {/* Image */}
+    {/* ── IMAGE ── */}
+    <div className="relative h-60 overflow-hidden">
       <Image
         src={card.img}
-        alt={card.heading ?? card.name}
+        alt={card.heading}
         fill
         className="object-cover transition-transform duration-700 group-hover:scale-110"
       />
 
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+      {/* multi-layer gradient */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-br from-color2/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-      {/* Wave Divider */}
-      <div className="absolute -bottom-2 left-0 right-0">
-        <svg viewBox="0 0 300 40" className="w-full" preserveAspectRatio="none">
-          <path
-            d="M0 40 L0 18 Q75 0 150 18 Q225 36 300 18 L300 40 Z"
-            fill="white"
-          />
-        </svg>
+      {/* Category pill — top left */}
+      <span className="absolute top-4 left-4 bg-color2 text-white text-[10px] font-black uppercase tracking-[0.2em] px-3.5 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+        <span className="w-1.5 h-1.5 bg-white rounded-full animate-pulse" />
+        {card.category}
+      </span>
+
+      {/* Wishlist heart — top right */}
+      <button className="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white hover:bg-rose-500  transition-all duration-300 hover:scale-110">
+        <span className="text-lg">♡</span>
+      </button>
+
+      {/* Bottom image info row */}
+      <div className="absolute bottom-0 left-0 right-0 px-4 py-4 flex items-end justify-between">
+        {/* Duration */}
+        <div className="flex items-center gap-1.5 bg-black/40 backdrop-blur-sm border border-white/15 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full">
+          🕐 {card.duration}
+        </div>
+
+        {/* Rating stars */}
+        
       </div>
     </div>
 
-    {/* FLAG BADGE */}
-    <div className="flex justify-center -mt-14 relative z-10">
-      <div
-        className="relative w-16 h-16 rounded-full border-4 border-white
-        shadow-lg overflow-hidden transition-transform duration-500
-        group-hover:scale-110"
-      >
-        <Image
-          src={card.flag}
-          alt={card.heading ?? card.name}
-          width={64}
-          height={64}
-          className="object-cover w-full h-full"
-        />
-      </div>
+    {/* ── FLOATING PRICE CARD — overlaps image ── */}
+    <div className="absolute top-44 right-5 z-20 bg-white rounded-2xl px-4 py-2.5 shadow-xl border border-color2/15 text-center min-w-[80px]">
+      <p className="text-color2 font-black text-xl leading-none">{card.price}</p>
+      <p className="text-gray-400 text-[9px] uppercase tracking-wider font-bold mt-0.5">per person</p>
     </div>
 
-    {/* CONTENT */}
-    <div className="text-center px-5 pt-3 pb-6">
+    {/* ── CONTENT ── */}
+    <div className="px-5 pt-6 pb-6 space-y-4">
 
-      <h3 className="text-zinc-900 font-bold text-lg mb-2">
-        {card.heading ?? card.name}
-      </h3>
+      {/* Title + location */}
+      <div>
+        <h3 className="text-zinc-900  font-bold text-xl leading-snug group-hover:text-color1 transition-colors duration-300 ">
+          {card.heading}
+        </h3>
+       <div className="flex items-center gap-1 ">
+          <span className="text-amber-400 text-xl">★★★★★</span>
+          <span className="text-zinc-700   text-xl font-bold ml-0.5">4.9</span>
+        </div>
+      </div>
 
-      <p className="text-zinc-800  leading-relaxed mx-auto">
-        {card.text ?? "Lorem Ipsum Has Been The Industry's Standard"}
+      {/* Description */}
+      <p className="text-gray-900  leading-relaxed">
+        {card.text}
       </p>
 
-      {/* Learn More */}
-<Link
-  href={"/service"}
-  className="mt-6  items-center gap-4 
-  px-4 py-2  flex justify-center  w-full
-  rounded-2xl
-  transition-all duration-300
-  hover:bg-color3 bg-color2 text-white
-  hover:shadow-md
-  group"
->
- <h3 className="text-sm">Learn More</h3> 
-  <FaArrowRightLong className="text-xs transition-transform duration-300 group-hover:translate-x-1" />
-</Link>
+      {/* ── Points grid ── */}
+      {card.points?.length > 0 && (
+        <div className="grid grid-cols-2 gap-2">
+          {card.points?.slice(0, 4).map((p: string, i: number) => (
+            <div key={i} className="flex items-center gap-2 border shadow-md rounded-xl p-3">
+              
+              <p className="text-sm  text-color1 font-semibold truncate">{p}</p>
+            </div>
+          ))}
+        </div>
+      )}
 
+      {/* ── Stats row ── */}
+      <div className="flex items-center justify-between py-3 border-y border-gray-100">
+        <div className="text-center">
+          <p className="text-color3 font-black text-sm">50+</p>
+          <p className="text-gray-400 text-[10px] uppercase tracking-wider">Bookings</p>
+        </div>
+        <div className="w-px h-8 bg-gray-100" />
+        <div className="text-center">
+          <p className="text-color3 font-black text-sm">All Inclusive</p>
+          <p className="text-gray-400 text-[10px] uppercase tracking-wider">Package</p>
+        </div>
+        <div className="w-px h-8 bg-gray-100" />
+        <div className="text-center">
+          <p className="text-color3 font-black text-sm">✈️ Visa</p>
+          <p className="text-gray-400 text-[10px] uppercase tracking-wider">Included</p>
+        </div>
+      </div>
+
+      {/* ── CTA row ── */}
+      <div className="flex items-center gap-3">
+        {/* Enquire ghost button */}
+        <button className="flex-1 flex items-center justify-center gap-1.5 px-4 py-3 rounded-xl border-2 border-color2/30 text-color2 text-xs font-black uppercase tracking-widest hover:border-color2 hover:bg-color2/5 transition-all duration-300">
+          Enquire
+        </button>
+
+        {/* View Package solid button */}
+        <Link
+          href={card.link}
+          className="flex-[2] flex items-center justify-center gap-2 px-5 py-3 rounded-xl
+            bg-color2 text-white text-xs font-black uppercase tracking-widest
+            hover:bg-color1 transition-all duration-300
+            shadow-lg shadow-color2/25 hover:shadow-color1/30 hover:gap-3"
+        >
+          View Package
+          <FaArrowRightLong className="text-[10px] group-hover:translate-x-1 transition-transform duration-300" />
+        </Link>
+      </div>
     </div>
 
+    {/* ── Bottom glow bar on hover ── */}
+    <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-color2 via-amber-400 to-color1 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
   </div>
 </SwiperSlide>
-            ))}
-          </Swiper>
- </div>
-          {/* ── Nav arrows ── */}
-        <button
-                className={`${uniqueId}-next absolute z-30 right-2 md:right-6 top-[62%] -translate-y-1/2
-                  w-12 h-12 border border-black/80 rounded-full bg-white/70  hover:bg-color1
-                  flex items-center justify-center text-black hover:text-white shadow-xl
-                  transition-all duration-300 hover:scale-110`}
-              >
-                <FaArrowRightLong className="text-sm" />
-              </button>
-              <button
-                className={`${uniqueId}-prev absolute z-30 left-2 md:left-6 top-[62%] -translate-y-1/2
-                  w-12 h-12 border border-black/80 rounded-full bg-white/70 hover:bg-color1
-                  flex items-center justify-center text-black hover:text-white shadow-xl
-                  transition-all duration-300 hover:scale-110`}
-              >
-                <FaArrowLeftLong className="text-sm" />
-              </button>
-    </>
-  )
-}
+          ))}
+        </Swiper>
+      </div>
 
+      {/* NAV BUTTONS */}
+      <button
+        className={`${uniqueId}-next absolute z-30 right-2 md:right-6 top-[55%] -translate-y-1/2
+        w-11 h-11 rounded-full bg-white shadow-lg hover:bg-color1 hover:text-white
+        flex items-center justify-center transition-all duration-300`}
+      >
+        <FaArrowRightLong />
+      </button>
+
+      <button
+        className={`${uniqueId}-prev absolute z-30 left-2 md:left-6 top-[55%] -translate-y-1/2
+        w-11 h-11 rounded-full bg-white shadow-lg hover:bg-color1 hover:text-white
+        flex items-center justify-center transition-all duration-300`}
+      >
+        <FaArrowLeftLong />
+      </button>
+    </>
+  );
+}

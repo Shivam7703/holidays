@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-
 import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/Footer";
 import { footer } from "@/data/homeData";
-import { patta } from "@/assets";
-import Image from "next/image";
 
 /**
  * Cormorant Garamond — editorial serif for headings
@@ -14,7 +11,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "ValueAdz",
-  description: "Premium Immigration & Visa Consultancy Services",
+  description: "Premium Tour & Travel Agency ",
 };
 
 export default function RootLayout({
@@ -25,10 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` font-sans relative`}
-        style={{
-          fontFamily: "var(--font-sans), sans-serif",
-        }}
+        className={`w-full max-w-screen  relative`}
       >
         <Header />
         {children}

@@ -3,7 +3,7 @@
 // Import required modules
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { bann, banner } from "@/assets";
+import { aboutb, bann, banner, cl1, cloud1, cloud3, plane } from "@/assets";
 import { sliderText, } from "@/utils/motion";
 
 
@@ -19,12 +19,27 @@ export default function Banner({title, para, img, slug}:any) {
         <AnimatePresence>
               <div className="w-full h-max relative">
                             <Image
-                  className="w-full h-[30vw] min-h-[440px] object-cover object-top"
-                  src={img || banner}
+                  className="w-full md:h-[630px] min-h-[440px] object-cover object-top"
+                  src={aboutb}
                   alt="sliding image"
-                  loading="lazy"
+                  
                 />
-                <div className="overlay w-full h-full absolute top-0 left-0 bg-black bg-opacity-30 flex items-center text-white">
+
+<Image
+                  className="w-full md:h-32 h-14 object-contain marque opacity-70 absolute z-[5] top-[18%] -right-3"
+                  src={cloud3}
+                  alt="sliding image"
+                  
+                />
+
+                <Image
+                  className="w-full md:h-36 h-16 object-contain aeo absolute z-[5] opacity-85 top-[20%] left-0"
+                  src={plane}
+                  alt="sliding image"
+                  
+                />
+
+                <div className="overlay w-full h-full z-20 absolute top-0 left-0 text-color1">
                   <motion.div
                   
                 variants={sliderText} // Using the sliderText motion variants
@@ -32,7 +47,7 @@ export default function Banner({title, para, img, slug}:any) {
                     animate="animate"
                     exit="exit"
                     transition={{ easings: ["easeIn", "easeOut"] }}
-                                        className="md:w-1/2 md:ml-28 flex flex-col max-md:justify-center max-md:items-center my-auto max-md:p-[8%] w-full max-md:text-center"
+                                        className=" flex flex-col h-full justify-center items-center my-auto p-[8%] w-full text-center"
                   >
                   
                   
@@ -40,10 +55,9 @@ export default function Banner({title, para, img, slug}:any) {
                         {title}
                       </motion.h2>
                  
-                   <motion.p className="md:text-lg text-base max-w-2xl"> {para}
-                   </motion.p>
+                 
 
-                   <motion.p className="py-3 w-max mt-7 bg-[#00000046] backdrop-blur-sm text-sm rounded-3xl px-6">Home &nbsp;/ &nbsp; <span className="text-green2 font-bold">{slug}</span>
+                   <motion.p className="py-3 w-max  bg-[#f0f0f046] border border-white/60 backdrop-blur-sm text-sm rounded-3xl px-6">Home &nbsp;/ &nbsp; <span className="text-color2 font-bold">{slug}</span>
                    </motion.p>
                    
                   </motion.div>

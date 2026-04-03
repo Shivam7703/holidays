@@ -1,5 +1,5 @@
 "use client";
-import { bal1, bal2, cloud1, cloud2, pro1, pro2, pro3, pro4, process1 } from "@/assets";
+import { bal1, bal2, cloud1, cloud2,cloud3, plane, pro1, pro2, pro3, pro4, process1 } from "@/assets";
 import Image from "next/image";
 import React from "react";
 import { FaAngleDoubleDown, FaWpforms } from "react-icons/fa";
@@ -7,7 +7,17 @@ import { LuHandshake } from "react-icons/lu";
 import { MdOutlineEngineering, MdOutlineSettings } from "react-icons/md";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useRef } from "react";
-import { fadeUp, nodePop, slideIn } from "@/utils/motion";
+import { fadeUp, nodePop} from "@/utils/motion";
+
+export const slideIn = (dir: "left" | "right") => ({
+  hidden: { opacity: 0, x: dir === "left" ? -80 : 80 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+  },
+});
+
 
 const data = [
   {
@@ -104,9 +114,9 @@ function TimelineRow({ item, i }: { item: any; i: number }) {
       <motion.div
         className={`${isLeft ? "lg:pr-28" : "lg:order-last lg:pl-28"}`}
         initial="hidden"
-        whileInView="show"
+        whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        variants={slideIn(isLeft ? "left" : "right", "tween", 0, 0.6)}
+        variants={slideIn(isLeft ? "left" : "right")}
       >
         {/* clean image — no bg, no overlay, no hover effects */}
         <div className="relative w-full h-72 sm:h-96">
@@ -129,9 +139,9 @@ function TimelineRow({ item, i }: { item: any; i: number }) {
       <motion.div
         className={`${isLeft ? "lg:pl-28" : "lg:pr-28"} flex flex-col justify-center`}
         initial="hidden"
-        whileInView="show"
+        whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        variants={slideIn(isLeft ? "right" : "left", "tween", 0, 0.6)}
+        variants={slideIn(isLeft ? "right" : "left")}
       >
         <div className="space-y-3 md:space-y-6">
           <motion.p
@@ -182,53 +192,53 @@ export default function WorkProcess() {
             src={bal2}
             alt={"Work process image"}
   
-            className="object-contain absolute top-[3%] right-[2%] animate-y z-0 opacity-70 pointer-events-none"
+            className="object-contain absolute top-[3%] right-[2%] animate-x z-0 opacity-70 pointer-events-none"
           />
            <Image
             src={bal1}
             alt={"Work process image"}
   
-            className="object-contain absolute top-[15%] left-[15%] animate-y z-0 md:w-44 opacity-40 pointer-events-none"
+            className="object-contain absolute top-[15%] left-[15%] animate-y z-0 md:w-44 opacity-70 pointer-events-none"
           />
 
             <Image
             src={cloud1}
             alt={"Work process image"}
   
-            className="object-contain absolute top-[16%] left-[2%]  z-0 opacity-80 pointer-events-none"
+            className="object-contain absolute top-[14%] left-[2%]  z-0 opacity-80 pointer-events-none"
           />
 
             <Image
             src={cloud2}
             alt={"Work process image"}
   
-            className="object-contain absolute top-[30%] right-[2%] animate-y z-0 opacity-80 pointer-events-none"
+            className="object-contain absolute top-[50%] right-[2%] marque z-0 opacity-80 pointer-events-none"
           />
           <Image
             src={bal1}
             alt={"Work process image"}
   
-            className="object-contain absolute top-[73%] right-[2%] animate-y z-0 md:w-44 opacity-80 pointer-events-none"
+            className="object-contain absolute top-[73%] right-[2%] animate-x z-0 md:w-44 opacity-80 pointer-events-none"
+          />
+           <Image
+            src={plane}
+            alt={"Work process image"}
+  
+            className="object-contain absolute top-[73%] left-[2%] aeo z-0 md:w-44 opacity-80 pointer-events-none"
           />
            <Image
             src={bal2}
             alt={"Work process image"}
   
-            className="object-contain absolute top-[40%] left-[2%] animate-y md:w-56 z-0 opacity-10 pointer-events-none"
+            className="object-contain absolute top-[30%] left-[2%] aeo md:w-56 z-0 opacity-40 pointer-events-none"
           />
 
-            <Image
-            src={cloud1}
-            alt={"Work process image"}
-  
-            className="object-contain absolute top-[70%] right-0 z-0  pointer-events-none"
-          />
 
             <Image
-            src={cloud2}
+            src={cloud3}
             alt={"Work process image"}
   
-            className="object-contain absolute top-[80%] left-[15%] animate-y z-0 opacity-50 pointer-events-none"
+            className="object-contain absolute top-[80%] right-[2%] marque z-0 opacity-50 pointer-events-none"
           />
       {/* Background blobs */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[550px] rounded-full bg-color2/8 blur-[150px] pointer-events-none" />

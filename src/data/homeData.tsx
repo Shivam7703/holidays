@@ -586,132 +586,124 @@ export const workingprocess = {
   ],
 };
 
-export const canadapnp = {
-  bgImg: back,
-  title1: "Countries We Offer",
-  title2: "Offering skilled workers and entrepreneurs ",
+export const packages = {
+  title2: "Our Most Presious ",
+  title3: "Packages",
 
   cards: [
-    {
-      id: 1,
-      img: ontario,
-      flag: canadaflag,
-      cat: "abroad",
-      heading: "Ontario Immigrant Nominee Program (OINP) ",
-      points: ["• Processing: 3–6 Months", "• High Nomination Quota"],
-      text:
-        "Provincial nomination for skilled workers to live and work in Ontario.",
-      link: "/canada-pnp",
-    },
-    {
-      id: 2,
-      img: bcPnpProgram,
-      flag: canadaflag,
-      cat: "mbbs",
+  {
+    id: 1,
+    img: ontario,
+    category: "international",
+    heading: "Canada Tour Package – Ontario",
+    duration: "6 Days / 5 Nights",
+    price: "₹1,25,000",
+    points: ["• Toronto City Tour", "• Niagara Falls Visit"],
+    text: "Explore Ontario with vibrant city life, natural beauty, and iconic attractions.",
+    link: "/packages/canada-ontario",
+  },
+  {
+    id: 2,
+    img: bcPnpProgram,
+    category: "international",
+    heading: "Canada Tour – British Columbia",
+    duration: "5 Days / 4 Nights",
+    price: "₹1,20,000",
+    points: ["• Vancouver City Tour", "• Mountain Views"],
+    text: "Discover scenic landscapes, coastal beauty, and adventure in British Columbia.",
+    link: "/packages/canada-bc",
+  },
+  {
+    id: 3,
+    img: alberta,
+    category: "international",
+    heading: "Alberta Nature Tour",
+    duration: "6 Days / 5 Nights",
+    price: "₹1,30,000",
+    points: ["• Banff National Park", "• Lake Louise Visit"],
+    text: "Experience breathtaking mountains, lakes, and wildlife in Alberta.",
+    link: "/packages/canada-alberta",
+  },
+  {
+    id: 4,
+    img: saskatchewanPnp,
+    category: "international",
+    heading: "Saskatchewan Explorer Package",
+    duration: "5 Days / 4 Nights",
+    price: "₹1,10,000",
+    points: ["• Cultural Experience", "• Nature Trails"],
+    text: "Enjoy peaceful landscapes and cultural heritage in Saskatchewan.",
+    link: "/packages/canada-saskatchewan",
+  },
+  {
+    id: 5,
+    img: manitoba,
+    category: "international",
+    heading: "Manitoba Adventure Tour",
+    duration: "5 Days / 4 Nights",
+    price: "₹1,15,000",
+    points: ["• Wildlife Experience", "• Northern Lights Chance"],
+    text: "Explore lakes, wildlife, and unique northern experiences in Manitoba.",
+    link: "/packages/canada-manitoba",
+  },
+  {
+    id: 6,
+    img: novaScotia,
+    category: "international",
+    heading: "Nova Scotia Coastal Tour",
+    duration: "6 Days / 5 Nights",
+    price: "₹1,25,000",
+    points: ["• Coastal Drive", "• Lighthouse Visit"],
+    text: "Experience stunning coastlines, seafood, and maritime culture.",
+    link: "/packages/canada-nova-scotia",
+  },
 
-      heading: "British Columbia PNP (BC PNP)",
-      points: ["• Processing: 2–4 Months", "• Regular Invitation Rounds"],
-      text:
-        "Nominations for skilled workers and entrepreneurs targeting opportunities in British Columbia.",
-      link: "/canada-pnp",
-    },
-    {
-      id: 3,
-      img: alberta,
-      flag: canadaflag,
-      cat: "abroad",
-
-      heading: "Alberta Immigrant Nominee Program (AINP)",
-      points: ["• Processing: 4–6 Months", "• Lower CRS Possibility"],
-      text:
-        "Streamlined immigration for workers with skills needed in Alberta’s labor market.",
-      link: "/canada-pnp",
-    },
-    {
-      id: 4,
-      img: saskatchewanPnp,
-      flag: canadaflag,
-      cat: "abroad",
-
-      heading: "Saskatchewan Immigrant",
-      points: ["• Processing: 2–5 Months", "• In-Demand Occupation Stream"],
-      text:
-        "Offers pathways for workers, entrepreneurs, and farmers to settle in Saskatchewan.",
-      link: "/canada-pnp",
-    },
-    {
-      id: 5,
-      img: manitoba,
-      flag: canadaflag,
-      cat: "mbbs",
-
-      heading: "Manitoba Provincial Nominee Program (MPNP)",
-      points: ["• Processing: 3–5 Months", "• Strong Provincial Support"],
-      text:
-        "Supports skilled workers and international graduates aiming to live in Manitoba.",
-      link: "/canada-pnp",
-    },
-    {
-      id: 6,
-      img: novaScotia,
-      flag: canadaflag,
-      cat: "mbbs",
-
-      heading: "Nova Scotia Nominee Program (NSNP)",
-      points: ["• Processing: 3–6 Months", "• Express Entry Priority"],
-      text:
-        "Nomination stream focused on attracting workers and graduates to Nova Scotia.",
-      link: "/canada-pnp",
-    },
-    {
-      id: 7,
-      img: manitoba,
-      flag: canadaflag,
-      cat: "abroad",
-
-      heading: "Manitoba Provincial Nominee Program (MPNP)",
-      points: ["• Processing: 3–5 Months", "• Strong Provincial Support"],
-      text:
-        "Supports skilled workers and international graduates aiming to live in Manitoba.",
-      link: "/canada-pnp",
-    },
-    {
-      id: 8,
-      img: novaScotia,
-      flag: canadaflag,
-      cat: "abroad",
-
-      heading: "Nova Scotia Nominee Program (NSNP)",
-      points: ["• Processing: 3–6 Months", "• Express Entry Priority"],
-      text:
-        "Nomination stream focused on attracting workers and graduates to Nova Scotia.",
-      link: "/canada-pnp",
-    },
-    {
-      id: 9,
-      img: manitoba,
-      flag: canadaflag,
-      cat: "mbbs",
-
-      heading: "Manitoba Provincial Nominee Program (MPNP)",
-      points: ["• Processing: 3–5 Months", "• Strong Provincial Support"],
-      text:
-        "Supports skilled workers and international graduates aiming to live in Manitoba.",
-      link: "/canada-pnp",
-    },
-    {
-      id: 10,
-      img: novaScotia,
-      flag: canadaflag,
-      cat: "abroad",
-
-      heading: "Nova Scotia Nominee Program (NSNP)",
-      points: ["• Processing: 3–6 Months", "• Express Entry Priority"],
-      text:
-        "Nomination stream focused on attracting workers and graduates to Nova Scotia.",
-      link: "/canada-pnp",
-    },
-  ],
+  // Domestic Packages (using same images as requested)
+  {
+    id: 7,
+    img: manitoba,
+    category: "domestic",
+    heading: "Himachal Hill Station Tour",
+    duration: "5 Days / 4 Nights",
+    price: "₹14,999",
+    points: ["• Manali Visit", "• Snow Activities"],
+    text: "Enjoy scenic mountains, snowfall, and adventure in Himachal Pradesh.",
+    link: "/packages/himachal-tour",
+  },
+  {
+    id: 8,
+    img: novaScotia,
+    category: "domestic",
+    heading: "Kerala Backwater Tour",
+    duration: "5 Days / 4 Nights",
+    price: "₹18,999",
+    points: ["• Houseboat Stay", "• Tea Gardens"],
+    text: "Relax in Alleppey backwaters and explore Munnar’s greenery.",
+    link: "/packages/kerala-tour",
+  },
+  {
+    id: 9,
+    img: manitoba,
+    category: "domestic",
+    heading: "Goa Beach Holiday",
+    duration: "4 Days / 3 Nights",
+    price: "₹12,999",
+    points: ["• Beach Stay", "• Water Sports"],
+    text: "Enjoy beaches, nightlife, and water sports in Goa.",
+    link: "/packages/goa-tour",
+  },
+  {
+    id: 10,
+    img: novaScotia,
+    category: "domestic",
+    heading: "Kashmir Paradise Tour",
+    duration: "6 Days / 5 Nights",
+    price: "₹22,999",
+    points: ["• Houseboat Stay", "• Gulmarg Visit"],
+    text: "Explore Srinagar, Gulmarg, and Pahalgam in this beautiful destination.",
+    link: "/packages/kashmir-tour",
+  },
+]
 };
 
 export const Whychoose = {

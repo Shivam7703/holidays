@@ -9,7 +9,6 @@ import { aboutdata, countDown } from "@/data/homeData";
 import FaqSection from "@/components/home/faq";
 import VisaSlider from "@/components/home/visaslider";
 import WorkProcessSlider from "@/components/home/workingprocess";
-import Canadapnp from "@/components/home/canadapnp";
 import WhychooseSection from "@/components/home/whychoose";
 import Award from "@/components/home/award";
 import Studyabrod from "@/components/home/studyabroad";
@@ -21,6 +20,7 @@ import Advertise from "@/components/home/advertise";
 import Destination from "@/components/home/destination";
 import WorkProcess from "@/components/home/workingprocess";
 import Gallery from "@/components/home/gallery";
+import Package from "@/components/home/package";
 
 export default function Home() {
   return (
@@ -30,6 +30,7 @@ export default function Home() {
 <AboutSection  data ={aboutdata} />
 <Advertise/>
 <CountDown data={countDown}/>
+<Package/>
 <Destination/>
 <WorkProcess/>
 <Gallery/>

@@ -30,7 +30,7 @@ function CountDown({ data }: any) {
               {/* Stat item */}
               <motion.div
                 variants={fadeIn("up", "tween", index * 0.12, 0.5)}
-                className="flex items-center gap-4 flex-1 justify-center"
+                className="flex items-center gap-4 flex-1 sm:justify-center"
               >
                 {/* Colored icon circle */}
                 <div

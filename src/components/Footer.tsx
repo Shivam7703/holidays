@@ -24,9 +24,9 @@ export default function Footer({ footer }: any) {
       <div className="absolute bottom-20 left-0 w-[300px] h-[300px] bg-amber-200/20 rounded-full blur-[100px] pointer-events-none" />
 
       {/* ══════════ MAIN FOOTER GRID ══════════ */}
-      <div className="relative z-10  mx-auto px-6 sm:px-10 lg:px-20 pt-16 pb-10 grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-12 gap-10">
+      <div className="relative z-10  mx-auto px-6 sm:px-10 lg:px-20 pt-16 pb-10 flex flex-wrap gap-y-9 justify-between">
         {/* ── Col 1: Logo + about + socials ── */}
-        <div className="col-span-3 flex flex-col gap-5">
+        <div className="lg:w-[25%] sm:w-[48%] w-full font1 flex flex-col gap-5">
           {/* Logo */}
           {footer?.logo && (
             <Image
@@ -37,7 +37,7 @@ export default function Footer({ footer }: any) {
           )}
 
           {/* Tagline */}
-          <p className="text-gray-600 text-sm leading-relaxed max-w-xs">
+          <p className="text-gray-600 font1 leading-relaxed ">
             {footer?.text ??
               "Your trusted travel partner for unforgettable journeys and beautiful destinations around the world."}
           </p>
@@ -70,7 +70,7 @@ export default function Footer({ footer }: any) {
         </div>
 
         {/* ── Col 2: Quick Links ── */}
-        <div className="col-span-3 flex flex-col gap-4">
+        <div className="lg:w-[20%] sm:w-[48%] w-full flex flex-col gap-4">
           <h4 className="text-color1 font-black text-base uppercase tracking-widest relative after:block after:w-8 after:h-[3px] after:bg-color2 after:rounded-full after:mt-2">
             {footer?.list2?.title ?? "Quick Links"}
           </h4>
@@ -79,7 +79,7 @@ export default function Footer({ footer }: any) {
               <li key={i}>
                 <Link
                   href={d?.href}
-                  className="text-gray-600 text-sm flex items-center gap-2 group hover:text-color2 transition-colors duration-300"
+                  className="text-gray-600 font1 flex items-center gap-2 group hover:text-color2 transition-colors duration-300"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-color2/40 group-hover:bg-color2 transition-colors duration-300 shrink-0" />
                   {d?.label}
@@ -90,7 +90,7 @@ export default function Footer({ footer }: any) {
         </div>
 
         {/* ── Col 3: Services / list1 ── */}
-        <div className="col-span-3 flex flex-col gap-4">
+        <div className="lg:w-[20%] sm:w-[48%] w-full flex flex-col gap-4">
           <h4 className="text-color1 font-black text-base uppercase tracking-widest relative after:block after:w-8 after:h-[3px] after:bg-amber-400 after:rounded-full after:mt-2">
             {footer?.list1?.title ?? "Services"}
           </h4>
@@ -99,7 +99,7 @@ export default function Footer({ footer }: any) {
               <li key={i}>
                 <Link
                   href={d?.href}
-                  className="text-gray-600 text-sm flex items-center gap-2 group hover:text-color2 transition-colors duration-300"
+                  className="text-gray-600 font1 flex items-center gap-2 group hover:text-color2 transition-colors duration-300"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-amber-400/50 group-hover:bg-amber-400 transition-colors duration-300 shrink-0" />
                   {d?.label}
@@ -110,7 +110,7 @@ export default function Footer({ footer }: any) {
         </div>
 
         {/* ── Col 4: Contact ── */}
-        <div className="col-span-3 flex flex-col gap-4">
+        <div className="lg:w-[26%] sm:w-[48%] w-full font1 flex flex-col gap-4">
           <h4 className="text-color1 font-black text-base uppercase tracking-widest relative after:block after:w-8 after:h-[3px] after:bg-color1 after:rounded-full after:mt-2">
             {footer?.newLetter?.title ?? "Contact Us"}
           </h4>
@@ -126,7 +126,7 @@ export default function Footer({ footer }: any) {
                 <p className="text-[10px] uppercase tracking-widest text-color2 font-bold">
                   Phone
                 </p>
-                <p className="text-gray-700 text-sm font-medium">
+                <p className="text-gray-700 font1 font-medium">
                   0679513203, 0677066361
                 </p>
               </div>
@@ -145,7 +145,7 @@ export default function Footer({ footer }: any) {
                 <p className="text-[10px] uppercase tracking-widest text-amber-500 font-bold">
                   Email
                 </p>
-                <p className="text-gray-700 text-sm font-medium break-all">
+                <p className="text-gray-700 font1 font-medium break-all">
                   info@valueadzcoreoverseas.com
                 </p>
               </div>
@@ -160,7 +160,7 @@ export default function Footer({ footer }: any) {
                 <p className="text-[10px] uppercase tracking-widest text-color1 font-bold">
                   Address
                 </p>
-                <p className="text-gray-700 text-sm leading-relaxed">
+                <p className="text-gray-700 font1 leading-relaxed">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
                   voluptate.
                 </p>
@@ -178,7 +178,7 @@ export default function Footer({ footer }: any) {
               <Image
                 src={patta2}
                 alt="city"
-                className="w-[28vw] object-cover object-bottom opacity-60"
+                className="w-[38vw] object-cover object-bottom opacity-80"
               />
             ))}
           </div>
@@ -190,7 +190,7 @@ export default function Footer({ footer }: any) {
 
       {/* ── Copyright bar ── */}
       <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-3 px-6 sm:px-10 lg:px-20 py-5">
-        <p className="text-gray-500 text-xs sm:text-sm text-center sm:text-left">
+        <p className="text-gray-500 text-xs font1 sm:font1 text-center sm:text-left">
           {footer?.copyrightText ?? "© 2026 All rights reserved."}{" "}
           <a
             href="https://skywarddigitalsolutions.com"
@@ -202,7 +202,7 @@ export default function Footer({ footer }: any) {
 
         {/* mini nav */}
         <div className="flex items-center gap-4 text-xs text-gray-500">
-          {["Privacy Policy", "Terms of Use", "Sitemap"].map((t, i) => (
+          {["Privacy Policy", "Terms of Use"].map((t, i) => (
             <Link
               key={i}
               href="/"
