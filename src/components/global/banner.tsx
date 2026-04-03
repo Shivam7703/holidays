@@ -9,7 +9,7 @@ import { sliderText, } from "@/utils/motion";
 
 
 
-export default function Banner({title, para, img, slug}:any) {
+export default function Banner({title, slug}:any) {
 
  // Trigger useEffect whenever currentSlide changes
 
