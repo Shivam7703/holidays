@@ -23,30 +23,30 @@ const data = [
   {
     img: pro1,
     icon: <FaWpforms />,
-    heading: "Planning & Assessment",
+    heading: "Travel Planning & Assessment",
     year: "step 01",
-    text: "Understanding project requirements, site conditions, timelines, and execution feasibility thoroughly.",
+    text: "Understanding your travel preferences, budget, destinations, and timelines to design the perfect trip.",
   },
   {
     img: pro2,
     icon: <MdOutlineSettings />,
-    heading: "Design & Engineering",
+    heading: "Itinerary Design",
     year: "step 02",
-    text: "Understanding project requirements, site conditions, timelines, and execution feasibility thoroughly.",
+    text: "Creating a personalized travel plan with selected destinations, activities, stays, and experiences tailored to you.",
   },
   {
     img: pro3,
     icon: <MdOutlineEngineering />,
-    heading: "Execution & Supervision",
+    heading: "Booking & Arrangements",
     year: "step 03",
-    text: "Executing construction activities with strict supervision, safety compliance, and quality control.",
+    text: "Managing flights, hotels, and tours with seamless coordination and confirmed reservations.",
   },
   {
     img: pro4,
     icon: <LuHandshake />,
-    heading: "Completion & Handover",
+    heading: "Travel Support & Assistance",
     year: "step 04",
-    text: "Final inspections, documentation, and smooth project handover within committed timelines.",
+    text: "Providing complete guidance and on-trip support to ensure a smooth, stress-free, and enjoyable journey.",
   },
 ];
 
@@ -224,7 +224,7 @@ export default function WorkProcess() {
             src={plane}
             alt={"Work process image"}
   
-            className="object-contain absolute top-[73%] left-[2%] aeo z-0 md:w-44 opacity-80 pointer-events-none"
+            className="object-contain absolute top-[73%] left-[2%] aeo z-0 md:w-44 w-16 opacity-80 pointer-events-none"
           />
            <Image
             src={bal2}
@@ -266,10 +266,9 @@ export default function WorkProcess() {
             variants={fadeUp}
             custom={1}
           >
-            We Provide Our {" "}
+            How We Plan{" "}
             <span className="text-color2">
-              Best Work Process
-            </span>
+          Your Journey</span>
           </motion.h2>
 
           <motion.p
@@ -277,7 +276,7 @@ export default function WorkProcess() {
             variants={fadeUp}
             custom={2}
           >
-            A decade-long journey of precision, passion, and pioneering aviation standards that set us apart.
+A thoughtful approach combining expertise, attention to detail, and reliable support to create stress-free and enjoyable travel experiences.
           </motion.p>
 
           {/* Scroll cue */}

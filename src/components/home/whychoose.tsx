@@ -3,22 +3,20 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/utils/motion";
-import { Whychoose as data } from "@/data/homeData";
-import Link from "next/link";
 import Buttonmain from "../global/button";
 import { bal1, bal2, choose, cloud1, cloud2 } from "@/assets";
-import { FaCompass, FaEye, FaPlane } from "react-icons/fa";
+import { FaCompass, FaEye} from "react-icons/fa";
 
 const features = [
   {
     icon: <FaCompass  />,
-    title: "Trusted Travel Guide",
-    desc: "Provides reliable information to help travelers plan their trips efficiently and safely.",
+    title: "Trusted Travel Guidance",
+    desc: "Providing reliable advice and smart planning to help you travel with confidence and ease.",
   },
   {
     icon: <FaEye  />,
-    title: "Mission & Vision",
-    desc: "Aims to connect people to positive experience through travel, helping them see the world differently.",
+    title: "Our Mission & Vision",
+    desc: "To create meaningful travel experiences that inspire, connect, and bring joy—helping you see the world in a new way.",
   },
 ];
 
@@ -52,14 +50,13 @@ export default function WhychooseSection() {
 
           {/* Heading */}
           <h2 className="font-bold text-color1 text-3xl sm:text-4xl md:text-5xl leading-[1.15]">
-            We Recommend{" "}
-            <span className="text-color2">Beautiful</span>{" "}Destinations Every Month
+            Creating Seamless{" "}
+            <span className="text-color2">Travel Experiences</span>{" "}You Can Always Trust
           </h2>
 
           {/* Para */}
           <p className="text-gray-800 leading-relaxed ">
-            {data?.para ??
-              "We are a multi-award-winning strategy and content creation agency that specializes in travel marketing and unique experiences."}
+            We bring you thoughtfully selected destinations and well-planned travel experiences every month, designed to suit every kind of traveler. Our focus is on making your journeys smooth, enjoyable, and truly memorable.
           </p>
 
           {/* ── 24/7 card + features row ── */}

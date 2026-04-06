@@ -1,10 +1,9 @@
-// app/blogs/[slug]/page.tsx
+// app/destinations/[slug]/page.tsx
 import { notFound } from "next/navigation";
 import React from "react";
-import { blogData } from "@/data/homeData";
-import { bann } from "@/assets";
+import { Destinationdata } from "@/data/destinationData";
 import Banner from "@/components/global/banner";
-import Blogdetails from "@/components/blog/blog-detail";
+import Destdetails from "@/components/destination/dest-detail";
 
 interface PageProps {
   params: {
@@ -23,31 +22,31 @@ const createSlug = (title: string): string => {
 
 // Generate static paths for blogs - removed Promise return type
 export function generateStaticParams() {
-  const blogsData = blogData.blog;
-  return blogsData.map((blog: any) => ({
-    slug: createSlug(blog.heading),
+  const destData = Destinationdata;
+  return destData.map((dest: any) => ({
+    slug: createSlug(dest.title),
   }));
 }
 
 export default function BlogPage({ params }: PageProps) {
   const decodedSlug = createSlug(decodeURIComponent(params.slug));
-  const blogsData = blogData.blog;
-  const singleBlog = blogsData.find(
-    (blog: any) => createSlug(blog.heading) === decodedSlug
+  const destData = Destinationdata;
+  const singleDest = destData.find(
+    (dest: any) => createSlug(dest.title) === decodedSlug
   );
 
-  if (!singleBlog) {
+  if (!singleDest) {
     notFound();
   }
 
   return (
     <main>
       <Banner
-        title={singleBlog.heading}
+        title={singleDest.title}
        
-        slug={`blogs/${createSlug(singleBlog.heading)}`}
+        slug={`destinations/${createSlug(singleDest.title)}`}
       />
-      <Blogdetails data={singleBlog} />
+      <Destdetails data={singleDest} />
     </main>
   );
 }

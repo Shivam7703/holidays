@@ -53,467 +53,339 @@ import { IoSearch, IoSettingsOutline } from "react-icons/io5";
 import { MdAttachEmail, MdWifiCalling3 } from "react-icons/md";
 import { RiUserFollowLine } from "react-icons/ri";
 
+import { FaUsers, FaGlobe } from "react-icons/fa";
+import { MdVerified } from "react-icons/md";
+import { BiTime } from "react-icons/bi";
+import { FiSettings } from "react-icons/fi";
+import { AiFillCar } from "react-icons/ai";
+
+
+
 // homepage
 export const navigationMenu = {
   primaryMenu: [
     { id: 2, label: "About Us", href: "/about-us" },
+ {
+    id: 3,
+    label: "Destination",
+    href: "#",
+    subNav: [
+      {
+        id: 1,
+        label: "Domestic",
+        href: "#",
+        subNav: [
+          {
+            id: 1,
+            label: "Himachal Pradesh",
+            href: "/destinations/himachal-pradesh",
+          },
+          {
+            id: 2,
+            label: "Andaman & Nicobar",
+            href: "/destinations/andaman-nicobar-islands",
+          },
+          { id: 3, label: "Kashmir", href: "/destinations/kashmir" },
+          {
+            id: 4,
+            label: "Sikkim",
+            href: "/destinations/sikkim",
+          },
+          { id: 5, label: "Kerala", href: "/destinations/kerala" },
+          { id: 6, label: "Goa", href: "/destinations/goa" },
+          {
+            id: 7,
+            label: "Leh-Ladakh",
+            href: "/destinations/leh-ladakh",
+          },
+          { id: 8, label: "Darjeeling", href: "/destinations/darjeeling" },
+          {
+            id: 9,
+            label: "Jaipur",
+            href: "/destinations/jaipur",
+          },
+          {
+            id: 10,
+            label: "Agra",
+            href: "/destinations/agra",
+          },
+          {
+            id: 11,
+            label: "Ranthambore",
+            href: "/destinations/ranthambore",
+          },
+           {
+            id: 12,
+            label: "Rishikesh",
+            href: "/destinations/rishikesh",
+          },
+        ],
+      },
+      {
+        id: 2,
+        label: "International",
+        href: "#",
+        subNav: [
+          {
+            id: 1,
+            label: "Dubai",
+            href: "/destinations/dubai",
+          },
+          { id: 2, label: "Thailand", href: "/destinations/thailand" },
+          {
+            id: 3,
+            label: "Vietnam",
+            href: "/destinations/vietnam",
+          },
+          {
+            id: 4,
+            label: "Maldives",
+            href: "/destinations/maldives",
+          },
+          {
+            id: 5,
+            label: "Hong Kong",
+            href: "/destinations/hong-kong",
+          },
+          { id: 6, label: "Turkey", href: "/destinations/turkey" },
+          {
+            id: 7,
+            label: "China",
+            href: "/destinations/china",
+          },
+          {
+            id: 8,
+            label: "Abu Dhabi",
+            href: "/destinations/abu-dhabi",
+          },
+          {
+            id: 9,
+            label: "Switzerland",
+            href: "/destinations/switzerland,-usa",
+          },
+          {
+            id: 10,
+            label: "Almaty",
+            href: "/destinations/almaty",
+          },
+          {
+            id: 11,
+            label: "Georgia",
+            href: "/destinations/georgia",
+          },
+          { id: 12, label: "Azerbaijan", href: "/destinations/azerbaijan" },
 
-    {
-      id: 3,
-      label: "Destinations",
-      href: "#",
-      subNav: [
-        { id: 1, label: "India Tours", href: "/destinations/india" },
-        {
-          id: 2,
-          label: "International Tours",
-          href: "/destinations/international",
-        },
-        { id: 3, label: "Honeymoon Packages", href: "/destinations/honeymoon" },
-        { id: 4, label: "Family Packages", href: "/destinations/family" },
-        { id: 5, label: "Adventure Tours", href: "/destinations/adventure" },
-      ],
-    },
-
-    {
-      id: 4,
-      label: "Packages",
-      href: "#",
-      subNav: [
-        { id: 1, label: "Budget Packages", href: "/packages/budget" },
-        { id: 2, label: "Luxury Packages", href: "/packages/luxury" },
-        { id: 3, label: "Weekend Getaways", href: "/packages/weekend" },
-        { id: 4, label: "Group Tours", href: "/packages/group" },
-        { id: 5, label: "Custom Packages", href: "/packages/custom" },
-      ],
-    },
-
-    {
-      id: 5,
-      label: "Services",
-      href: "#",
-      subNav: [
-        { id: 1, label: "Flight Booking", href: "/services/flight-booking" },
-        { id: 2, label: "Hotel Booking", href: "/services/hotel-booking" },
-        { id: 3, label: "Visa Assistance", href: "/services/visa" },
-        { id: 4, label: "Travel Insurance", href: "/services/insurance" },
-        { id: 5, label: "Car Rental", href: "/services/car-rental" },
-      ],
-    },
+          {
+            id: 14,
+            label: "Bhutan",
+            href: "/destinations/bhutan",
+          },
+          {
+            id: 15,
+            label: "Russia",
+            href: "/destinations/russia",
+          },
+          { id: 16, label: "Japan", href: "/destinations/japan" },
+        ],
+      },
+    ],
+  },
+  {
+    id: 4,
+    label: "Packages",
+    href: "#",
+    subNav: [
+      {
+        id: 1,
+        label: "Domestic",
+        href: "#",
+        subNav: [
+          {
+            id: 1,
+            label: "Golden Triangle Tour",
+            href: "/packages/golden-triangle-tour",
+          },
+          {
+            id: 2,
+            label: "Jodhpur – Jaisalmer Tour",
+            href: "/packages/jodhpur-–-jaisalmer-tour",
+          },
+          {
+            id: 3,
+            label: "Paradise on Earth – Kashmir Tour",
+            href: "/packages/paradise-on-earth-–-kashmir-tour",
+          },
+          {
+            id: 4,
+            label: "The Andaman Tour",
+            href: "/packages/the-andaman-tour",
+          },
+          { id: 5, label: "Goa Tour", href: "/packages/goa-tour" },
+          {
+            id: 6,
+            label: "Ladakh Tour",
+            href: "/packages/ladakh-tour",
+          },
+          {
+            id: 7,
+            label: "South India Temple Tour 5N 6D",
+            href: "/packages/south-india-temple-tour-5n-6d",
+          },
+          {
+            id: 8,
+            label: "Exotic kerala Tour 3N 4D",
+            href: "/packages/exotic-kerala-tour-3n-4d",
+          },
+          {
+            id: 9,
+            label: "Exotic kerala Tour 7N 8D",
+            href: "/packages/exotic-kerala-tour-7n-8d",
+          },
+          {
+            id: 10,
+            label: "Darjeeling Tour",
+            href: "/packages/darjeeling-tour",
+          },
+          {
+            id: 11,
+            label: "Assam Meghalaya Tour",
+            href: "/packages/assam-meghalaya-tour",
+          },
+          {
+            id: 12,
+            label: "Dajeeling Gangtok Tour",
+            href: "/packages/darjeeling-gangtok-tour",
+          },
+          {
+            id: 13,
+            label: "South India Tour",
+            href: "/packages/south-india-tour",
+          },
+        ],
+      },
+      {
+        id: 2,
+        label: "International",
+        href: "#",
+        subNav: [
+          {
+            id: 1,
+            label: "Vietnam Adventure Tour",
+            href: "/packages/vietnam-adventure-tour",
+          },
+          {
+            id: 2,
+            label: "Bali Discovery Trip",
+            href: "/packages/bali-discovery-trip",
+          },
+          {
+            id: 3,
+            label: "Best of Turkey",
+            href: "/packages/best-of-turkey",
+          },
+          {
+            id: 4,
+            label: "Enchanting Sri Lanka",
+            href: "/packages/enchanting-sri-lanka-tour",
+          },
+          {
+            id: 5,
+            label: "Greece Tour",
+            href: "/packages/greece-tour",
+          },
+          {
+            id: 6,
+            label: "Mesmerizing Japan",
+            href: "/packages/mesmerizing-japan",
+          },
+          {
+            id: 7,
+            label: "Thailand Tour",
+            href: "/packages/thailand-tour",
+          },
+          {
+            id: 8,
+            label: "Dubai Tour",
+            href: "/packages/dubai-tour",
+          },
+          {
+            id: 9,
+            label: "Singapore Tour",
+            href: "/packages/singapore-tour",
+          },
+        ],
+      },
+    ],
+  },
 
     {
       id: 7,
       label: "Blog",
-      href: "/blog",
+      href: "/blogs",
     },
 
     { id: 8, label: "Contact Us", href: "/contact-us" },
   ],
-
-  secondaryMenu: [
-    {
-      id: 1,
-      label: "Canada",
-      href: "#",
-      subNav: [
-        { id: 1, label: "PR Visa", href: "/visa/canada-pr-visa" },
-        { id: 2, label: "Work", href: "/visa/canada-work-visa" },
-        { id: 3, label: "Study", href: "/visa/canada-study-visa" },
-        { id: 4, label: "Visit", href: "/visa/canada-visit-visa" },
-        { id: 5, label: "Business Visa", href: "/visa/canada-business-visa" },
-        { id: 6, label: "Investor Visa", href: "/visa/canada-investor-visa" },
-        { id: 7, label: "Spouse Visa", href: "/visa/canada-spouse-visa" },
-        { id: 8, label: "Super Visa", href: "/visa/canada-super-visa" },
-      ],
-    },
-
-    {
-      id: 2,
-      label: "Australia",
-      href: "#",
-      subNav: [
-        { id: 1, label: "PR Visa", href: "/visa/australia-pr-visa" },
-        { id: 2, label: "Work", href: "/visa/australia-work-visa" },
-        { id: 3, label: "Study", href: "/visa/australia-study-visa" },
-        { id: 4, label: "Visit", href: "/visa/australia-visit-visa" },
-        {
-          id: 5,
-          label: "Business Visa",
-          href: "/visa/australia-business-visa",
-        },
-        {
-          id: 6,
-          label: "Investor Visa",
-          href: "/visa/australia-investor-visa",
-        },
-        { id: 7, label: "Spouse Visa", href: "/visa/australia-spouse-visa" },
-      ],
-    },
-
-    {
-      id: 3,
-      label: "New Zealand",
-      href: "#",
-      subNav: [
-        { id: 1, label: "PR Visa", href: "/visa/new-zealand-pr-visa" },
-        { id: 2, label: "Work", href: "/visa/new-zealand-work-visa" },
-        { id: 3, label: "Study", href: "/visa/new-zealand-study-visa" },
-        { id: 4, label: "Visit", href: "/visa/new-zealand-visit-visa" },
-      ],
-    },
-
-    {
-      id: 4,
-      label: "Europe",
-      href: "#",
-      subNav: [
-        {
-          id: 1,
-          label: "Work Visa",
-          href: "#",
-          subNav: [
-            { id: 1, label: "Ireland", href: "/visa/ireland-work-visa" },
-            { id: 2, label: "Luxembourg", href: "/visa/luxembourg-work-visa" },
-            { id: 3, label: "Malta", href: "/visa/malta-work-visa" },
-            { id: 4, label: "Poland", href: "/visa/poland-work-visa" },
-            {
-              id: 5,
-              label: "Netherlands",
-              href: "/visa/netherlands-work-visa",
-            },
-            { id: 6, label: "Germany", href: "/visa/germany-work-visa" },
-            { id: 7, label: "Sweden", href: "/visa/sweden-work-visa" },
-            { id: 8, label: "Finland", href: "/visa/finland-work-visa" },
-            { id: 9, label: "Italy", href: "/visa/italy-work-visa" },
-            { id: 10, label: "Denmark", href: "/visa/denmark-work-visa" },
-          ],
-        },
-      ],
-    },
-
-    {
-      id: 5,
-      label: "GCC",
-      href: "#",
-      subNav: [
-        {
-          id: 1,
-          label: "Work Visa",
-          href: "#",
-          subNav: [
-            { id: 1, label: "UAE", href: "/visa/uae-work-visa" },
-            { id: 2, label: "Oman", href: "/visa/oman-work-visa" },
-            { id: 3, label: "Kuwait", href: "/visa/kuwait-work-visa" },
-            { id: 4, label: "Qatar", href: "/visa/qatar-work-visa" },
-            { id: 5, label: "Saudi Arabia", href: "/visa/saudi-work-visa" },
-          ],
-        },
-      ],
-    },
-
-    {
-      id: 6,
-      label: "USA",
-      href: "#",
-      subNav: [
-        { id: 1, label: "Visit", href: "/visa/usa-visit-visa" },
-        { id: 2, label: "Investor Visa", href: "/visa/usa-investor-visa" },
-        { id: 3, label: "Business Visa", href: "/visa/usa-business-visa" },
-      ],
-    },
-
-    {
-      id: 12,
-      label: "PNP Programs",
-      href: "#",
-      subNav: [
-        { id: 1, label: "AAIP", href: "/visa/aaip" },
-        { id: 2, label: "BC PNP", href: "/visa/bc-pnp" },
-        { id: 3, label: "MPNP", href: "/visa/mpnp" },
-        { id: 4, label: "NBPNP", href: "/visa/nbpnp" },
-        { id: 5, label: "NLPNP", href: "/visa/nlpnp" },
-        { id: 6, label: "NWTNP", href: "/visa/nwtnp" },
-        { id: 7, label: "NSNP", href: "/visa/nsnp" },
-        { id: 8, label: "AIP", href: "/visa/aip" },
-        { id: 9, label: "OINP", href: "/visa/oinp" },
-        { id: 10, label: "PEI PNP", href: "/visa/pei-pnp" },
-        { id: 11, label: "SINP", href: "/visa/sinp" },
-        { id: 12, label: "YNP", href: "/visa/ynp" },
-      ],
-    },
-
-    {
-      id: 13,
-      label: "Points Calculator",
-      href: "#",
-      subNav: [
-        {
-          id: 1,
-          label: "Canada 67 Points Calculator",
-          href: "/calculator/canada-67-points",
-        },
-        {
-          id: 2,
-          label: "Australia Points Calculator",
-          href: "/calculator/australia-points",
-        },
-        {
-          id: 3,
-          label: "New Zealand Points Calculator",
-          href: "/calculator/new-zealand-points",
-        },
-      ],
-    },
-
-    {
-      id: 4,
-      label: "Other Visas",
-      href: "#",
-      subNav: [
-        { id: 1, label: "Dubai Golden Visa", href: "/visa/dubai-golden-visa" },
-        { id: 2, label: "Schengen Visa", href: "/visa/schengen-visa" },
-        {
-          id: 3,
-          label: "Tourist Visa",
-          href: "#",
-          subNav: [
-            { id: 1, label: "UK", href: "/visa/uk-tourist-visa" },
-            { id: 2, label: "Germany", href: "/visa/germany-tourist-visa" },
-            { id: 3, label: "Ireland", href: "/visa/ireland-tourist-visa" },
-            {
-              id: 4,
-              label: "Luxembourg",
-              href: "/visa/luxembourg-tourist-visa",
-            },
-            { id: 5, label: "Malta", href: "/visa/malta-tourist-visa" },
-            { id: 6, label: "Poland", href: "/visa/poland-tourist-visa" },
-            {
-              id: 7,
-              label: "Netherlands",
-              href: "/visa/netherlands-tourist-visa",
-            },
-            { id: 8, label: "Portugal", href: "/visa/portugal-tourist-visa" },
-            { id: 9, label: "Sweden", href: "/visa/sweden-tourist-visa" },
-            { id: 10, label: "Italy", href: "/visa/italy-tourist-visa" },
-            { id: 11, label: "France", href: "/visa/france-tourist-visa" },
-            { id: 12, label: "Spain", href: "/visa/spain-tourist-visa" },
-          ],
-        },
-      ],
-    },
-  ],
 };
-
-export const sliderContent = [
-  {
-    id: 1, // Fix duplicate id issue by using unique ids
-    img: banner2,
-    welcome: "Best Agri-input & Crop Protection Firm ",
-    title1: "Helping farmers grow more with ",
-    title2: "simple and effective products.",
-    para:
-      "Making farming simple and effective. Your crops will be protected while the soil gets nourished for increased production.",
-    btntext: "Contact Us",
-    href: "/contact-us",
-  },
-  {
-    id: 2, // Fix duplicate id issue by using unique ids
-    img: box2,
-    welcome: "Best Agri-input & Crop Protection Firm ",
-    title1: "Leading the Future of Crop ",
-    title2: "Protection & Growth",
-    para:
-      "Empowering farmers with innovative agri-solutions that ensure healthier crops and higher yields. Sustainable, effective, and farmer-focused—we help you grow with confidence.",
-    btntext: "Contact Us",
-    href: "/contact-us",
-  },
-];
 
 export const aboutdata = {
   img: about,
-  title2: "Trusted & Expert Immigration ",
-  title3: "Consultant",
+  title2: "Your Reliable Travel ",
+  title3: "Partner",
   para:
-    "We deliver reliable, results-oriented immigration solutions backed by expert guidance, ethical practices, and structured processes. Recognized for offering the best immigration consultants in Noida, we support individuals and families from visa planning to final submission, ensuring clarity, confidence, and complete professional assistance throughout the process.",
+    "We create hassle-free travel experiences with curated destinations, expert planning, and end-to-end support. From booking to boarding, we make sure your journey is smooth, exciting, and unforgettable. With personalized itineraries and attention to every detail, we turn your travel plans into effortless experiences. Our dedicated team is always there to guide you, ensuring comfort, convenience, and peace of mind throughout your trip.",
   pointer: [
     {
       id: 1,
       heading: "Transparency",
-      text: "Clear processes, honest advice, and no hidden commitments.",
+      text: "Clear pricing, honest recommendations, and no hidden surprises—just smooth travel planning you can trust.",
       icon: <IoSearch />,
     },
     {
       id: 2,
-      heading: "Client Satisfaction",
-      text: "Focused on results, trust, and long-term client success.",
+      heading: "Customer Satisfaction",
+      text: "Focused on creating memorable journeys, comfort, and experiences that you’ll truly enjoy.",
       icon: <RiUserFollowLine />,
     },
     {
       id: 3,
-      heading: "Transparency",
-      text: "Clear processes, honest advice, and no hidden commitments.",
+      heading: "Reliability",
+      text: "On-time bookings, dependable support, and well-planned trips you can count on every time.",
       icon: <IoSearch />,
     },
     {
       id: 4,
-      heading: "Client Satisfaction",
-      text: "Focused on results, trust, and long-term client success.",
+      heading: "Personalized Experience",
+      text: "Trips tailored to your preferences, ensuring every journey feels just right for you.",
       icon: <RiUserFollowLine />,
     },
   ],
 };
 
 export const advertise = {
-  title: "To Go Your Desire Place Through our GoFLy.",
+  title: "Travel to your dream destinations with exclusive packages.",
   ads: [ad1, ad2],
   points: [
     {
       icon: <AiFillCar />,
-      heading: "One Click Booking",
+      heading: "Quick & Easy Booking",
       text:
-        "You can hassle-free and fast tour & travel package booking by GoFly.",
+        "Plan and book your entire trip in just a few simple steps—fast and convenient.",
     },
     {
       icon: <AiFillCar />,
-      heading: "One Click Booking",
+      heading: "Stress-Free Travel",
       text:
-        "You can hassle-free and fast tour & travel package booking by GoFly.",
+        "Leave the planning to us while you enjoy a smooth and relaxed journey.",
     },
     {
       icon: <AiFillCar />,
-      heading: "One Click Booking",
+      heading: "All-in-One Travel Support",
       text:
-        "You can hassle-free and fast tour & travel package booking by GoFly.",
+        "From flights to stays and tours, everything you need is handled in one place.",
     },
   ],
 };
-
-export const aboutdata2 = {
-  img1: about2,
-  img2: box2,
-  title1: "ABOUT US",
-  title2: "Leading Immigration ",
-  title3: "Consultancy",
-  para:
-    "Focused on clarity and compliance, we are the best immigration consultants in Noida, delivering profile-based immigration guidance and end-to-end visa support. Our expert team follows ethical practices and structured processes to help individuals and families achieve global opportunities with confidence.",
-
-  pointer: [
-    {
-      id: 1,
-      heading: "Leading Immigration Consultancy",
-      text:
-        "Delivering ethical guidance, expert support, and reliable solutions for global immigration success.",
-      icon: <FaPlaneDeparture />,
-    },
-    {
-      id: 2,
-      heading: "Immigration Solutions That Work",
-      text:
-        "Structured processes and expert guidance to help you move abroad with confidence.",
-      icon: <IoSettingsOutline />,
-    },
-  ],
-};
-
-export const visaSliderdata = {
-  title1: "Wide Range of Visa Options",
-  title2: "Structured Immigration Services for PR and Citizenship",
-
-  cards: [
-    {
-      id: 1,
-      img: visa1,
-      heading: "Work Visa",
-      text:
-        "Support for work visa applications with proper documents and employer-compliant immigration procedures.",
-    },
-    {
-      id: 2,
-      img: prvisa,
-      heading: "Permanent Residency Visa",
-      text:
-        "Guidance to apply for permanent residency through structured programs and accurate profile submission.",
-    },
-    {
-      id: 3,
-      img: famvisa,
-      heading: "Family Sponsorship Visa",
-      text:
-        "Help families reunite abroad through legal sponsorship filing and complete documentation support.",
-    },
-    {
-      id: 4,
-      img: business,
-      heading: "Business & Investor Visa",
-      text:
-        "Assistance for investors and entrepreneurs applying through approved business and investment immigration routes.",
-    },
-    {
-      id: 5,
-      img: touristvisa,
-      heading: "Tourist / Visitor Visa",
-      text:
-        "Simple assistance for visitor visa applications with clear guidance and timely submission.",
-    },
-  ],
-};
-
-export const countrytomigrate = {
-  title1: "Countries We Offer",
-  title2: "We Provide Expert Immigration And Destinations.",
-
-  cards: [
-    {
-      id: 1,
-      img: canadaflag,
-      heading: "United States",
-      link: "country/us",
-      points: [
-        "4 Years Business Visa",
-        "Visa Apply Online",
-        "Student Admission Visa",
-        "24/7 Support",
-      ],
-    },
-    {
-      id: 2,
-      img: ukflag,
-      heading: "United Kingdom",
-      link: "country/uk",
-      points: [
-        "4 Years Business Visa",
-        "Visa Apply Online",
-        "Student Admission Visa",
-        "24/7 Support",
-      ],
-    },
-    {
-      id: 3,
-      img: canadaflag,
-      heading: "Canada",
-      link: "country/canada",
-      points: ["PR Pathways", "Express Entry", "Student Visa", "24/7 Support"],
-    },
-    {
-      id: 4,
-      img: ukflag,
-      heading: "Australia",
-      link: "country/australia",
-      points: [
-        "Skilled Migration",
-        "Work Visa",
-        "Student Visa",
-        "24/7 Support",
-      ],
-    },
-  ],
-};
-
-import { FaUsers, FaGlobe } from "react-icons/fa";
-import { MdVerified } from "react-icons/md";
-import { BiTime } from "react-icons/bi";
-import { FiSettings } from "react-icons/fi";
-import { AiFillCar } from "react-icons/ai";
 
 export const countDown = [
   {
@@ -549,42 +421,6 @@ export const countDown = [
     color: "color3",
   },
 ];
-
-export const workingprocess = {
-  title1: "Our Working Process",
-  title2: "Get Your Visa Approved in 4 Easy Steps.",
-
-  cards: [
-    {
-      id: 1,
-      img: process1,
-      heading: "Initial Consultation",
-      text:
-        "Discuss your goals and assess eligibility for the best visa option.",
-    },
-    {
-      id: 2,
-      img: process1,
-      heading: "Document Preparation",
-      text:
-        "Gather and organize all required documents for a smooth application.",
-    },
-    {
-      id: 3,
-      img: process1,
-      heading: "Application Submission",
-      text:
-        "Submit your visa application accurately with expert guidance and follow-up.",
-    },
-    {
-      id: 4,
-      img: process1,
-      heading: "Approval & Support",
-      text:
-        "Receive visa approval and get assistance with post-landing formalities.",
-    },
-  ],
-};
 
 export const packages = {
   title2: "Our Most Presious ",
@@ -706,22 +542,6 @@ export const packages = {
 ]
 };
 
-export const Whychoose = {
-  img: box1,
-
-  title1: "Why Choose Us",
-  title2: "India’s Best immigration consultants ",
-  title3: "",
-  para:
-    "ValueAdz, the immigration consultants in Noida, offers reliable and result-driven immigration solutions backed by experienced professionals and transparent processes. We focus on profile-based guidance, accurate documentation, and legal compliance to ensure smooth visa applications. With a client-first approach, ethical practices, and personalized support, we help individuals and families in Noida achieve their global immigration goals with confidence and clarity.",
-
-  success: [
-    { id: 1, value: "100%", text: "Visa Success Rate" },
-    { id: 2, value: "100%", text: "Clients Satisfaction" },
-    { id: 3, value: "100%", text: "Transparency" },
-  ],
-};
-
 export const testimonialData = {
   title1: "Testimonial",
   title2: "What Our Client Says",
@@ -759,48 +579,33 @@ export const HomefaqData = {
   title3: " Questions",
 
   para1:
-    "Our Frequently Asked Questions section answers common concerns about visas, eligibility, timelines, and documentation. ",
-  Counts: [
-    {
-      value: 100,
-      title: "Expert Guidance",
-    },
-    {
-      value: 96,
-      title: "Personalized Support",
-    },
-    {
-      value: 94,
-      title: "Global Expertise",
-    },
-  ],
-  para2:
-    "Designed to offer clarity and transparency, it helps you make informed decisions while choosing the Right immigration consultants in Noida for your global plans.",
+    "Find answers to the most common travel queries—from planning and bookings to documents and on-trip support—so you can travel with confidence and ease.",
+ 
   faqs: [
     {
-      que: "How do I know which visa is right for me?",
+      que: "How do I manage my budget during the trip?",
       ans:
-        "Visa selection depends on your age, education, work experience, language ability, and future goals. Our experts evaluate your complete profile and suggest the most suitable and compliant visa pathway, ensuring you receive the best immigration consultants.",
+        "We help you plan a realistic budget before your trip, including stays, transport, and activities. You’ll also get tips on local pricing, saving options, and where to spend wisely without compromising your experience.",
     },
     {
-      que: "Can you guarantee visa approval?",
+      que: "Can I make last-minute travel bookings?",
       ans:
-        "No legitimate consultant can legally guarantee visa approval. We focus on correct documentation, ethical guidance, and proper program selection to maximize success while strictly following immigration laws and professional standards.",
+        "Yes, last-minute bookings are possible depending on availability. We try to secure the best options quickly, but prices may be higher and choices limited, so early planning is always recommended for better deals.",
     },
     {
-      que: "Can you help if my application was refused?",
+      que: "Are group tours or private trips better?",
       ans:
-        "Yes, we review refused applications to identify errors, gaps, or compliance issues. Our consultants suggest corrective strategies, improve documentation, and guide you on reapplication or alternative visa options to strengthen your chances of success.",
+        "It depends on your preference. Group tours are cost-effective and social, while private trips offer flexibility and privacy. We help you choose the right option based on your travel style and comfort.",
     },
     {
-      que: "Why should I use a valueadzcore instead of applying on my own?",
+      que: "What kind of local experiences can I expect?",
       ans:
-        "Immigration rules are complex and constantly changing. valueadzcore provides expert guidance, accurate documentation, and profile-based strategies to reduce mistakes, avoid refusals, and ensure your application meets legal and procedural requirements confidently.",
+        "We include authentic experiences like local food tours, cultural visits, and hidden spots. These add a unique touch to your journey, helping you connect more deeply with the destination beyond typical sightseeing.",
     },
     {
-      que: "What does a ValueAdz consultant do?",
+      que: " How do you ensure safety during travel?",
       ans:
-        "A ValueAdz consultant evaluates your profile, recommends suitable visa pathways, manages documentation, files applications accurately, and provides continuous guidance from initial assessment to final decision, ensuring transparency, compliance, and personalized support throughout your immigration journey.",
+        "Your safety is our priority. We work with trusted partners, verified stays, and reliable transport services. We also provide guidance, emergency support, and important travel tips to keep your journey safe and smooth.",
     },
   ],
 };
@@ -808,7 +613,7 @@ export const HomefaqData = {
 export const footer = {
   logo: logo2,
   text:
-    "valueadzcore is a trusted consulting firm delivering reliable immigration and visa solutions through expert guidance, transparent processes, and personalized support, helping individuals and families achieve their global aspirations with confidence.",
+    "From dream destinations to perfect itineraries, Holidays by Value ADZ makes travel easy, enjoyable, and stress-free for every traveler.",
 
   socials: {
     facebook: "https://www.facebook.com/",
@@ -908,68 +713,6 @@ export let blogData = {
   ],
 };
 
-// about us
-export const mission = {
-  img: box1,
-  title1: "Mission & Vision",
-  title2: "Our Vision and ",
-  title3: "Mission Statement",
-  vision: [
-    {
-      icon: HiOutlineLightBulb,
-      heading: "Our Vision",
-      para:
-        "Our vision is to become a trusted global name in immigration consulting by guiding people with honesty, clarity, and confidence. We aim to simplify complex immigration processes and help individuals and families build secure futures abroad through ethical practices and informed decision-making.",
-    },
-    {
-      icon: HiOutlineFlag,
-      heading: "Our Mission",
-      para:
-        "Our mission is to provide transparent, profile-based immigration guidance tailored to every client’s goals. We focus on accuracy, compliance, and continuous support at every stage, ensuring our clients feel informed, supported, and confident as they pursue opportunities across international borders.",
-    },
-  ],
-};
-
-export const whychooseus = {
-  title1: "Why Choose Us",
-  img: bene2,
-  points: [
-    {
-      icon: <FaGlobeAmericas />,
-      heading: "Transparent & Ethical Guidance",
-      para:
-        "We operate as immigration consultants in Noida, offering honest advice, compliant processes, realistic timelines, and clear communication throughout the application journey.",
-    },
-    {
-      icon: <FaGlobeAmericas />,
-      heading: "Profile-Based Strategy",
-      para:
-        "Our team works as visa consultants in Noida, delivering profile-based strategies, accurate documentation, and program selection aligned with immigration regulations.",
-    },
-    {
-      icon: <FaGlobeAmericas />,
-      heading: "Experienced Professionals",
-      para:
-        "Experienced immigration consultants in Noida manage applications with regulatory knowledge, structured workflows, attention to detail, and consistent follow-ups for outcomes.",
-    },
-    {
-      icon: <FaGlobeAmericas />,
-      heading: "End-to-End Support",
-      para:
-        "As visa consultants in Noida, we provide end-to-end support from assessment to post-landing assistance, ensuring clients are informed, supported, and confident.",
-    },
-  ],
-};
-
-// contat Us
-export const contactBanner = {
-  title: "Contact Us",
-  para:
-    "Connect With valueadz For Reliable Crop Protection & Farming Support. We're Here to Help Your Agriculture Thrive With Expert Solutions.",
-  slug: "contact-us",
-  img: contactb,
-};
-
 export const contactdetail = [
   {
     icon: <MdWifiCalling3 />,
@@ -991,88 +734,3 @@ export const contactdetail = [
   },
 ];
 
-// services
-export const serviceData = {
-  title1: "Our Services",
-  title2: "Smart solutions for global immigration",
-
-  services: [
-    {
-      title: "IELTS",
-      text: "Eligibility assessment and guidance",
-      img: ielts,
-      icon: <FaBriefcase />,
-    },
-    {
-      title: "PTE Exams",
-      text: "Eligibility assessment and guidance",
-      img: pte,
-      icon: <FiSettings />,
-    },
-    {
-      title: "Profile Evaluation",
-      text: "Eligibility assessment and guidance",
-      img: profile,
-      icon: <FiSettings />,
-    },
-    {
-      title: "Career Counselling",
-      text: "Career planning and advice",
-      img: Career,
-      icon: <FiSettings />,
-    },
-    {
-      title: "Immigration Solutions",
-      text: "Structured migration pathways",
-      img: immigration,
-      icon: <FiSettings />,
-    },
-    {
-      title: "Visa Documentation Support",
-      text: "Accurate document preparation",
-      img: visaDocument,
-      icon: <FiSettings />,
-    },
-    {
-      title: "Job Search Assistance",
-      text: "International employment guidance",
-      img: jobAssist,
-      icon: <FiSettings />,
-    },
-    {
-      title: "Post-Landing Support",
-      text: "Settlement and integration assistance",
-      img: PostLanding,
-      icon: <FiSettings />,
-    },
-  ],
-};
-
-export const servicechoose = {
-  img: box1,
-  title1: "Why Choose Us",
-  title2: "Why Choose ValueAdz For Your ",
-  title3: "Immigration Pathway?",
-  para:
-    "We provide structured, transparent immigration solutions designed to help individuals and families move abroad confidently through expert guidance, ethical practices, and end-to-end professional support.",
-
-  vision: [
-    {
-      icon: HiOutlineLightBulb,
-      heading: "Professional Immigration Expertise",
-      para:
-        "Customized guidance based on your profile and current international regulations.",
-    },
-    {
-      icon: HiOutlineFlag,
-      heading: "Clear & Honest Procedures",
-      para:
-        "Well-defined steps, realistic timelines, and fully compliant documentation.",
-    },
-    {
-      icon: HiOutlineFlag,
-      heading: "Complete Application Assistance",
-      para: "Support provided from initial assessment to final visa approval.",
-    },
-  ],
-};

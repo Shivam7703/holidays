@@ -10,8 +10,8 @@ export default function Blogs({ isHome }: any) {
   return (
     <section
       className={`${
-        isHome ? "lg:px-24 md:px-20 sm:p-14 p-6 relative" : "px-3 pb-5"
-      } relative w-full overflow-hidden bg-gradient-to-br from-orange-100 via-white to-blue-100`}
+        isHome ? "lg:px-24 md:px-20 sm:p-14 p-6 bg-gradient-to-br from-orange-100 via-white to-blue-100 relative" : "px-3 pb-5"
+      } relative w-full overflow-hidden `}
     >
      {isHome && (
           <Image
@@ -49,9 +49,7 @@ export default function Blogs({ isHome }: any) {
 
       {/* ── GRID ── */}
       <div
-        className={`grid ${
-          !isHome ? "" : "lg:grid-cols-3"
-        } sm:grid-cols-2 gap-7 max-w-7xl mx-auto relative z-10`}
+        className={`grid lg:grid-cols-3 sm:grid-cols-2 gap-7 max-w-7xl mx-auto relative z-10`}
       >
         {(isHome ? data?.blog?.slice(0, 3) : data?.blog)?.map(
           (blogs: any, index: number) => (

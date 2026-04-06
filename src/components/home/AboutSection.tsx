@@ -2,9 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Buttonmain from "../global/button";
 import { fadeIn, textVariant, staggerContainer } from "@/utils/motion";
-import { FaCheck } from "react-icons/fa";
 import { secImage } from "@/assets";
 
 export default function AboutSection({ data }: any) {

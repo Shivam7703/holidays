@@ -1,8 +1,6 @@
 import Banner from "@/components/global/banner";
 import React from "react";
-import { contactdetail } from "@/data/homeData";
 import Form from "@/components/contact/form";
-import ConDetail from "@/components/contact/condetail";
 
 function Contact() {
   return (

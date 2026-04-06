@@ -15,7 +15,7 @@ import { logo, patta, patta2 } from "@/assets";
 
 export default function Footer({ footer }: any) {
   return (
-    <footer className="relative overflow-hidden bg-white">
+    <footer className="relative overflow-hidden z-10 bg-white">
       {/* ── Top accent line ── */}
       <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-color2 to-color1" />
 

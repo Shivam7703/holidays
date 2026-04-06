@@ -64,11 +64,11 @@ const Menu = ({ Isprimary, Items }: any) => {
           {item.subNav && (
             <div
               className="absolute w-max -left-2 top-[100%] z-[70] hidden flex-col
-              rounded-xl bg-blue-50 border border-white/10
+              rounded-xl bg-white border border-white/10
               py-2 shadow-[0_16px_40px_rgba(0,0,0,0.4)]
               transition-all group-hover:flex
               before:absolute before:-top-2 before:left-6 before:w-4 before:h-4
-              before:bg-blue-50 before:rotate-45 before:border-l before:border-t
+              before:bg-white before:rotate-45 before:border-l before:border-t
               before:border-white/10"
             >
               {item.subNav.map((nav: any) => (
@@ -86,7 +86,7 @@ const Menu = ({ Isprimary, Items }: any) => {
                           .split("/")
                           .filter(Boolean)
                           .pop() || "home")
-                          ? "bg-[#CB0000] text-white rounded-lg mx-1"
+                          ? "bg-color1 text-white rounded-lg mx-1"
                           : "text-color1/80"
                       }`}
                     style={{ width: "calc(100% - 8px)" }}
@@ -107,7 +107,7 @@ const Menu = ({ Isprimary, Items }: any) => {
                   {nav.subNav && (
                     <div
                       className="absolute left-[calc(100%)] top-0 z-[70] hidden flex-col
-                      w-auto rounded-xl bg-[#243340] border border-white/10
+                      w-auto rounded-xl bg-white border border-white/10
                       py-2 shadow-[0_16px_40px_rgba(0,0,0,0.4)]
                       transition-all group-hover/subnav:flex max-h-[500px]"
                     >
@@ -129,10 +129,10 @@ const Menu = ({ Isprimary, Items }: any) => {
                                   .split("/")
                                   .filter(Boolean)
                                   .pop() || "home")
-                                  ? "bg-[#CB0000] text-white rounded-lg mx-1"
+                                  ? "bg-color1 text-white rounded-lg "
                                   : "text-color1/80"
                               }`}
-                            style={{ width: "calc(100%)" }}
+                            style={{ width: "calc(100% - 8px)" }}
                           >
                             <span
                               className="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-0
@@ -151,7 +151,7 @@ const Menu = ({ Isprimary, Items }: any) => {
                           {subNav.subNavv && subNav.subNavv.length > 0 && (
                             <div
                               className="absolute left-[calc(100% - 8px)] top-0 z-[70] hidden flex-col
-                              w-auto rounded-xl bg-[#2B3944] border border-white/10
+                              w-auto rounded-xl bg-white border border-white/10
                               py-2 shadow-[0_16px_40px_rgba(0,0,0,0.4)]
                               transition-all group-hover/subsubnav:flex
                               max-h-[500px] overflow-y-auto min-w-[200px]"
@@ -171,7 +171,7 @@ const Menu = ({ Isprimary, Items }: any) => {
                                         .split("/")
                                         .filter(Boolean)
                                         .pop() || "home")
-                                        ? "bg-[#CB0000] text-white rounded-lg mx-1"
+                                        ? "bg-color1 text-white rounded-lg mx-1"
                                         : "text-color1/80"
                                     }`}
                                   style={{ width: "calc(100% - 8px)" }}

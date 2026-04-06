@@ -21,8 +21,6 @@ export default function About() {
                <Aboutchoose/>
                <Partners/>
                <Testimonials/>
-
-      
     </>
   );
 }

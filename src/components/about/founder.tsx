@@ -3,10 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/utils/motion";
-import { Whychoose as data } from "@/data/homeData";
-import Link from "next/link";
-import Buttonmain from "../global/button";
-import { bal1, bal2, ceo, choose, cloud1, cloud2, plane } from "@/assets";
+import { bal1, ceo, cloud1, plane } from "@/assets";
 import { FaCompass, FaEye, FaPlane } from "react-icons/fa";
 
 const features = [
@@ -96,7 +93,7 @@ export default function CEOMessage() {
 
    {/* ── Para ── */}
   <p className="text-gray-600 md:text-lg leading-relaxed">
-    {data?.para ??
+    {
       "We are a multi-award-winning travel agency specializing in curated tour experiences, visa assistance, and personalized journeys that connect people to the world's most beautiful destinations. We are a multi-award-winning travel agency specializing in curated tour experiences, visa assistance, and personalized journeys that connect."}
   </p>
 

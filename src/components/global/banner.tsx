@@ -3,7 +3,7 @@
 // Import required modules
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { aboutb, bann, banner, cl1, cloud1, cloud3, plane } from "@/assets";
+import { aboutb, cloud3, plane } from "@/assets";
 import { sliderText, } from "@/utils/motion";
 
 
@@ -15,9 +15,9 @@ export default function Banner({title, slug}:any) {
 
   return (
     <>
-      <div>
+      <div className="overflow-hidden">
         <AnimatePresence>
-              <div className="w-full h-max relative">
+              <div className="w-full h-max relative z-30">
                             <Image
                   className="w-full md:h-[630px] min-h-[440px] object-cover object-top"
                   src={aboutb}
@@ -33,7 +33,7 @@ export default function Banner({title, slug}:any) {
                 />
 
                 <Image
-                  className="w-full md:h-36 h-16 object-contain aeo absolute z-[5] opacity-85 top-[20%] left-0"
+                  className="w-full md:h-36 h-16 object-contain aeo absolute z-[5] top-[20%] left-0"
                   src={plane}
                   alt="sliding image"
                   

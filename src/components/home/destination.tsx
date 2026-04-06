@@ -7,7 +7,7 @@ import Destslider from "./destslider";
 
 export default function Destination() {
     const data= {
-        para: "Discover the most sought-after destinations with our curated travel experiences. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        para: "Our most loved destinations are carefully selected to offer unforgettable travel experiences. From scenic mountains and peaceful beaches to vibrant cities and cultural hotspots, each place is chosen to match every traveler’s dream. Enjoy seamless planning, comfortable stays, and unique experiences that make every journey special. Whether you're looking for relaxation, adventure, or cultural charm, we bring you destinations that truly stand out and create lasting memories."
     }
   return (
     <section className="w-full overflow-hidden  py-10 bg-white p-6 md:px-12 lg:px-24">
@@ -74,7 +74,7 @@ export default function Destination() {
           className=" md:w-[57%] w-full  px-4 select-none  pointer-events-none"
         >
           <p
-            className="font-black text-8xl font1 leading-none text-color2"
+            className="font-black text-4xl  md:text-8xl font1 leading-none text-color2"
           >
             TOP{" "} <span
             className="text-white"

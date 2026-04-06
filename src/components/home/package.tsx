@@ -71,7 +71,7 @@ export default function Package() {
 
       {/* Slider */}
       <div className="sm:p-12 md:p-16 lg:px-20 -mt-20 md:-mt-28">
-        <Countryslider data={filteredPackages} uniqueId={"packageSlider"} />
+        <Countryslider data={filteredPackages} uniqueId={"packageSlider123"} />
       </div>
 
     </section>

@@ -6,11 +6,17 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { FaSearch, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { sliderContent } from "@/data/homeData";
-import { bannerImage } from "@/assets";
+import { banner, banner2, bannerImage } from "@/assets";
 import { textVariant, fadeIn, zoomIn, staggerContainer } from "@/utils/motion";
 
 export default function HomeBanner() {
+const slidercontent = [{img:banner,
+  title: "Making Every Journey Worth It",
+},
+{img:banner2,
+ title: "Making Every Journey Worth It",
+},]
+
   const [destination, setDestination] = useState("");
 
   const swiperOptions = {
@@ -25,12 +31,12 @@ export default function HomeBanner() {
   return (
     <section className="relative w-full overflow-hidden h-screen md:h-[130vh]">
       <Swiper {...swiperOptions} className="w-full h-full">
-        {sliderContent.map((item, index) => (
-          <SwiperSlide key={item.id} className="relative w-full h-full">
+        {slidercontent.map((item:any, index:number) => (
+          <SwiperSlide key={index} className="relative w-full h-full">
             <div className="absolute inset-0 w-full h-full">
               <Image
                 src={item.img}
-                alt={item.title1}
+                alt={item.title}
                 fill
                 priority={index === 0}
                 className="object-cover object-center"
@@ -56,22 +62,22 @@ export default function HomeBanner() {
             variants={fadeIn("down", "tween", 0.1, 0.6)}
             className="text-white/90 text-sm md:text-base tracking-[4px] uppercase mb-3 font-light"
           >
-            Discover the world
+Escape the Routine
           </motion.p>
 
           <motion.h1
             variants={textVariant({ delay: 0.3 })}
             className="text-white text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg"
           >
-            Find Your Next{" "}
-            <span className="text-color2">Adventure</span>
+            Making Every Journey{" "}
+            <span className="text-color2">Worth It</span>
           </motion.h1>
 
           <motion.p
             variants={fadeIn("up", "tween", 0.5, 0.6)}
             className="text-white/90 mt-4 text-sm md:text-lg max-w-xl mx-auto"
           >
-            Explore handpicked destinations, curated tours & unforgettable experiences
+Handpicked destinations, smooth planning & journeys you’ll truly enjoy
           </motion.p>
         </div>
 

@@ -76,12 +76,12 @@ export default function Gallery() {
          
 
           <h2 className="text-4xl sm:text-5xl lg:text-5xl font-bold text-color1 leading-[1.1] tracking-tight mb-4">
-            Our Happy {" "}
+            Captured Travel{" "}
             <span className="text-color2">
-Moments            </span>
+Stories</span>
           </h2>
           <p className="text-stone-500 text-base max-w-lg mx-auto leading-relaxed">
-            Every journey tells a story. Here are the beautiful chapters we've written together across the world.
+A glimpse of the unforgettable moments and experiences shared by our happy travelers.
           </p>
 
          
