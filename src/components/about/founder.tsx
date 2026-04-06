@@ -86,21 +86,22 @@ export default function CEOMessage() {
 
   {/* ── Heading ── */}
   <h2 className="font-extrabold text-color1 text-3xl sm:text-4xl md:text-5xl !leading-[1.35]">
-   We Made{" "}
-    <span className="text-color2">Beautiful{" "}</span>
-    Destinations 
+   We Design{" "}
+    <span className="text-color2">Memorable Travel{" "}</span>
+    Experiences Worldwide 
   </h2>
 
    {/* ── Para ── */}
   <p className="text-gray-600 md:text-lg leading-relaxed">
-    {
-      "We are a multi-award-winning travel agency specializing in curated tour experiences, visa assistance, and personalized journeys that connect people to the world's most beautiful destinations. We are a multi-award-winning travel agency specializing in curated tour experiences, visa assistance, and personalized journeys that connect."}
+   Holidays by Value ADZ is a results-driven travel-planning and experience company specializing in crafting seamless domestic and international journeys. We focus on delivering personalized itineraries, curated stays, and unforgettable experiences that match every traveler’s style. From luxury holidays to budget-friendly trips, our goal is to make travel simple, smooth, and truly memorable.
+
   </p>
 
   {/* ── Founder quote pull ── */}
   <div className="border-l-[3px] border-color2 bg-white pl-5 py-2.5 shadow-lg rounded-r-2xl">
     <p className="text-black italic font-semibold leading-relaxed">
-      "We started with one simple belief — travel should be transparent, reliable, and unforgettable for every single person."
+      “We started with one simple belief — travel should be easy, trustworthy, and memorable for every traveler.”
+
     </p>
     <p className="text-color1 text-xl font-black text-right mr-5 font1 tracking-widest !mt-3">
       — Jonathan A. Mercer, <span className="text-color2 font-medium block text-xs">Founder & CEO</span>

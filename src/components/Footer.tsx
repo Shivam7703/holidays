@@ -26,7 +26,7 @@ export default function Footer({ footer }: any) {
       {/* ══════════ MAIN FOOTER GRID ══════════ */}
       <div className="relative z-10  mx-auto px-6 sm:px-10 lg:px-20 pt-16 pb-10 flex flex-wrap gap-y-9 justify-between">
         {/* ── Col 1: Logo + about + socials ── */}
-        <div className="lg:w-[25%] sm:w-[48%] w-full font1 flex flex-col gap-5">
+        <div className="lg:w-[23%] sm:w-[48%] w-full font1 flex flex-col gap-5">
           {/* Logo */}
           {footer?.logo && (
             <Image

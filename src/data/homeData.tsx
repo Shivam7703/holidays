@@ -545,32 +545,28 @@ export const packages = {
 export const testimonialData = {
   title1: "Testimonial",
   title2: "What Our Client Says",
-  testimonials: [
-    {
-      title: "Suresh Dixit",
-      text:
-        "valueadzcore guided my Canada PR smoothly with honest advice, clear timelines, and perfect documentation. Truly the best immigration consultants in Noida for anyone seeking transparent, professional, and reliable immigration support.",
-      img: cl1,
-    },
-    {
-      title: "Mohan Rane",
-      text:
-        "Excellent support for my work permit application. The team explained every step, handled documents professionally, and kept me updated. Their guidance reduced stress and helped me make confident decisions abroad.",
-      img: cl1,
-    },
-    {
-      title: "Manoj Saini",
-      text:
-        "valueadzcore helped us reunite through family sponsorship with clear communication and ethical advice. We experienced the best Visa consultants in Noida, with personalized attention and smooth processing throughout the entire journey.",
-      img: cl1,
-    },
-    {
-      title: "Sam Goyal",
-      text:
-        "From IELTS coaching to visa filing, the service was professional and supportive. Trainers and consultants worked together to strengthen my profile and guide me confidently toward my overseas goals successfully.",
-      img: cl1,
-    },
-  ],
+ testimonials: [
+  {
+    title: "Rahul Sharma",
+    text: "Our Goa trip was amazing, with a perfect hotel stay and smooth planning. Holidays by Value ADZ handled everything professionally, allowing us to enjoy beaches, nightlife, and relaxation without any stress.",
+    img: cl1,
+  },
+  {
+    title: "Priya Mehta",
+    text: "We had a wonderful experience in Dubai with great sightseeing and luxury stays. Holidays by Value ADZ planned everything perfectly, from transfers to activities, making our trip smooth, comfortable, and memorable.",
+    img: cl1,
+  },
+  {
+    title: "Amit Verma",
+    text: "Our Himachal trip was peaceful and refreshing with beautiful views and comfortable stays. Thanks to Holidays by Value ADZ, all arrangements were seamless, and we enjoyed every destination without any confusion.",
+    img: cl1,
+  },
+  {
+    title: "Neha Kapoor",
+    text: "Japan was an unforgettable experience with perfect planning and great support. Holidays by Value ADZ managed everything efficiently, from hotels to transport, helping us explore comfortably and enjoy every moment.",
+    img: cl1,
+  },
+],
 };
 
 export const HomefaqData = {
@@ -624,41 +620,67 @@ export const footer = {
   },
   copyrightText: "Copyrights © 2026 . Designed and Manage by ",
   list1: {
-    title: "Our Services",
-    links: [
-      { id: 1, label: "IELTS", href: "/services/ielts-coaching-preparation" },
-      {
-        id: 2,
-        label: "PTE Exam",
-        href: "/services/pte-exam-coaching-preparation",
-      },
-      {
-        id: 3,
-        label: "Post Landing Assistance",
-        href: "/services/post-landing-assistance",
-      },
-      {
-        id: 4,
-        label: "Job Assistance",
-        href: "/services/job-assistance",
-      },
-      {
-        id: 5,
-        label: "Immigration Services",
-        href: "/services/immigration",
-      },
-    ],
+    title: "Popular Destination",
+   links: [
+     {
+            id: 1,
+            label: "Himachal Pradesh",
+            href: "/destinations/himachal-pradesh",
+          },
+          {
+            id: 2,
+            label: "Andaman & Nicobar",
+            href: "/destinations/andaman-nicobar-islands",
+          },
+          { id: 3, label: "Kashmir", href: "/destinations/kashmir" },
+         {
+            id: 4,
+            label: "Maldives",
+            href: "/destinations/maldives",
+          },
+          {
+            id: 5,
+            label: "Hong Kong",
+            href: "/destinations/hong-kong",
+          },
+          { id: 6, label: "Turkey", href: "/destinations/turkey" },
+          {
+            id: 7,
+            label: "China",
+            href: "/destinations/china",
+          }, ],
   },
 
   list2: {
-    title: "Our Services",
+    title: "Tour Packages",
     links: [
-      { id: 1, label: "IELTS", href: "about" },
-      { id: 2, label: "PTE Exam", href: "career" },
-      { id: 3, label: "Post Landing Assistance", href: "sustainability" },
-      { id: 4, label: "Job Assistance", href: "blogs" },
-      { id: 5, label: "Immigration Services", href: "contact-us" },
-    ],
+     {
+            id: 1,
+            label: "Himachal Pradesh",
+            href: "/destinations/himachal-pradesh",
+          },
+          {
+            id: 2,
+            label: "Andaman & Nicobar",
+            href: "/destinations/andaman-nicobar-islands",
+          },
+          { id: 3, label: "Kashmir", href: "/destinations/kashmir" },
+         {
+            id: 4,
+            label: "Maldives",
+            href: "/destinations/maldives",
+          },
+          {
+            id: 5,
+            label: "Hong Kong",
+            href: "/destinations/hong-kong",
+          },
+          { id: 6, label: "Turkey", href: "/destinations/turkey" },
+          {
+            id: 7,
+            label: "China",
+            href: "/destinations/china",
+          }, ],
   },
 
   newLetter: {

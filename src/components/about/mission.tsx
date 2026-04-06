@@ -13,19 +13,19 @@ export default function Advertise() {
         icon: <AiFillCar />,
         heading: "Our Mission",
         text:
-          "You can hassle-free and fast tour & travel package booking by GoFly.",
+          "To make travel simple, affordable, and memorable by offering well-planned holiday experiences with seamless booking, transparent pricing, and personalized support for every traveler.",
       },
       {
         icon: <AiFillCar />,
         heading: "Our Vision",
         text:
-          "You can hassle-free and fast tour & travel package booking by GoFly.",
+          "To become a trusted travel partner known for delivering value-driven holidays, creating unforgettable journeys, and making global travel accessible to everyone.",
       },
       {
         icon: <AiFillCar />,
         heading: "Our Values",
         text:
-          "You can hassle-free and fast tour & travel package booking by GoFly.",
+          "We believe in honesty, customer satisfaction, and quality service. Our focus is on delivering real value, building long-term relationships, and ensuring every trip is smooth, safe, and truly enjoyable.",
       },
     ];
   return (
