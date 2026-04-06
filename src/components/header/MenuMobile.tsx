@@ -104,7 +104,7 @@ const MenuMobile: React.FC<MenuMobileProps> = ({
 
   return (
     <ul className="w-full flex flex-col">
-      {[...(navigationMenu?.primaryMenu || []), ...(navigationMenu?.secondaryMenu || [])].map((item) => (
+      {[...(navigationMenu?.primaryMenu || [])].map((item) => (
         <li key={item.id} className="border-b border-gray-100/20 last:border-none">
           {renderItems([item], 1)}
         </li>
