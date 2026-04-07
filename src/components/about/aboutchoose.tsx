@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { banner, banner2 } from "@/assets";
+import { banner } from "@/assets";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 
 function useIsMobile() {
@@ -220,7 +220,7 @@ export default function Aboutchoose() {
         className="relative h-[80%] mb-[20%] w-[45%] rounded-t-full overflow-hidden shadow-xl"
       >
         <Image
-          src={banner2}
+          src={banner}
           alt="Waterfall adventure"
           fill
           className="object-cover w-full h-full object-center"

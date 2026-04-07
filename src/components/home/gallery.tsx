@@ -11,16 +11,16 @@ import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import "swiper/css/effect-cards";
 
-import { banner, banner2, banner3, box1, box2, box3, process1, visa1 } from "@/assets";
+import { banner, box2, box3, process1, } from "@/assets";
 
 const imgs = [
   { src: banner,    label: "Mountain Escape",   tag: "Adventure" },
-  { src: banner2,   label: "City Lights Tour",   tag: "Urban" },
-  { src: banner3,   label: "Golden Horizons",    tag: "Scenic" },
-  { src: box1,      label: "Hidden Trails",      tag: "Explore" },
+  { src: banner,   label: "City Lights Tour",   tag: "Urban" },
+  { src: banner,   label: "Golden Horizons",    tag: "Scenic" },
+  { src: box3,      label: "Hidden Trails",      tag: "Explore" },
   { src: box2,      label: "Ocean Breeze",       tag: "Coastal" },
   { src: box3,      label: "Sunset Moments",     tag: "Memories" },
-  { src: visa1,     label: "New Beginnings",     tag: "Journey" },
+  { src: process1,     label: "New Beginnings",     tag: "Journey" },
   { src: process1,  label: "Together Always",    tag: "Happy" },
 ];
 

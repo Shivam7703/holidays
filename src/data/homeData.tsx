@@ -1,62 +1,23 @@
 import {
-  about2,
-  banner,
-  banner2,
-  banner3,
-  bene2,
-  box1,
-  box2,
+ 
   box3,
   cl1,
-  cl2,
-  cl3,
-  cl4,
-  cl5,
-  cl6,
-  cl7,
-  cl8,
-  cl9,
-  immigration,
-  Career,
-  ielts,
-  jobAssist,
-  PostLanding,
-  profile,
-  pte,
-  visaDocument,
-  famvisa,
-  prvisa,
-  business,
-  touristvisa,
-  contactb,
+ 
   logo2,
-  process1,
-  ukflag,
-  visa1,
-  canadaflag,
-  ontario,
-  bcPnpProgram,
-  alberta,
-  novaScotia,
-  manitoba,
-  saskatchewanPnp,
-  bann,
+ 
   about,
-  back,
   ad1,
   ad2,
+  banner,
 } from "@/assets";
-import { FaBriefcase, FaGlobeAmericas, FaPlaneDeparture } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
-import { HiOutlineFlag, HiOutlineLightBulb } from "react-icons/hi";
-import { IoSearch, IoSettingsOutline } from "react-icons/io5";
+import { IoSearch } from "react-icons/io5";
 import { MdAttachEmail, MdWifiCalling3 } from "react-icons/md";
 import { RiUserFollowLine } from "react-icons/ri";
 
 import { FaUsers, FaGlobe } from "react-icons/fa";
 import { MdVerified } from "react-icons/md";
 import { BiTime } from "react-icons/bi";
-import { FiSettings } from "react-icons/fi";
 import { AiFillCar } from "react-icons/ai";
 
 
@@ -429,7 +390,7 @@ export const packages = {
   cards: [
   {
     id: 1,
-    img: ontario,
+    img: banner,
     category: "international",
     heading: "Canada Tour Package – Ontario",
     duration: "6 Days / 5 Nights",
@@ -440,7 +401,7 @@ export const packages = {
   },
   {
     id: 2,
-    img: bcPnpProgram,
+    img: banner,
     category: "international",
     heading: "Canada Tour – British Columbia",
     duration: "5 Days / 4 Nights",
@@ -451,7 +412,7 @@ export const packages = {
   },
   {
     id: 3,
-    img: alberta,
+    img: banner,
     category: "international",
     heading: "Alberta Nature Tour",
     duration: "6 Days / 5 Nights",
@@ -462,7 +423,7 @@ export const packages = {
   },
   {
     id: 4,
-    img: saskatchewanPnp,
+    img: banner,
     category: "international",
     heading: "Saskatchewan Explorer Package",
     duration: "5 Days / 4 Nights",
@@ -473,7 +434,7 @@ export const packages = {
   },
   {
     id: 5,
-    img: manitoba,
+    img: banner,
     category: "international",
     heading: "Manitoba Adventure Tour",
     duration: "5 Days / 4 Nights",
@@ -484,7 +445,7 @@ export const packages = {
   },
   {
     id: 6,
-    img: novaScotia,
+    img: banner,
     category: "international",
     heading: "Nova Scotia Coastal Tour",
     duration: "6 Days / 5 Nights",
@@ -497,7 +458,7 @@ export const packages = {
   // Domestic Packages (using same images as requested)
   {
     id: 7,
-    img: manitoba,
+    img: banner,
     category: "domestic",
     heading: "Himachal Hill Station Tour",
     duration: "5 Days / 4 Nights",
@@ -508,7 +469,7 @@ export const packages = {
   },
   {
     id: 8,
-    img: novaScotia,
+    img: banner,
     category: "domestic",
     heading: "Kerala Backwater Tour",
     duration: "5 Days / 4 Nights",
@@ -519,7 +480,7 @@ export const packages = {
   },
   {
     id: 9,
-    img: manitoba,
+    img: banner,
     category: "domestic",
     heading: "Goa Beach Holiday",
     duration: "4 Days / 3 Nights",
@@ -530,7 +491,7 @@ export const packages = {
   },
   {
     id: 10,
-    img: novaScotia,
+    img: banner,
     category: "domestic",
     heading: "Kashmir Paradise Tour",
     duration: "6 Days / 5 Nights",

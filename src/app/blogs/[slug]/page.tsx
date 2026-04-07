@@ -2,7 +2,6 @@
 import { notFound } from "next/navigation";
 import React from "react";
 import { blogData } from "@/data/homeData";
-import { bann } from "@/assets";
 import Banner from "@/components/global/banner";
 import Blogdetails from "@/components/blog/blog-detail";
 

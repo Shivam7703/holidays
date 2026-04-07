@@ -1,8 +1,21 @@
-import { banner, cl1,} from "@/assets";
+import { banner, cl1,  andman1, andman2, andman3, andman4, andman5, andman6, andman7, andman8, andman9,
+  sikkim1, sikkim2, sikkim3, sikkim4, sikkim5, sikkim6, sikkim7, sikkim8, sikkim9,
+  goa1, goa2, goa3, goa4, goa5, goa6, goa7, goa8, goa9,
+  himanchal1, himanchal2, himanchal3, himanchal4, himanchal5, himanchal6, himanchal7, himanchal8, himanchal9,
+  kashmir1, kashmir2, kashmir3, kashmir4, kashmir5, kashmir6, kashmir7, kashmir8, kashmir9,
+  kerala1, kerala2, kerala3, kerala4, kerala5, kerala6, kerala7, kerala8, kerala9,
+  ladakh1, ladakh2, ladakh3, ladakh4, ladakh5, ladakh6, ladakh7, ladakh8, ladakh9,
+  goa,
+  himanchal,
+  kashmir,
+  kerala,
+  andman,
+  sikkim,
+  ladakh} from "@/assets";
 
 export const Destinationdata = [
     {
-   img:banner,
+   img:goa,
     title: "Goa",
     heading:"About Goa",
 description: "Goa is one of India’s most loved beach destinations, known for its golden coastline, vibrant nightlife, Portuguese heritage, and relaxed vibe. From peaceful beaches to lively parties, Goa offers something for every traveler. Whether you're looking for adventure, culture, or simply a laid-back holiday, Goa delivers a perfect mix of experiences.",
@@ -11,45 +24,45 @@ description: "Goa is one of India’s most loved beach destinations, known for i
     heading:"Top Attractions in Goa",
     para:"Explore must-see attractions, vibrant beaches, historic churches, scenic landscapes, and unforgettable coastal experiences.",
     cards:[{
-        img:banner,
+        img:goa1,
         title:"Baga Beach",
     description: "Baga Beach is one of the most popular beaches in Goa, famous for its lively atmosphere, water sports, and beach shacks. Visitors can enjoy parasailing, jet skiing, and delicious seafood while soaking in stunning sunset views. It’s perfect for those who love energy and nightlife."
     },
-    { img:banner,
+    { img:goa2,
         title:"Calangute Beach",
     description: " Known as the Queen of Beaches, Calangute Beach attracts tourists with its wide shoreline and vibrant crowd. It offers various activities like shopping, water sports, and relaxing by the sea. It’s an ideal place for both adventure lovers and families."
     },{
-    img: banner,
+    img: goa3,
     title: "Anjuna Beach",
 description: "Anjuna Beach is famous for its laid-back vibe and flea market. It’s a favorite spot for backpackers and those looking for a unique experience. The rocky shoreline and beautiful sunsets make it perfect for photography and peaceful evenings."
 },
 {
-    img: banner,
+    img: goa4,
     title: "Fort Aguada",
 description: "Fort Aguada is a historic Portuguese fort offering breathtaking views of the Arabian Sea. It is well-known for its lighthouse and strong architecture. Visitors can explore the fort while enjoying panoramic coastal views and learning about Goa’s colonial history."
 },
 {
-    img: banner,
+    img: goa5,
     title: "Dudhsagar Waterfalls",
 description: "Dudhsagar Waterfalls are one of the tallest waterfalls in India, surrounded by lush greenery. The waterfall looks like a stream of milk flowing down the mountains. It’s a must-visit for nature lovers and adventure seekers."
 },
 {
-    img: banner,
+    img: goa6,
     title: "Basilica of Bom Jesus",
 description: "This UNESCO World Heritage site is one of the most important churches in Goa. It houses the remains of St. Francis Xavier. The architecture is stunning, and the peaceful environment makes it a spiritual and cultural attraction."
 },
 {
-    img: banner,
+    img: goa7,
     title: "Vagator Beach",
 description: "Vagator Beach is known for its scenic beauty and dramatic cliffs. It offers a more relaxed atmosphere compared to other beaches. The sunset views here are stunning, making it a great place to unwind and enjoy nature."
 },
 {
-    img: banner,
+    img: goa8,
     title: "Chapora Fort",
 description: "Chapora Fort is famous for its panoramic views of the sea and surrounding beaches. It gained popularity after being featured in Bollywood movies. Visitors can enjoy a short trek to the top and capture amazing photographs."
 },
 {
-    img: banner,
+    img: goa9,
     title: "Palolem Beach",
 description: "Palolem Beach is one of the most beautiful and peaceful beaches in South Goa. Known for its crescent shape and calm waters, it’s perfect for swimming, relaxing, and enjoying a quiet beach holiday."
 }
@@ -137,7 +150,7 @@ whychoose:[{
 },
 // Destination 1: Himachal Pradesh
 {
-    img: banner,
+    img: himanchal,
     title: "Himachal Pradesh",
     heading: "About Himachal Pradesh",
 description: "Himachal Pradesh is a beautiful hill state in northern India, known for its snow-capped mountains, scenic valleys, charming hill stations, and peaceful environment. It is a perfect destination for nature lovers, adventure seekers, and honeymooners. From serene landscapes to thrilling activities, Himachal offers a refreshing escape from city life.",
@@ -146,47 +159,47 @@ description: "Himachal Pradesh is a beautiful hill state in northern India, know
         para: "Explore must-see attractions, stunning mountain views, peaceful valleys, adventure spots, and unforgettable natural beauty.",
         cards: [
             {
-                img: banner,
+                img: himanchal1,
                 title: "Manali",
             description: "Manali is one of the most popular hill stations in Himachal, surrounded by snow-covered mountains and lush greenery. It is famous for its scenic beauty, adventure activities, and romantic atmosphere. Visitors can enjoy snow, local markets, and nearby attractions like Solang Valley and Rohtang Pass."
             },
             {
-                img: banner,
+                img: himanchal2,
                 title: "Shimla",
             description: "Shimla, the capital of Himachal Pradesh, is known for its colonial charm, pleasant weather, and beautiful hills. The Mall Road, Ridge, and toy train rides are major highlights. It is an ideal destination for families and couples looking for a relaxing and scenic holiday."
             },
             {
-                img: banner,
+                img: himanchal3,
                 title: "Dharamshala",
             description: "Dharamshala is famous for its peaceful surroundings and Tibetan culture. It is home to the Dalai Lama and offers stunning views of the Dhauladhar range. The town is perfect for those seeking spirituality, nature, and a calm environment away from busy city life."
             },
             {
-                img: banner,
+                img: himanchal4,
                 title: "Dalhousie",
             description: "Dalhousie is a quiet and charming hill station known for its old-world charm and scenic beauty. Surrounded by pine forests and mountains, it offers peaceful views and a relaxing atmosphere. It is perfect for travelers looking for a calm and less crowded destination."
             },
             {
-                img: banner,
+                img: himanchal5,
                 title: "Spiti Valley",
             description: "Spiti Valley is a cold desert mountain valley known for its rugged landscapes and unique culture. It is ideal for adventure lovers who enjoy road trips, monasteries, and breathtaking views. The valley offers a raw and untouched travel experience."
             },
             {
-                img: banner,
+                img: himanchal6,
                 title: "Kullu Valley",
             description: "Kullu Valley is famous for its lush greenery, rivers, and temples. It is often called the Valley of Gods. Visitors can enjoy river rafting, sightseeing, and scenic views. It is a great destination for both relaxation and adventure."
             },
             {
-                img: banner,
+                img: himanchal7,
                 title: "Kasol",
             description: "Kasol is a small village known for its natural beauty and relaxed vibe. It is popular among backpackers and trekkers. Surrounded by mountains and rivers, Kasol is perfect for peaceful stays and short treks."
             },
             {
-                img: banner,
+                img: himanchal8,
                 title: "Kufri",
             description: "Kufri is a small hill station near Shimla, known for its snow activities and scenic views. It is especially popular during winter for skiing and snow adventures. It is a great place for family outings and short trips."
             },
             {
-                img: banner,
+                img: himanchal9,
                 title: "Bir Billing",
             description: "Bir Billing is one of the best paragliding destinations in the world. It offers stunning aerial views of the mountains and valleys. Adventure lovers visit this place to experience the thrill of flying and enjoy the natural beauty from above."
             }
@@ -277,7 +290,7 @@ description: "Himachal Pradesh is a beautiful hill state in northern India, know
 ,
 // Destination 2: Kashmir
 {
-    img: banner,
+    img: kashmir,
     title: "Kashmir",
     heading: "About Kashmir",
 description: "Kashmir, often called Paradise on Earth, is one of the most beautiful destinations in India, known for its snow-capped mountains, lush valleys, serene lakes, and picturesque landscapes. It offers a perfect blend of natural beauty, culture, and peace. Whether it’s snowfall, gardens, or houseboats, Kashmir promises an unforgettable experience.",
@@ -286,47 +299,47 @@ description: "Kashmir, often called Paradise on Earth, is one of the most beauti
         para: "Explore must-see attractions, breathtaking valleys, scenic lakes, beautiful gardens, and unforgettable mountain experiences.",
         cards: [
             {
-                img: banner,
+                img: kashmir1,
                 title: "Srinagar",
             description: "Srinagar is the heart of Kashmir, famous for its beautiful lakes, Mughal gardens, and houseboats. The city offers stunning views of mountains and water. Visitors can enjoy peaceful surroundings, explore local markets, and experience the unique culture and lifestyle of Kashmir."
             },
             {
-                img: banner,
+                img: kashmir2,
                 title: "Gulmarg",
             description: "Gulmarg is a popular hill station known for its snow-covered landscapes and adventure activities. It is famous for skiing and has one of the highest cable cars in the world. The scenic beauty and fresh mountain air make it a must-visit destination in Kashmir."
             },
             {
-                img: banner,
+                img: kashmir3,
                 title: "Pahalgam",
             description: "Pahalgam is a peaceful valley surrounded by forests, rivers, and mountains. It is known for its natural beauty and relaxing environment. Visitors can enjoy scenic walks, river views, and a calm atmosphere away from crowded places."
             },
             {
-                img: banner,
+                img: kashmir4,
                 title: "Sonmarg",
             description: "Sonmarg, also known as the Meadow of Gold, is famous for its glaciers and breathtaking landscapes. It offers stunning views of snow-covered peaks and green meadows. It is a perfect destination for nature lovers and photography enthusiasts."
             },
             {
-                img: banner,
+                img: kashmir5,
                 title: "Dal Lake",
             description: "Dal Lake is one of the most famous attractions in Kashmir. It is known for its houseboats and shikara rides. The calm waters and surrounding mountains create a magical experience, especially during sunrise and sunset."
             },
             {
-                img: banner,
+                img: kashmir6,
                 title: "Betaab Valley",
             description: "Betaab Valley is a beautiful destination surrounded by mountains and greenery. It is known for its clear streams and scenic views. The peaceful environment makes it ideal for relaxation and photography."
             },
             {
-                img: banner,
+                img: kashmir7,
                 title: "Aru Valley",
             description: "Aru Valley is a small and charming village known for its untouched beauty. Surrounded by mountains and meadows, it is perfect for nature walks and peaceful stays. It is less crowded and offers a refreshing experience."
             },
             {
-                img: banner,
+                img: kashmir8,
                 title: "Mughal Gardens",
             description: "The Mughal Gardens in Srinagar are famous for their beautiful design, fountains, and greenery. These gardens reflect Mughal architecture and offer a peaceful place to relax and enjoy nature."
             },
             {
-                img: banner,
+                img: kashmir9,
                 title: "Yusmarg",
             description: "Yusmarg is a hidden gem in Kashmir known for its scenic beauty and calm environment. Surrounded by forests and meadows, it is perfect for those who want to explore less crowded places and enjoy nature."
             }
@@ -417,7 +430,7 @@ description: "Kashmir, often called Paradise on Earth, is one of the most beauti
 ,
 // Destination 3: Kerala
 {
-    img: banner,
+    img: kerala,
     title: "Kerala",
     heading: "About Kerala",
 description: "Kerala, known as God’s Own Country, is a beautiful state in southern India famous for its backwaters, lush greenery, serene beaches, and rich culture. It offers a perfect mix of nature, relaxation, and tradition. From houseboat stays to hill stations, Kerala offers a peaceful and refreshing travel experience for travelers of all types.",
@@ -426,47 +439,47 @@ description: "Kerala, known as God’s Own Country, is a beautiful state in sout
         para: "Explore must-see attractions, scenic backwaters, peaceful hill stations, wildlife experiences, and stunning coastal beauty.",
         cards: [
             {
-                img: banner,
+                img: kerala1,
                 title: "Munnar",
             description: "Munnar is a popular hill station known for its tea plantations, cool climate, and scenic landscapes. Surrounded by rolling hills and greenery, it offers a refreshing escape from city life. Visitors can enjoy nature walks, viewpoints, and peaceful surroundings."
             },
             {
-                img: banner,
+                img: kerala2,
                 title: "Alleppey (Alappuzha)",
             description: "Alleppey is famous for its backwaters and houseboat experiences. Cruising through calm waters surrounded by palm trees is a unique and relaxing experience. It is one of the best places in Kerala to enjoy nature and peaceful surroundings."
             },
             {
-                img: banner,
+                img: kerala3,
                 title: "Kochi (Cochin)",
             description: "Kochi is a vibrant city known for its mix of modern life and colonial history. It offers beautiful coastal views, historic sites, and cultural experiences. Visitors can explore Fort Kochi, Chinese fishing nets, and local markets."
             },
             {
-                img: banner,
+                img: kerala4,
                 title: "Thekkady",
             description: "Thekkady is known for the Periyar Wildlife Sanctuary and its rich biodiversity. It is a great place for wildlife lovers and nature enthusiasts. Visitors can enjoy boat rides, spice plantations, and peaceful forest surroundings."
             },
             {
-                img: banner,
+                img: kerala5,
                 title: "Kovalam Beach",
             description: "Kovalam Beach is one of Kerala's most famous beaches. Known for its clean shores and calm waters, it is perfect for relaxation. Visitors can enjoy sunbathing, swimming, and beautiful sunset views."
             },
             {
-                img: banner,
+                img: kerala6,
                 title: "Wayanad",
             description: "Wayanad is a beautiful hill district known for its forests, waterfalls, and wildlife. It offers a peaceful environment and is perfect for nature lovers. Trekking, caves, and scenic viewpoints make it a must-visit destination."
             },
             {
-                img: banner,
+                img: kerala7,
                 title: "Varkala",
             description: "Varkala is a unique beach destination known for its cliffs and scenic beauty. It offers a calm and relaxing environment with stunning sea views. It is also known for its spiritual significance and peaceful vibe."
             },
             {
-                img: banner,
+                img: kerala8,
                 title: "Kumarakom",
             description: "Kumarakom is a peaceful backwater destination known for its bird sanctuary and scenic beauty. It is ideal for relaxing stays and nature experiences. Visitors can enjoy houseboats and explore the calm surroundings."
             },
             {
-                img: banner,
+                img: kerala9,
                 title: "Athirappilly Waterfalls",
             description: "Athirappilly Waterfalls is one of the largest waterfalls in Kerala, often called the Niagara of India. Surrounded by forests, it offers breathtaking views and is a perfect spot for nature lovers and photographers."
             }
@@ -557,7 +570,7 @@ description: "Kerala, known as God’s Own Country, is a beautiful state in sout
 ,
 // Destination 4: Andaman & Nicobar Islands,
 {
-    img: banner,
+    img: andman,
     title: "Andaman & Nicobar Islands",
     heading: "About Andaman & Nicobar Islands",
 description: "The Andaman & Nicobar Islands are a tropical paradise in India, known for their crystal-clear waters, white sandy beaches, coral reefs, and peaceful environment. These islands offer a perfect escape for travelers seeking relaxation, adventure, and natural beauty. It is an ideal destination for honeymooners, families, and beach lovers.",
@@ -566,47 +579,47 @@ description: "The Andaman & Nicobar Islands are a tropical paradise in India, kn
         para: "Explore must-see attractions, stunning beaches, historic sites, marine life, and unforgettable island experiences.",
         cards: [
             {
-                img: banner,
+                img: andman1,
                 title: "Havelock Island (Swaraj Dweep)",
             description: "Havelock Island is one of the most popular destinations in Andaman, known for its clear waters and beautiful beaches. It is perfect for water activities like scuba diving and snorkeling. The island offers a peaceful environment and breathtaking natural beauty."
             },
             {
-                img: banner,
+                img: andman2,
                 title: "Radhanagar Beach",
             description: "Radhanagar Beach is considered one of the best beaches in Asia. It is famous for its soft white sand, turquoise water, and stunning sunsets. It is an ideal place for relaxation, swimming, and enjoying peaceful surroundings."
             },
             {
-                img: banner,
+                img: andman3,
                 title: "Cellular Jail",
             description: "Cellular Jail in Port Blair is a historic site that reflects India’s freedom struggle. Visitors can explore the museum and attend the light and sound show that tells the story of brave freedom fighters."
             },
             {
-                img: banner,
+                img: andman4,
                 title: "Neil Island (Shaheed Dweep)",
             description: "Neil Island is known for its calm and less crowded environment. It offers beautiful beaches, natural rock formations, and a peaceful vibe. It is perfect for travelers looking to relax away from busy tourist spots."
             },
             {
-                img: banner,
+                img: andman5,
                 title: "Ross Island",
             description: "Ross Island is famous for its historical ruins and natural beauty. Once the administrative headquarters during British rule, it now offers scenic views and a glimpse into history, surrounded by greenery."
             },
             {
-                img: banner,
+                img: andman6,
                 title: "North Bay Island",
             description: "North Bay Island is popular for water activities and coral viewing. It is a great place for snorkeling and sea walking. Visitors can explore marine life and enjoy clear views of underwater beauty."
             },
             {
-                img: banner,
+                img: andman7,
                 title: "Baratang Island",
             description: "Baratang Island is known for its limestone caves and mangrove forests. The journey itself is an adventure, passing through dense forests and waterways. It is a unique and exciting experience."
             },
             {
-                img: banner,
+                img: andman8,
                 title: "Elephant Beach",
             description: "Elephant Beach is famous for its water sports and vibrant coral reefs. It is one of the best places for snorkeling and enjoying marine life. The clear water makes it perfect for underwater activities."
             },
             {
-                img: banner,
+                img: andman9,
                 title: "Chidiya Tapu",
             description: "Chidiya Tapu is known for its beautiful sunsets and bird-watching opportunities. Surrounded by forests and the sea, it is a peaceful place to relax and enjoy nature."
             }
@@ -697,7 +710,7 @@ description: "The Andaman & Nicobar Islands are a tropical paradise in India, kn
 ,
 // Destination 5: Sikkim
 {
-    img: banner,
+    img: sikkim,
     title: "Sikkim",
     heading: "About Sikkim",
 description: "Sikkim is a small yet stunning state in northeast India, known for its breathtaking mountain views, peaceful monasteries, rich culture, and natural beauty. Surrounded by the Himalayas, it offers a perfect mix of adventure and serenity. The state is home to Kanchenjunga, the third-highest mountain in the world, making it a paradise for nature lovers and trekkers.",
@@ -706,47 +719,47 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
         para: "Explore must-see attractions, scenic mountain views, peaceful monasteries, beautiful lakes, and unforgettable Himalayan experiences.",
         cards: [
             {
-                img: banner,
+                img: sikkim1,
                 title: "Gangtok",
             description: "Gangtok, the capital of Sikkim, is a vibrant hill town known for its clean streets, scenic views, and modern lifestyle. It offers a perfect mix of nature and city life. Visitors can explore MG Road, enjoy local food, and visit nearby viewpoints and monasteries."
             },
             {
-                img: banner,
+                img: sikkim2,
                 title: "Tsomgo Lake",
             description: "Tsomgo Lake is a beautiful glacial lake surrounded by snow-covered mountains. It changes colors with the seasons and offers breathtaking views. Visitors can enjoy yak rides and peaceful surroundings, making it one of the most popular attractions in Sikkim."
             },
             {
-                img: banner,
+                img: sikkim3,
                 title: "Nathula Pass",
             description: "Nathula Pass is a high-altitude mountain pass connecting India and China. It is known for its historical importance and stunning views. Visiting this place is an exciting experience, offering snow, mountains, and a sense of adventure."
             },
             {
-                img: banner,
+                img: sikkim4,
                 title: "Yumthang Valley",
             description: "Yumthang Valley, also called the Valley of Flowers, is famous for its colorful blooms and scenic beauty. Surrounded by mountains and rivers, it is a paradise for nature lovers and photographers."
             },
             {
-                img: banner,
+                img: sikkim5,
                 title: "Pelling",
             description: "Pelling is known for its breathtaking views of Kanchenjunga and peaceful environment. It offers attractions like waterfalls, monasteries, and skywalk experiences. It is perfect for those looking for relaxation and scenic beauty."
             },
             {
-                img: banner,
+                img: sikkim6,
                 title: "Lachung",
             description: "Lachung is a small mountain village known for its natural beauty and peaceful surroundings. It serves as a base for visiting Yumthang Valley. The fresh air and scenic views make it a perfect getaway."
             },
             {
-                img: banner,
+                img: sikkim7,
                 title: "Ravangla",
             description: "Ravangla is a quiet town known for its spiritual and scenic attractions. It is home to the Buddha Park and offers stunning views of the Himalayas. It is perfect for relaxation and peaceful stays."
             },
             {
-                img: banner,
+                img: sikkim8,
                 title: "Namchi",
             description: "Namchi is known for its cultural and religious sites. It offers beautiful views and attractions like Char Dham and large statues. It is a great place to explore Sikkim’s spiritual side."
             },
             {
-                img: banner,
+                img: sikkim9,
                 title: "Zuluk",
             description: "Zuluk is an offbeat destination known for its winding roads and panoramic views. It is part of the old Silk Route and offers a unique travel experience with less crowds and stunning landscapes."
             }
@@ -976,7 +989,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
 
 // Destination 2: Leh Ladakh
 {
-    img: banner,
+    img: ladakh,
     title: "Leh Ladakh",
     heading: "About Leh Ladakh",
     description: "Leh Ladakh is a breathtaking destination in northern India, known for its rugged mountains, high-altitude deserts, crystal-clear lakes, and unique culture. Surrounded by the Himalayas, it offers stunning landscapes and adventure experiences. From peaceful monasteries to thrilling road trips, Leh Ladakh is perfect for travelers seeking both beauty and adventure.",
@@ -985,47 +998,47 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
         para: "Explore must-see attractions, high-altitude lakes, scenic mountain passes, ancient monasteries, and unforgettable landscapes.",
         cards: [
             {
-                img: banner,
+                img: ladakh1,
                 title: "Pangong Lake",
                 description: "Pangong Lake is one of the most famous attractions in Ladakh, known for its changing colors and crystal-clear water. Surrounded by mountains, it offers breathtaking views and a peaceful environment, making it a must-visit destination."
             },
             {
-                img: banner,
+                img: ladakh2,
                 title: "Nubra Valley",
                 description: "Nubra Valley is known for its sand dunes, double-humped camels, and scenic beauty. It offers a unique mix of desert and mountains, creating a one-of-a-kind experience for travelers."
             },
             {
-                img: banner,
+                img: ladakh3,
                 title: "Khardung La Pass",
                 description: "Khardung La is one of the highest motorable roads in the world. It offers stunning views and an adventurous journey, making it a highlight for road trip lovers."
             },
             {
-                img: banner,
+                img: ladakh4,
                 title: "Magnetic Hill",
                 description: "Magnetic Hill is a unique place where vehicles appear to move uphill on their own. It is a popular attraction that surprises visitors and offers a fun experience."
             },
             {
-                img: banner,
+                img: ladakh5,
                 title: "Shanti Stupa",
                 description: "Shanti Stupa is a beautiful white dome offering panoramic views of Leh city and the surrounding mountains. It is a peaceful place, especially during sunrise and sunset."
             },
             {
-                img: banner,
+                img: ladakh6,
                 title: "Leh Palace",
                 description: "Leh Palace is a historic palace offering a glimpse into Ladakh’s royal past. It also provides stunning views of the town and mountains."
             },
             {
-                img: banner,
+                img: ladakh7,
                 title: "Tso Moriri Lake",
                 description: "Tso Moriri is a less crowded and equally beautiful lake surrounded by mountains. It is perfect for those looking for peace and natural beauty."
             },
             {
-                img: banner,
+                img: ladakh8,
                 title: "Hemis Monastery",
                 description: "Hemis Monastery is one of the largest and most famous monasteries in Ladakh. It is known for its spiritual importance and beautiful architecture."
             },
             {
-                img: banner,
+                img: ladakh9,
                 title: "Zanskar Valley",
                 description: "Zanskar Valley is known for its rugged beauty and adventure activities. It is famous for trekking and the Chadar Trek during the winter."
             }

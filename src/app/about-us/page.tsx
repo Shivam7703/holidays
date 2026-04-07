@@ -1,4 +1,3 @@
-import { bann } from "@/assets";
 import Aboutchoose from "@/components/about/aboutchoose";
 import CEOMessage from "@/components/about/founder";
 import Mission from "@/components/about/mission";

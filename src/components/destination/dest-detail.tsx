@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, stagger } from "framer-motion";
 import { FaCheckCircle, FaStar } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import DestinationAside from "./destaside";
