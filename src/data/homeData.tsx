@@ -122,7 +122,7 @@ export const navigationMenu = {
           {
             id: 9,
             label: "Switzerland",
-            href: "/destinations/switzerland,-usa",
+            href: "/destinations/switzerland",
           },
           {
             id: 10,

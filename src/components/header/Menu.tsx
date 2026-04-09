@@ -107,7 +107,7 @@ const Menu = ({ Isprimary, Items }: any) => {
                   {nav.subNav && (
                     <div
                       className="absolute left-[calc(100%)] top-0 z-[70] hidden flex-col
-                      w-auto rounded-xl bg-white border border-white/10
+                      w-auto rounded-xl bg-white border overflow-y-auto border-white/10
                       py-2 shadow-[0_16px_40px_rgba(0,0,0,0.4)]
                       transition-all group-hover/subnav:flex max-h-[500px]"
                     >
