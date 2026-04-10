@@ -1,13 +1,15 @@
 "use client";
-import { bal1, bal2, cloud1, cloud2,cloud3, plane, pro1, pro2, pro3, pro4, process1 } from "@/assets";
+import { bal1, bal2, cloud1, cloud2,cloud3, plane, pro1, pro2, pro3, pro4, rope } from "@/assets";
 import Image from "next/image";
 import React from "react";
 import { FaAngleDoubleDown, FaWpforms } from "react-icons/fa";
 import { LuHandshake } from "react-icons/lu";
-import { MdOutlineEngineering, MdOutlineSettings } from "react-icons/md";
+import { MdOutlineEngineering, MdOutlineSettings, MdOutlineSupportAgent } from "react-icons/md";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useRef } from "react";
 import { fadeUp, nodePop} from "@/utils/motion";
+import { GiGlobe } from "react-icons/gi";
+import { FaBagShopping, FaEarthAsia, FaPlaneUp } from "react-icons/fa6";
 
 export const slideIn = (dir: "left" | "right") => ({
   hidden: { opacity: 0, x: dir === "left" ? -80 : 80 },
@@ -22,28 +24,32 @@ export const slideIn = (dir: "left" | "right") => ({
 const data = [
   {
     img: pro1,
-    icon: <FaWpforms />,
+    icon: <FaEarthAsia />
+,
     heading: "Travel Planning & Assessment",
     year: "step 01",
     text: "Understanding your travel preferences, budget, destinations, and timelines to design the perfect trip.",
   },
   {
     img: pro2,
-    icon: <MdOutlineSettings />,
+    icon: <FaPlaneUp />
+,
     heading: "Itinerary Design",
     year: "step 02",
     text: "Creating a personalized travel plan with selected destinations, activities, stays, and experiences tailored to you.",
   },
   {
     img: pro3,
-    icon: <MdOutlineEngineering />,
+    icon: <FaBagShopping />
+,
     heading: "Booking & Arrangements",
     year: "step 03",
     text: "Managing flights, hotels, and tours with seamless coordination and confirmed reservations.",
   },
   {
     img: pro4,
-    icon: <LuHandshake />,
+    icon: <MdOutlineSupportAgent />
+,
     heading: "Travel Support & Assistance",
     year: "step 04",
     text: "Providing complete guidance and on-trip support to ensure a smooth, stress-free, and enjoyable journey.",
@@ -82,11 +88,11 @@ function TimelineRow({ item, i }: { item: any; i: number }) {
   return (
     <div
       ref={ref}
-      className="relative grid lg:grid-cols-2 gap-8 max-w-screen-2xl mx-auto lg:gap-0 items-center mb-8 lg:mb-14"
+      className="relative grid lg:grid-cols-2 gap-8 max-w-screen-2xl mx-auto lg:gap-0 items-center mb-6 lg:mb-8"
     >
       {/* ── Center node ── */}
       <motion.div
-        className="hidden lg:flex absolute left-[46.5%] -translate-x-1/2 flex-col items-center z-20"
+        className="hidden lg:flex absolute left-[46.6%] -translate-x-1/2 flex-col items-center z-20"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -104,7 +110,7 @@ function TimelineRow({ item, i }: { item: any; i: number }) {
             visible: { opacity: 1, y: 0, transition: { delay: 0.5, duration: 0.4 } },
           }}
         >
-          <span className="text-color2 text-[10px] font-bold tracking-widest uppercase">
+          <span className="text-color2 text-xs font-bold tracking-widest uppercase">
             {item.year}
           </span>
         </motion.div>
@@ -119,7 +125,7 @@ function TimelineRow({ item, i }: { item: any; i: number }) {
         variants={slideIn(isLeft ? "left" : "right")}
       >
         {/* clean image — no bg, no overlay, no hover effects */}
-        <div className="relative w-full h-72 sm:h-96">
+        <div className="relative w-full h-56 sm:h-96">
 
 <div
   className="absolute group inset-0 h-9 w-9 z-0 rounded-full top-1/2 left-[45%] bg-red-700"
@@ -130,7 +136,7 @@ function TimelineRow({ item, i }: { item: any; i: number }) {
             src={item.img}
             alt={item.heading}
             fill
-            className="object-contain mx-auto group-hover:-translate-y-10 transition-transform duration-500"
+            className="object-contain mx-auto group-hover:-translate-y-10 w-full transition-transform duration-500"
           />
         </div>
       </motion.div>
@@ -143,9 +149,9 @@ function TimelineRow({ item, i }: { item: any; i: number }) {
         viewport={{ once: true, amount: 0.2 }}
         variants={slideIn(isLeft ? "right" : "left")}
       >
-        <div className="space-y-3 md:space-y-6">
+        <div className="space-y-3 md:space-y-6 ">
           <motion.p
-            className="text-color2 text-[10px] font-bold uppercase tracking-[0.3em]"
+            className="text-color2 text-sm  font-bold uppercase tracking-[0.3em]"
             variants={fadeUp}
              whileInView="visible"
             custom={0}
@@ -154,7 +160,7 @@ function TimelineRow({ item, i }: { item: any; i: number }) {
           </motion.p>
 
           <motion.h3
-            className="text-color1 text-2xl md:text-3xl font-bold leading-tight"
+            className="text-color1 text-lg sm:text-3xl font-bold leading-tight"
             variants={fadeUp}
             whileInView="visible"
             custom={1}
@@ -171,7 +177,7 @@ function TimelineRow({ item, i }: { item: any; i: number }) {
           />
 
           <motion.p
-            className="text-zinc-700 max-w-sm"
+            className="text-zinc-900 md:text-lg text-sm max-w-sm"
             variants={fadeUp}
             whileInView="visible"
             custom={2}
@@ -187,51 +193,41 @@ function TimelineRow({ item, i }: { item: any; i: number }) {
 
 export default function WorkProcess() {
   return (
-    <div className="lg:px-20 sm:p-12 p-6  relative overflow-hidden bg-gradient-to-br from-orange-100 via-white to-blue-100">
+    <div className="lg:px-20 sm:p-12 p-6  relative overflow-hidden bg-gradient-to-b from-[#F6F0DE] via-white to-blue-100">
  <Image
-            src={bal2}
+            src={rope}
             alt={"Work process image"}
   
-            className="object-contain absolute top-[3%] right-[2%] animate-x z-0 opacity-70 pointer-events-none"
+            className="object-contain absolute top-0 -right-[2%] animate-x z-0 md:h-64 h-28  opacity-70 pointer-events-none"
           />
            <Image
             src={bal1}
             alt={"Work process image"}
   
-            className="object-contain absolute top-[15%] left-[15%] animate-y z-0 md:w-44 opacity-70 pointer-events-none"
+            className="object-contain absolute top-[17%] left-[13%] animate-y z-0 md:w-32 w-14 opacity-90 pointer-events-none"
           />
 
-            <Image
-            src={cloud1}
-            alt={"Work process image"}
-  
-            className="object-contain absolute top-[14%] left-[2%]  z-0 opacity-80 pointer-events-none"
-          />
+          
 
             <Image
             src={cloud2}
             alt={"Work process image"}
   
-            className="object-contain absolute top-[50%] right-[2%] marque z-0 opacity-80 pointer-events-none"
+            className="object-contain absolute top-[40%] right-[2%] marque z-0 opacity-30 pointer-events-none"
           />
           <Image
-            src={bal1}
+            src={bal2}
             alt={"Work process image"}
   
-            className="object-contain absolute top-[73%] right-[2%] animate-x z-0 md:w-44 opacity-80 pointer-events-none"
+            className="object-contain absolute top-[84%] right-[2%] animate-x z-0 md:w-44 w-20 opacity-70 pointer-events-none"
           />
            <Image
             src={plane}
             alt={"Work process image"}
   
-            className="object-contain absolute top-[73%] left-[2%] aeo z-0 md:w-44 w-16 opacity-80 pointer-events-none"
+            className="object-contain absolute top-[55%] left-[19%] aeo z-0 md:w-44 w-16 opacity-60 pointer-events-none"
           />
-           <Image
-            src={bal2}
-            alt={"Work process image"}
-  
-            className="object-contain absolute top-[30%] left-[2%] aeo md:w-56 z-0 opacity-40 pointer-events-none"
-          />
+       
 
 
             <Image
@@ -241,13 +237,12 @@ export default function WorkProcess() {
             className="object-contain absolute top-[80%] right-[2%] marque z-0 opacity-50 pointer-events-none"
           />
       {/* Background blobs */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[550px] rounded-full bg-color2/8 blur-[150px] pointer-events-none" />
-      <div className="absolute top-1/3 left-0 w-[450px] h-[700px] bg-yellow-600/5 blur-[130px] pointer-events-none" />
-      <div className="absolute top-1/3 right-0 w-[450px] h-[700px] bg-color2/6 blur-[130px] pointer-events-none" />
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-color2/7 blur-[120px] pointer-events-none" />
+      <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-[1000px] h-[550px] rounded-full bg-white/50 blur-[150px] pointer-events-none !z-0" />
+      <div className="absolute top-1/3 left-0 w-[450px] h-[700px] bg-yellow-600/10 blur-[130px] pointer-events-none" />
+      <div className="absolute top-1/3 right-0 w-[450px] h-[700px] bg-rose-500/10 blur-[130px] pointer-events-none" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-color1/15 blur-[120px] pointer-events-none" />
 
-      {/* Accent lines */}
-      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-color2/50 to-transparent" />
+      
       <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-color2/20 to-transparent" />
 
       <div className="max-w-7xl mx-auto relative z-10">
@@ -262,7 +257,7 @@ export default function WorkProcess() {
       
 
           <motion.h2
-            className="font-bold text-3xl text-color1 md:text-5xl max-w-3xl mx-auto leading-tight"
+            className="font-bold text-xl text-color1 md:text-5xl max-w-3xl mx-auto leading-tight"
             variants={fadeUp}
             custom={1}
           >
@@ -272,7 +267,7 @@ export default function WorkProcess() {
           </motion.h2>
 
           <motion.p
-            className="text-zinc-800  max-w-2xl text-center leading-relaxed"
+            className="text-zinc-800 max-sm:text-sm  max-w-2xl text-center leading-relaxed"
             variants={fadeUp}
             custom={2}
           >

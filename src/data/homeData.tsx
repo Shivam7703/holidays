@@ -355,7 +355,7 @@ export const countDown = [
     suffix: "+",
     title: "Clients Served",
     Value: 2000,
-    color: "color4",
+    color: "color5",
   },
   {
     id: 2,

@@ -54,7 +54,7 @@ export default function Testimonials() {
                       fill
                       className="object-contain w-full max-h-max absolute top-0 left-0 z-20"/>
       <div className="w-full text-center flex flex-col items-center gap-y-3 sm:mb-8 ">
-        <h2 className="font-bold text-center text-3xl md:text-5xl !leading-tight my-6 max-w-3xl mx-auto text-color1 relative">
+        <h2 className="font-bold text-center text-xl md:text-5xl !leading-tight my-6 max-w-3xl mx-auto text-color1 relative">
           Lorem ipsum dolor{" "}
           <span className="text-color2">consectetur</span> adipisicing.
         </h2>

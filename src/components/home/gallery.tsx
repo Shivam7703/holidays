@@ -67,7 +67,7 @@ export default function Gallery() {
         }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto">
+      <div className="relative z-10  mx-auto">
 
         {/* ── Header ── */}
         <div
@@ -75,12 +75,12 @@ export default function Gallery() {
         >
          
 
-          <h2 className="text-4xl sm:text-5xl lg:text-5xl font-bold text-color1 leading-[1.1] tracking-tight mb-4">
+          <h2 className="text-xl sm:text-4xl lg:text-5xl font-bold text-color1 leading-[1.1] tracking-tight mb-4">
             Captured Travel{" "}
             <span className="text-color2">
 Stories</span>
           </h2>
-          <p className="text-stone-500 text-base max-w-lg mx-auto leading-relaxed">
+          <p className="text-zinc-700 text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
 A glimpse of the unforgettable moments and experiences shared by our happy travelers.
           </p>
 
@@ -100,8 +100,9 @@ A glimpse of the unforgettable moments and experiences shared by our happy trave
             pagination={{ clickable: true, el: ".gal-dots" }}
             autoplay={{ delay: 3500, disableOnInteraction: false, pauseOnMouseEnter: true }}
             breakpoints={{
-              600:  { slidesPerView: 2, spaceBetween: 16 },
-              1024: { slidesPerView: 3, spaceBetween: 20 },
+              100:  { slidesPerView: 1, spaceBetween: 8 },
+                            600:  { slidesPerView: 2, spaceBetween: 16 },
+              1024: { slidesPerView: 4, spaceBetween: 20 },
             }}
             className="!pb-4"
           >

@@ -11,7 +11,7 @@ export default function Countryslider({ data, uniqueId }: any) {
   return (
     <>
       <div className="relative px-4 md:px-10">
-        <Swiper
+        <Swiper className="max-sm:w-[80vw]"
           slidesPerView={1}
           spaceBetween={20}
           loop={true}
@@ -68,8 +68,8 @@ export default function Countryslider({ data, uniqueId }: any) {
     </div>
 
     {/* ── FLOATING PRICE CARD — overlaps image ── */}
-    <div className="absolute top-44 right-5 z-20 bg-white rounded-2xl px-4 py-2.5 shadow-xl border border-color2/15 text-center min-w-[80px]">
-      <p className="text-color2 font-black text-xl leading-none">{card.price}</p>
+    <div className="absolute top-44 right-5 z-20 bg-white rounded-2xl sm:p-4 p-2 shadow-xl border border-color2/15 text-center min-w-[70px]">
+      <p className="text-color2 font-black text-base sm:text-xl leading-none">{card.price}</p>
       <p className="text-gray-400 text-[9px] uppercase tracking-wider font-bold mt-0.5">per person</p>
     </div>
 

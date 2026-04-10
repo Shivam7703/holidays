@@ -8,14 +8,14 @@ import { motion } from 'motion/react'
 import { footerImage, process1 } from '@/assets';
 export default function Advertise() {
   return (
-    <section className="w-full  bg-white flex-wrap flex items-stretch justify-between gap-y-7 p-6 md:px-12 lg:px-24">
+    <section className="w-full  bg-white flex-wrap flex items-stretch justify-between gap-y-7  sm:pb-9 p-6 md:px-12 lg:px-24">
         {advertise?.ads?.map((item:any,index:number)=>(
-            <div key={index} className="relative w-full md:w-[48%] rounded-lg overflow-hidden">
+            <div key={index} className="relative w-full md:w-[48%] rounded-lg overflow-hidden shadow-lg shadow-black/50">
                 <Image src={item} alt={`Advertise ${index + 1}`} className="w-full h-full object-contain" />
             </div>
         ))}
 
-       <div className="w-full rounded-2xl md:p-10 p-6 bg-orange-50  relative overflow-hidden shadow-sm">
+       <div className="w-full shadow-lg shadow-black/40 rounded-2xl md:p-10 p-6 bg-orange-50  relative overflow-hidden ">
     <Image src={footerImage} alt='bag' className='absolute bottom-0 right-0 z-[1] opacity-80 w-full h-full object-cover ' />
 
 
@@ -34,7 +34,7 @@ export default function Advertise() {
     >
       View All →
     </Link>
-  </div> <h2 className="text-3xl md:text-4xl font-bold text-color1 leading-snug max-w-lg">
+  </div> <h2 className="text-xl md:text-4xl font-bold text-color1 leading-snug max-w-lg">
         {advertise?.title}
       </h2>
 
@@ -60,11 +60,11 @@ export default function Advertise() {
 
         {/* Text */}
         <div>
-          <h3 className="text-gray-800 font-semibold text-xl leading-snug mb-0.5
+          <h3 className="text-gray-800 font-semibold sm:text-xl text-lg leading-snug mb-0.5
             group-hover:text-color1 transition-colors duration-200">
             {item.heading}
           </h3>
-          <p className="text-gray-700 sm:text-lg leading-relaxed">
+          <p className="text-gray-700 sm:text-lg text-sm leading-relaxed">
             {item.text}
           </p>
         </div>

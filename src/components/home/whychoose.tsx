@@ -49,7 +49,7 @@ export default function WhychooseSection() {
           </span>
 
           {/* Heading */}
-          <h2 className="font-bold text-color1 text-3xl sm:text-4xl md:text-5xl leading-[1.15]">
+          <h2 className="font-bold text-color1 text-xl sm:text-4xl md:text-5xl leading-[1.15]">
             Creating Seamless{" "}
             <span className="text-color2">Travel Experiences</span>{" "}You Can Always Trust
           </h2>

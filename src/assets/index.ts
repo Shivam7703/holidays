@@ -4,6 +4,10 @@ import box2 from "@/assets/home/box2.webp";
 import box3 from "@/assets/home/box3.webp";
 import ad1 from "@/assets/home/ad1.webp";
 import ad2 from "@/assets/home/ad2.webp";
+import rope from "@/assets/home/rope.png";
+import rope2 from "@/assets/home/rope2.png";
+import logobg from "@/assets/home/logo-bg.jpg";
+
 
 import man2 from "@/assets/home/man.png";
 import man from "@/assets/home/man-rock.png";
@@ -21,6 +25,21 @@ import bal2 from "@/assets/home/bal2.png";
 import cloud1 from "@/assets/home/cloud-1.png";
 import cloud2 from "@/assets/home/cloud-2.png";
 import cloud3 from "@/assets/home/cloud-3.png";
+import l1 from "@/assets/home/l1.png";
+import l2 from "@/assets/home/l2.png";
+import l3 from "@/assets/home/l3.png";
+import l4 from "@/assets/home/l4.png";
+import l5 from "@/assets/home/l5.png";
+import l6 from "@/assets/home/l6.png";
+import l7 from "@/assets/home/l7.png";
+import l8 from "@/assets/home/l8.png";
+import l9 from "@/assets/home/l9.png";
+import l10 from "@/assets/home/l10.png";
+import l11 from "@/assets/home/l11.png";
+import l12 from "@/assets/home/l12.png";
+import l13 from "@/assets/home/l13.png";
+
+
 
 
 import plane from "@/assets/home/plane.png";
@@ -351,8 +370,10 @@ import japan9 from "@/assets/destination/japan9.webp";
 
 
 
-export {bannerImage,secImage,ad1,ad2,pro1,pro2,pro3,pro4,choose, bal1, bal2, cloud1, cloud2,cloud3,
-    logo , logo2, banner, box2, box3,process1,aboutb,about,cl1,cl2,footerImage, plane, patta,patta2, man2, ceo,man,   andman,  andman1, andman2, andman3, andman4, andman5, andman6, andman7, andman8, andman9,
+export {logobg, bannerImage,secImage,ad1,ad2,pro1,pro2,pro3,pro4,choose, bal1, bal2, cloud1, cloud2,cloud3,
+    logo , logo2, banner, box2, box3,process1,aboutb,about,cl1,cl2,footerImage, plane, patta,patta2, man2,
+    ceo,man, l1,l2,l3,l4,l5,l6,l7,l8,l9,l10,l11,l12,l13,rope,rope2,
+  andman,  andman1, andman2, andman3, andman4, andman5, andman6, andman7, andman8, andman9,
   sikkim, sikkim1, sikkim2, sikkim3, sikkim4, sikkim5, sikkim6, sikkim7, sikkim8, sikkim9,
  goa, goa1, goa2, goa3, goa4, goa5, goa6, goa7, goa8, goa9,
    himanchal, himanchal1, himanchal2, himanchal3, himanchal4, himanchal5, himanchal6, himanchal7, himanchal8, himanchal9,

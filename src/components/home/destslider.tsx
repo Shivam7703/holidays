@@ -4,22 +4,23 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/free-mode";
-import { banner, box3 } from "@/assets";
+import { andman, banner, box3, china, darjeeling, dubai, goa, himanchal, hong, japan, kashmir, kerala, thailand, turkey } from "@/assets";
 import Image from "next/image";
+import Link from "next/link";
 
 const destinations = [
-  { name: "California", tours: 2 },
-  { name: "America", tours: 0 },
-  { name: "Iran", tours: 0 },
-  { name: "Israel", tours: 0 },
-  { name: "Turkey", tours: 3 },
-  { name: "Italy", tours: 1 },
-  { name: "Spain", tours: 1 },
-  { name: "Germany", tours: 0 },
-  { name: "France", tours: 2 },
-  { name: "Netherlands", tours: 0 },
-  { name: "Sweden", tours: 0 },
-  { name: "Norway", tours: 1 },
+  { name: "Goa", tours: goa },
+  { name: "Himachal Pradesh", tours: himanchal },
+  { name: "Kashmir", tours: kashmir },
+  { name: "Kerala", tours: kerala },
+  { name: "Turkey", tours: turkey },
+  { name: "Andaman & Nicobar", tours: andman },
+  { name: "Darjeeling", tours: darjeeling },
+  { name: "Dubai", tours: dubai },
+  { name: "Thailand", tours: thailand },
+  { name: "Hong Kong", tours: hong },
+  { name: "China", tours: china },
+  { name: "Japan", tours: japan },
 ];
 
 function Destslider() {
@@ -54,9 +55,10 @@ function Destslider() {
             <SwiperSlide
               key={dest.name}
               style={{
-                width: isHovered ? "280px" : isOtherHovered ? "205px" : "220px",
+                width: isHovered ? "300px" : isOtherHovered ? "215px" : "240px",
               }}
             >
+              <Link href={`/destinations/${dest.name.toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-")}`}>
               <div
                 onMouseEnter={() => setHoveredIndex(i)}
                 onMouseLeave={() => setHoveredIndex(null)}
@@ -68,9 +70,9 @@ function Destslider() {
                 `}
               >
                 <Image
-                  src={i % 2 === 0 ? banner : box3}
+                  src={dest.tours}
                   alt={dest.name}
-                  className="w-full object-cover object-center transition-all duration-500 md:h-80 h-64"
+                  className="w-full object-cover object-center transition-all duration-500 md:h-80 h-44"
                 />
 
                 <div className="p-3 w-full text-center">
@@ -83,7 +85,8 @@ function Destslider() {
                     {dest.name}
                   </p>
                 </div>
-              </div>
+              </div>              </Link>
+
             </SwiperSlide>
           );
         })}

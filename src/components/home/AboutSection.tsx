@@ -29,7 +29,7 @@ export default function AboutSection({ data }: any) {
           {/* Heading */}
           <motion.h2
             variants={textVariant({ delay: 0.2 })}
-            className="text-3xl md:text-4xl xl:text-5xl font-bold text-color1 !leading-snug mb-5"
+            className="text-xl md:text-4xl xl:text-5xl font-bold text-color1 !leading-snug mb-5"
           >
             {data?.title2}{" "}
             <span className="text-color2">{data?.title3}</span>
@@ -39,7 +39,7 @@ export default function AboutSection({ data }: any) {
           {data?.para && (
             <motion.p
               variants={fadeIn("up", "tween", 0.3, 0.5)}
-              className="text-gray-700 text-base md:text-lg leading-relaxed mb-8"
+              className="text-gray-700 text-sm md:text-lg leading-relaxed mb-8"
             >
               {data?.para}
             </motion.p>

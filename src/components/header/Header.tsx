@@ -193,7 +193,7 @@ function Right() {
       {/* ── CALL & EMAIL ── */}
       <motion.div
         variants={fadeIn("down", "tween", 0.65, 0.5)}
-        className="flex items-center gap-5"
+        className=""
       >
         <a
           href="tel:+911234567890"
@@ -202,7 +202,19 @@ function Right() {
           <FaPhone className="text-lg" />
           <span className="text-base">+91 12345 67890</span>
         </a>
-        
+      
+      </motion.div>
+
+        <motion.div
+        variants={fadeIn("down", "tween", 0.8, 0.4)}
+        className="w-px h-6 bg-gray-300"
+      />
+
+<motion.div
+        variants={fadeIn("down", "tween", 0.65, 0.5)}
+        className=""
+      >
+      
         <a  href="mailto:hello@example.com"
           className="flex items-center gap-2 text-color1 hover:text-color2 transition-colors duration-200"
         >
@@ -210,12 +222,6 @@ function Right() {
           <span className="text-base">hello@example.com</span>
         </a>
       </motion.div>
-
-      <motion.div
-        variants={fadeIn("down", "tween", 0.8, 0.4)}
-        className="w-px h-6 bg-gray-300"
-      />
-
     </motion.div>
   );
 }

@@ -10,7 +10,7 @@ export default function Blogs({ isHome }: any) {
   return (
     <section
       className={`${
-        isHome ? "lg:px-24 md:px-20 sm:p-14 p-6 bg-gradient-to-br from-orange-100 via-white to-blue-100 relative" : "px-3 pb-5"
+        isHome ? "lg:px-24 md:px-20 sm:p-14 py-6 px-3 bg-gradient-to-br from-orange-100 via-white to-blue-100 relative" : "px-3 pb-5"
       } relative w-full overflow-hidden `}
     >
      {isHome && (
@@ -34,7 +34,7 @@ export default function Blogs({ isHome }: any) {
                 {data.title1}
               </span>
             )}
-            <h2 className="text-color1 font-bold leading-tight text-3xl md:text-4xl lg:text-5xl">
+            <h2 className="text-color1 font-bold leading-tight text-xl md:text-4xl lg:text-5xl">
               Explore{" "}
               <span className="text-color2">Latest News</span>
             </h2>
@@ -49,7 +49,7 @@ export default function Blogs({ isHome }: any) {
 
       {/* ── GRID ── */}
       <div
-        className={`grid lg:grid-cols-3 sm:grid-cols-2 gap-7 max-w-7xl mx-auto relative z-10`}
+        className={`grid lg:grid-cols-3 grid-cols-2 gap-7 max-w-7xl mx-auto relative z-10`}
       >
         {(isHome ? data?.blog?.slice(0, 3) : data?.blog)?.map(
           (blogs: any, index: number) => (
@@ -58,10 +58,10 @@ export default function Blogs({ isHome }: any) {
               href={`/blogs/${encodeURIComponent(
                 blogs.heading.toLowerCase().replace(/\s+/g, "-")
               )}`}
-              className="group block bg-color2 relative rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 pb-4 "
+              className="group block bg-color2 relative rounded-md sm:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 pb-4 "
             >
               {/* ── IMAGE — top 58% ── */}
-              <div className="relative h-44 sm:h-60 overflow-hidden rounded-3xl">
+              <div className="relative h-32 sm:h-60 overflow-hidden rounded-3xl">
                 <Image
                   src={blogs?.img ?? box3}
                   alt={blogs.heading}
@@ -75,8 +75,8 @@ export default function Blogs({ isHome }: any) {
 
                 {/* Date badge — top right */}
                 {blogs?.date && (
-                  <div className="absolute top-4 right-4 bg-white text-color1 text-center px-3 py-2.5 rounded-xl shadow-lg min-w-[52px] group-hover:rounded-full duration-1000 border border-gray-100">
-                    <p className="text-xl font-black leading-none text-color1">
+                  <div className="absolute top-4 right-4 bg-white text-color1 text-center sm:p-3 p-1.5 rounded-xl shadow-lg min-w-[52px] group-hover:rounded-full duration-1000 border border-gray-100">
+                    <p className="sm:text-xl text-lg font-black leading-none text-color1">
                       {blogs.date.split(" ")[0]}
                     </p>
                     <p className="text-[10px] uppercase tracking-wider font-bold text-color2 mt-0.5">
@@ -87,7 +87,7 @@ export default function Blogs({ isHome }: any) {
               </div>
 
               {/* ── WHITE CONTENT BOX — overlaps image slightly ── */}
-              <div className="relative -mt-5 mx-3 bg-white rounded-2xl px-5 pt-5 pb-6 space-y-3 shadow-sm border border-gray-100/80 z-10">
+              <div className="relative -mt-5 mx-3 bg-white sm:rounded-2xl rounded-md sm:p-6 p-3 space-y-3 shadow-sm border border-gray-100/80 z-10">
 
                 {/* Tag */}
                 {blogs?.tag && (
@@ -97,7 +97,7 @@ export default function Blogs({ isHome }: any) {
                 )}
 
                 {/* Title */}
-                <h2 className="text-zinc-600 font-bold text-lg sm:text-xl leading-snug line-clamp-2 group-hover:text-color1 transition-colors duration-300">
+                <h2 className="text-zinc-600 font-bold text-base sm:text-xl leading-snug line-clamp-2 group-hover:text-color1 transition-colors duration-300">
                   {blogs.heading}
                 </h2>
 

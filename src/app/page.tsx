@@ -12,6 +12,7 @@ import Destination from "@/components/home/destination";
 import WorkProcess from "@/components/home/workingprocess";
 import Gallery from "@/components/home/gallery";
 import Package from "@/components/home/package";
+import Logotext from "@/components/home/logobg";
 
 export default function Home() {
   return (
@@ -20,9 +21,11 @@ export default function Home() {
 <Partners/>
 <AboutSection  data ={aboutdata} />
 <Advertise/>
-<CountDown data={countDown}/>
 <Package/>
 <Destination/>
+<CountDown data={countDown}/>
+<Logotext/>
+
 <WorkProcess/>
 <Gallery/>
 <WhychooseSection/>

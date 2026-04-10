@@ -10,10 +10,10 @@ export default function Destination() {
         para: "Our most loved destinations are carefully selected to offer unforgettable travel experiences. From scenic mountains and peaceful beaches to vibrant cities and cultural hotspots, each place is chosen to match every traveler’s dream. Enjoy seamless planning, comfortable stays, and unique experiences that make every journey special. Whether you're looking for relaxation, adventure, or cultural charm, we bring you destinations that truly stand out and create lasting memories."
     }
   return (
-    <section className="w-full overflow-hidden  py-10 bg-white p-6 md:px-12 lg:px-24">
+    <section className="w-full overflow-hidden  py-10 bg-white p-0 md:px-12 lg:px-20">
      
-<div className="bg-color1 overflow-hidden rounded-3xl relative  p-6 py-8 sm:py-14">
-      <div className="relative z-10 flex flex-wrap justify-between items-center">
+<div className="bg-color1 overflow-hidden md:rounded-3xl relative ">
+      <div className="relative z-10 flex flex-wrap justify-between  items-center  p-6 py-8 sm:py-14">
 
         {/* ── LEFT TEXT ── */}
         <motion.div
@@ -74,7 +74,7 @@ export default function Destination() {
           className=" md:w-[57%] w-full  px-4 select-none  pointer-events-none"
         >
           <p
-            className="font-black text-5xl mt-4 md:text-8xl font1 leading-none text-color2"
+            className="font-black text-6xl mt-4 md:text-8xl font1 leading-none text-color2"
           >
             TOP{" "} <span
             className="text-white"
@@ -91,7 +91,7 @@ export default function Destination() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="absolute sm:-top-14 !z-20 -top-8 -right-6 h-1/2 "
+          className="absolute sm:-top-14 !z-20 -top-8 -right-6 h-1/2 max-sm:hidden"
         >
           <Image
             src={man}
@@ -101,7 +101,7 @@ export default function Destination() {
         </motion.div>
 
       </div>
-<div className="mt-8 md:mt-14">
+<div className="mb-8 ">
 <Destslider/>
 </div>
       </div>

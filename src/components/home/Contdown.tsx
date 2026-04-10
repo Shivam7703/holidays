@@ -12,13 +12,13 @@ function CountDown({ data }: any) {
   return (
     <section
       ref={ref}
-      className="relative w-full py-10  bg-white p-6 md:px-12 lg:px-24"
+      className="relative w-full pb-10 shadow-lg shadow-black/30 bg-white p-6 md:px-12 lg:px-20"
     >
       <motion.div
         variants={staggerContainer(0.15, 0.1)}
         initial="hidden"
         animate={inView ? "show" : "hidden"}
-        className="relative z-10  mx-auto bg-gray-100 rounded-3xl px-8 md:px-14 py-10 overflow-hidden"
+        className="relative z-10  mx-auto bg-gray-100 rounded-3xl p-8 md:p-14   overflow-hidden"
       >
             <Image src={footerImage} alt='bag' className='absolute bottom-0 right-0 z-[1] opacity-80 w-full h-full object-cover ' />
         
