@@ -51,7 +51,7 @@ export default function Gallery() {
   }, [lightboxOpen, lightboxSwiper]);
 
   return (
-    <section className="relative w-full overflow-hidden bg-white lg:px-20 px-4 py-8 sm:p-16">
+    <section className="relative w-full overflow-hidden bg-white lg:px-20 px-4 py-7 sm:p-16">
 
       {/* ── Decorative background blobs ── */}
       <div className="pointer-events-none absolute -top-32 -left-32 w-96 h-96 rounded-full bg-amber-200/40 blur-[100px]" />
@@ -71,11 +71,11 @@ export default function Gallery() {
 
         {/* ── Header ── */}
         <div
-          className={`text-center mb-16 transition-all duration-1000 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
+          className={`text-center sm:mb-16 mb-8  transition-all duration-1000 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
         >
          
 
-          <h2 className="text-xl sm:text-4xl lg:text-5xl font-bold text-color1 leading-[1.1] tracking-tight mb-4">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-color1 leading-[1.1] tracking-tight mb-4">
             Captured Travel{" "}
             <span className="text-color2">
 Stories</span>
@@ -100,8 +100,8 @@ A glimpse of the unforgettable moments and experiences shared by our happy trave
             pagination={{ clickable: true, el: ".gal-dots" }}
             autoplay={{ delay: 3500, disableOnInteraction: false, pauseOnMouseEnter: true }}
             breakpoints={{
-              100:  { slidesPerView: 1, spaceBetween: 8 },
-                            600:  { slidesPerView: 2, spaceBetween: 16 },
+              100:  { slidesPerView: 2, spaceBetween: 8 },
+                            600:  { slidesPerView: 3, spaceBetween: 16 },
               1024: { slidesPerView: 4, spaceBetween: 20 },
             }}
             className="!pb-4"

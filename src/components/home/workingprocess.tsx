@@ -128,7 +128,7 @@ function TimelineRow({ item, i }: { item: any; i: number }) {
         <div className="relative w-full h-56 sm:h-96">
 
 <div
-  className="absolute group inset-0 h-9 w-9 z-0 rounded-full top-1/2 left-[45%] bg-red-700"
+  className="absolute group inset-0 h-9 w-9 z-0 rounded-full top-1/2 left-[45%] max-sm:hidden bg-red-700"
   style={{
     boxShadow: "0 0 12px 10px rgba(0,0,0,0.7), 0 0 80px 40px rgba(0,0,0,0.5), 0 0 160px 80px rgba(0,0,0,0.4), 0 0 300px 150px rgba(0,0,0,0.1)",
   }}
@@ -136,7 +136,7 @@ function TimelineRow({ item, i }: { item: any; i: number }) {
             src={item.img}
             alt={item.heading}
             fill
-            className="object-contain mx-auto group-hover:-translate-y-10 w-full transition-transform duration-500"
+            className="object-contain mx-auto group-hover:-translate-y-10 h-full transition-transform duration-500"
           />
         </div>
       </motion.div>
@@ -151,7 +151,7 @@ function TimelineRow({ item, i }: { item: any; i: number }) {
       >
         <div className="space-y-3 md:space-y-6 ">
           <motion.p
-            className="text-color2 text-sm  font-bold uppercase tracking-[0.3em]"
+            className="text-color2 text-sm max-sm:-mb-1 font-bold uppercase tracking-[0.3em]"
             variants={fadeUp}
              whileInView="visible"
             custom={0}
@@ -194,12 +194,13 @@ function TimelineRow({ item, i }: { item: any; i: number }) {
 export default function WorkProcess() {
   return (
     <div className="lg:px-20 sm:p-12 p-6  relative overflow-hidden bg-gradient-to-b from-[#F6F0DE] via-white to-blue-100">
- <Image
+          <Image
             src={rope}
             alt={"Work process image"}
   
-            className="object-contain absolute top-0 -right-[2%] animate-x z-0 md:h-64 h-28  opacity-70 pointer-events-none"
+            className="object-contain absolute top-0 sm:-right-[2%] -right-[50%] animate-x z-0 md:h-64 h-28  opacity-70 pointer-events-none"
           />
+
            <Image
             src={bal1}
             alt={"Work process image"}
@@ -239,8 +240,8 @@ export default function WorkProcess() {
       {/* Background blobs */}
       <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-[1000px] h-[550px] rounded-full bg-white/50 blur-[150px] pointer-events-none !z-0" />
       <div className="absolute top-1/3 left-0 w-[450px] h-[700px] bg-yellow-600/10 blur-[130px] pointer-events-none" />
-      <div className="absolute top-1/3 right-0 w-[450px] h-[700px] bg-rose-500/10 blur-[130px] pointer-events-none" />
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-color1/15 blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/3 right-0 w-[450px] h-[700px] bg-rose-500/10 max-sm:hidden blur-[130px] pointer-events-none" />
+      <div className="absolute bottom-0 max-sm:hidden  left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-color1/15 blur-[120px] pointer-events-none" />
 
       
       <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-color2/20 to-transparent" />
@@ -257,7 +258,7 @@ export default function WorkProcess() {
       
 
           <motion.h2
-            className="font-bold text-xl text-color1 md:text-5xl max-w-3xl mx-auto leading-tight"
+            className="font-bold text-2xl text-color1 md:text-5xl max-w-3xl mx-auto leading-tight"
             variants={fadeUp}
             custom={1}
           >

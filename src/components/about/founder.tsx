@@ -34,7 +34,7 @@ export default function CEOMessage() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.15 }}
-        className="mx-auto xl:px-28  max-w-[1350px] md:px-20 sm:p-14 px-5 justify-between py-8 lg:px-24 flex flex-col lg:flex-row items-center gap-14 lg:gap-10 relative z-10"
+        className="mx-auto xl:px-28  max-w-[1350px] md:px-20 sm:p-14 px-5 justify-between py-8 lg:px-24 flex flex-col lg:flex-row items-center gap-7 lg:gap-10 relative z-10"
       >
 
         {/* ══════════ LEFT TEXT SIDE ══════════ */}
@@ -44,8 +44,8 @@ export default function CEOMessage() {
         >
         
             {/* Outer ring */}
-            <div className="absolute sm:bottom-0 bottom-12 right-0 w-[270px] h-[270px] sm:w-[380px] sm:h-[380px] md:w-[500px] md:h-[500px] rounded-full border-[3px] border-white/70 !z-[3] bg-gradient-to-b from-orange-200 via-red-400 to-rose-200 "/>
-             <Image
+            <div className="absolute bottom-0 right-3  sm:right-0 w-[360px] h-[360px] sm:w-[390px] sm:h-[390px] md:w-[500px] md:h-[500px] rounded-full border-[3px] border-white/70 !z-[3] bg-gradient-to-b from-orange-200 via-red-400 to-rose-200 "/>
+             {/* <Image
                 src={bal1}
                 alt="Why choose us"
                 
@@ -57,7 +57,7 @@ export default function CEOMessage() {
                 alt="Why choose us"
               
                 className="absolute z-[6] object-contain sm:h-60 h-44  w-auto top-[30%] -left-8"
-              />
+              /> */}
                           <div className="absolute top-3 right-0 w-[90px] h-[90px] sm:w-[130px] sm:h-[130px] md:w-[200px] md:h-[200px] rounded-full border-[3px] border-white/70 shadow-sm shadow-black/50 z-[1] bg-gradient-to-b from-indigo-400  to-blue-200 "/>
 
                   <Image
@@ -79,20 +79,20 @@ export default function CEOMessage() {
         {/* ══════════ RIGHT IMAGE SIDE ══════════ */}
       <motion.div
   variants={fadeIn("right", "tween", 0.2, 0.9)}
-  className="w-full lg:w-[46%] space-y-7"
+  className="w-full lg:w-[46%] space-y-4 sm:space-y-7"
 >
   {/* ── Label pill ── */}
  
 
   {/* ── Heading ── */}
-  <h2 className="font-extrabold text-color1 text-3xl sm:text-4xl md:text-5xl !leading-[1.35]">
+  <h2 className="font-bold text-color1 text-2xl sm:text-4xl md:text-5xl !leading-[1.35]">
    We Design{" "}
     <span className="text-color2">Memorable Travel{" "}</span>
     Experiences Worldwide 
   </h2>
 
    {/* ── Para ── */}
-  <p className="text-gray-600 md:text-lg leading-relaxed">
+  <p className="text-gray-600 text-sm md:text-lg leading-relaxed">
    Holidays by Value ADZ is a results-driven travel-planning and experience company specializing in crafting seamless domestic and international journeys. We focus on delivering personalized itineraries, curated stays, and unforgettable experiences that match every traveler’s style. From luxury holidays to budget-friendly trips, our goal is to make travel simple, smooth, and truly memorable.
 
   </p>
@@ -103,7 +103,7 @@ export default function CEOMessage() {
       “We started with one simple belief — travel should be easy, trustworthy, and memorable for every traveler.”
 
     </p>
-    <p className="text-color1 text-xl font-black text-right mr-5 font1 tracking-widest !mt-3">
+    <p className="text-color1 text-lg sm:text-xl font-black text-right mr-5 font1 tracking-widest !mt-3">
       — Jonathan A. Mercer, <span className="text-color2 font-medium block text-xs">Founder & CEO</span>
     </p>
   </div>

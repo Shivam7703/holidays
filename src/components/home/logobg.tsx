@@ -142,7 +142,7 @@ export default function Logotext() {
         className='w-full h-full min-h-[40vh] object-cover'
       />
 
-      <div className='text-center absolute z-10 bottom-[15%] left-0 w-full'>
+      <div className='text-center absolute z-10 bottom-[18%] left-0 w-full'>
         <div
           ref={textWrapRef}
           className='text-wrap-3d inline-block'

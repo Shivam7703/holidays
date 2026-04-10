@@ -11,7 +11,7 @@ export default function Countryslider({ data, uniqueId }: any) {
   return (
     <>
       <div className="relative px-4 md:px-10">
-        <Swiper className="max-sm:w-[80vw]"
+        <Swiper className="max-sm:w-[75vw]"
           slidesPerView={1}
           spaceBetween={20}
           loop={true}
@@ -32,7 +32,7 @@ export default function Countryslider({ data, uniqueId }: any) {
   <div className="group my-8 relative bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-[0_32px_64px_rgba(0,179,136,0.18)] hover:-translate-y-3 transition-all duration-500 border border-gray-100">
 
     {/* ── IMAGE ── */}
-    <div className="relative h-60 overflow-hidden">
+    <div className="relative sm:h-60 h-44 overflow-hidden">
       <Image
         src={card.img}
         alt={card.heading}
@@ -45,8 +45,8 @@ export default function Countryslider({ data, uniqueId }: any) {
       <div className="absolute inset-0 bg-gradient-to-br from-color2/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
       {/* Category pill — top left */}
-      <span className="absolute top-4 left-4 bg-color2 text-white text-[10px] font-black uppercase tracking-[0.2em] px-3.5 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
-        <span className="w-1.5 h-1.5 bg-white rounded-full animate-pulse" />
+      <span className="absolute top-4 left-4 bg-color2 text-white text-[6px] sm:text-[10px] font-black uppercase tracking-[0.2em] sm:px-3 p-1  rounded-full shadow-lg flex items-center gap-1.5">
+        <span className="w-1.5 h-1.5 max-sm:hidden bg-white rounded-full animate-pulse" />
         {card.category}
       </span>
 
@@ -74,21 +74,21 @@ export default function Countryslider({ data, uniqueId }: any) {
     </div>
 
     {/* ── CONTENT ── */}
-    <div className="px-5 pt-6 pb-6 space-y-4">
+    <div className="px-5 pt-6 pb-6 space-y-2 sm:space-y-4">
 
       {/* Title + location */}
       <div>
-        <h3 className="text-zinc-900  font-bold text-xl leading-snug group-hover:text-color1 transition-colors duration-300 ">
+        <h3 className="text-zinc-900  font-bold text-lg leading-snug group-hover:text-color1 transition-colors duration-300 ">
           {card.heading}
         </h3>
-       <div className="flex items-center gap-1 ">
-          <span className="text-amber-400 text-xl">★★★★★</span>
-          <span className="text-zinc-700   text-xl font-bold ml-0.5">4.9</span>
+       <div className="flex items-center gap-1 sm:text-xl text-base">
+          <span className="text-amber-400 ">★★★★★</span>
+          <span className="text-zinc-700 font-bold ml-0.5">4.9</span>
         </div>
       </div>
 
       {/* Description */}
-      <p className="text-gray-900  leading-relaxed">
+      <p className="text-gray-900 max-sm:text-sm leading-relaxed">
         {card.text}
       </p>
 
@@ -98,7 +98,7 @@ export default function Countryslider({ data, uniqueId }: any) {
           {card.points?.slice(0, 4).map((p: string, i: number) => (
             <div key={i} className="flex items-center gap-2 border shadow-md rounded-xl p-3">
               
-              <p className="text-sm  text-color1 font-semibold truncate">{p}</p>
+              <p className="sm:text-sm text-xs text-color1 font-semibold truncate">{p}</p>
             </div>
           ))}
         </div>
@@ -125,15 +125,15 @@ export default function Countryslider({ data, uniqueId }: any) {
       {/* ── CTA row ── */}
       <div className="flex items-center gap-3">
         {/* Enquire ghost button */}
-        <button className="flex-1 flex items-center justify-center gap-1.5 px-4 py-3 rounded-xl border-2 border-color2/30 text-color2 text-xs font-black uppercase tracking-widest hover:border-color2 hover:bg-color2/5 transition-all duration-300">
+        <button className="flex-1 flex items-center justify-center gap-1.5 sm:px-4 sm:py-3 p-2 rounded-xl border-2 border-color2/30 text-color2 sm:text-xs text-[8px] font-black uppercase tracking-widest hover:border-color2 hover:bg-color2/5 transition-all duration-300">
           Enquire
         </button>
 
         {/* View Package solid button */}
         <Link
           href={card.link}
-          className="flex-[2] flex items-center justify-center gap-2 px-5 py-3 rounded-xl
-            bg-color2 text-white text-xs font-black uppercase tracking-widest
+          className="flex-[2] flex items-center justify-center gap-2 sm:px-4 sm:py-3 p-2 rounded-xl
+            bg-color2 text-white sm:text-xs text-[8px] font-black uppercase tracking-widest
             hover:bg-color1 transition-all duration-300
             shadow-lg shadow-color2/25 hover:shadow-color1/30 hover:gap-3"
         >

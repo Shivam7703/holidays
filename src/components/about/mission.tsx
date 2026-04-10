@@ -29,19 +29,13 @@ export default function Advertise() {
       },
     ];
   return (
-    <section className="w-full  bg-white p-6 md:p-12 lg:px-24">
+    <section className="w-full  bg-white py-6 px-3 md:p-12 lg:px-24">
        
        <div className="w-full rounded-2xl md:p-10 p-6 bg-blue-50  relative overflow-hidden shadow-sm">
     <Image src={footerImage} alt='bag' className='absolute bottom-0 right-0 z-[1] opacity-80 w-full h-full object-cover ' />
 
 
-  {/* Top row */}
-  <div className="relative z-10 flex items-start justify-between mb-2">
-      
-    
-    
-  </div> 
-  <h2 className="text-3xl md:text-4xl lg:text-5xl mb-6 text-center font-bold text-color1 leading-snug ">
+  <h2 className="text-2xl md:text-4xl lg:text-5xl mb-6 text-center font-bold text-color1 leading-snug ">
 Our Mission &{" "} <span className='text-color2'>Vision</span>      </h2>
 <div className='mt-2 mx-auto h-px w-80 bg-gradient-to-r from-color2/30 via-color2/90 to-color2/30'/>
   {/* Points */}
@@ -66,11 +60,11 @@ Our Mission &{" "} <span className='text-color2'>Vision</span>      </h2>
 
         {/* Text */}
         <div>
-          <h3 className="text-gray-800 font-bold text-2xl leading-snug mb-3
+          <h3 className="text-gray-800 font-bold sm:text-2xl text-lg leading-snug mb-1 sm:mb-3
             group-hover:text-color1 transition-colors duration-200">
             {item.heading}
           </h3>
-          <p className="text-gray-700 sm:text-lg text-semibold leading-relaxed">
+          <p className="text-gray-700 sm:text-lg  text-sm leading-relaxed">
             {item.text}
           </p>
         </div>

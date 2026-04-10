@@ -131,7 +131,7 @@ const Header = ({ header }: any) => {
               animate="show"
               exit={{ x: "-100%", transition: { duration: 0.3 } }}
               className={`fixed top-20 left-0 h-screen w-full md:hidden ${
-                isAtTop ? "bg-black" : "bg-white"
+                isAtTop ? "bg-color1" : "bg-white"
               }`}
             >
               <MenuMobile

@@ -74,7 +74,7 @@ export default function Destination() {
           className=" md:w-[57%] w-full  px-4 select-none  pointer-events-none"
         >
           <p
-            className="font-black text-6xl mt-4 md:text-8xl font1 leading-none text-color2"
+            className="font-black text-5xl mt-4 md:text-8xl font1 leading-none text-color2"
           >
             TOP{" "} <span
             className="text-white"

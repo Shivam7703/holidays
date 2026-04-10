@@ -12,7 +12,7 @@ function CountDown({ data }: any) {
   return (
     <section
       ref={ref}
-      className="relative w-full pb-10 shadow-lg shadow-black/30 bg-white p-6 md:px-12 lg:px-20"
+      className="relative w-full sm:pb-12 shadow-lg shadow-black/30 bg-white px-6 pb-6 md:px-12 lg:px-20"
     >
       <motion.div
         variants={staggerContainer(0.15, 0.1)}

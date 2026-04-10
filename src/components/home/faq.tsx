@@ -46,7 +46,7 @@ export default function FaqSection() {
         className="md:w-[47%] w-full  space-y-6"
       >
         
-        <h2 className="text-color1 font-bold text-xl md:text-5xl leading-tight">
+        <h2 className="text-color1 font-bold text-2xl md:text-5xl leading-tight">
           {data?.title2}
           <span className="text-color2">
             {data?.title3}

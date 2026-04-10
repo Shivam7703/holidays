@@ -8,7 +8,7 @@ import { motion } from 'motion/react'
 import { footerImage, process1 } from '@/assets';
 export default function Advertise() {
   return (
-    <section className="w-full  bg-white flex-wrap flex items-stretch justify-between gap-y-7  sm:pb-9 p-6 md:px-12 lg:px-24">
+    <section className="w-full  bg-white flex-wrap flex items-stretch justify-between gap-y-7 pb-6 p-3 md:p-12 lg:px-24">
         {advertise?.ads?.map((item:any,index:number)=>(
             <div key={index} className="relative w-full md:w-[48%] rounded-lg overflow-hidden shadow-lg shadow-black/50">
                 <Image src={item} alt={`Advertise ${index + 1}`} className="w-full h-full object-contain" />
@@ -34,12 +34,13 @@ export default function Advertise() {
     >
       View All →
     </Link>
-  </div> <h2 className="text-xl md:text-4xl font-bold text-color1 leading-snug max-w-lg">
+  </div> 
+  <h2 className="text-xl md:text-4xl font-bold text-color1 leading-snug max-w-2xl">
         {advertise?.title}
       </h2>
 
   {/* Points */}
-  <div className="relative z-10 flex flex-wrap gap-y-3 mt-6">
+  <div className="relative z-10 flex flex-wrap gap-y-3 mt-3 sm:mt-8">
     {advertise?.points?.map((item: any, index: number) => (
       <motion.div
         key={index}
@@ -60,7 +61,7 @@ export default function Advertise() {
 
         {/* Text */}
         <div>
-          <h3 className="text-gray-800 font-semibold sm:text-xl text-lg leading-snug mb-0.5
+          <h3 className="text-gray-800 font-semibold sm:text-xl text-base leading-snug mb-0.5
             group-hover:text-color1 transition-colors duration-200">
             {item.heading}
           </h3>

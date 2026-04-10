@@ -41,7 +41,7 @@ export default function Package() {
        
       {/* Header */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 pt-9 pb-20 md:pt-12 md:pb-24">
-        <h2 className="text-color1 font-bold text-xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto">
+        <h2 className="text-color1 font-bold text-2xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto">
           {data?.title2}{" "}
           <span className="text-color2">{data?.title3}</span>
         </h2>
@@ -52,7 +52,7 @@ export default function Package() {
             <button
               key={item}
               onClick={() => setCat(item)}
-              className={`sm:px-6 sm:py-2 px-2 py-1 sm:text-base text-xs rounded-full  font-medium transition-all duration-300
+              className={`sm:px-6 sm:py-2 px-3 py-1 sm:text-base text-sm rounded-full  font-medium transition-all duration-300
                 ${
                   cat === item
                     ? "bg-color2 text-white"

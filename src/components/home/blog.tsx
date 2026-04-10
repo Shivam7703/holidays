@@ -26,22 +26,22 @@ export default function Blogs({ isHome }: any) {
 
       {/* ── HEADER — left title + right button ── */}
       {isHome && (
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10 relative z-10 max-w-7xl mx-auto">
+        <div className="flex flex-wrap flex-row items-end justify-between gap-4 mb-10 relative z-10 max-w-7xl mx-auto">
           {/* Left */}
-          <div className="space-y-3 max-w-xl">
+          <div className="sm:space-y-3 space-y-1 max-w-xl">
             {data?.title1 && (
-              <span className="block text-color1 font-bold uppercase text-xs tracking-[0.25em]">
+              <span className="block  text-color1 font-bold uppercase max-sm:hidden text-xs tracking-[0.25em]">
                 {data.title1}
               </span>
             )}
-            <h2 className="text-color1 font-bold leading-tight text-xl md:text-4xl lg:text-5xl">
+            <h2 className="text-color1 font-bold leading-tight text-2xl md:text-4xl lg:text-5xl">
               Explore{" "}
               <span className="text-color2">Latest News</span>
             </h2>
           </div>
 
           {/* Right — See More button */}
-          <div className="shrink-0">
+          <div className="">
             <Buttonmain href="/blogs" text1="See More Articles" text2="View All Blogs" />
           </div>
         </div>
@@ -49,19 +49,19 @@ export default function Blogs({ isHome }: any) {
 
       {/* ── GRID ── */}
       <div
-        className={`grid lg:grid-cols-3 grid-cols-2 gap-7 max-w-7xl mx-auto relative z-10`}
+        className={`grid lg:grid-cols-3 grid-cols-2 gap-y-6 gap-3 max-w-7xl mx-auto relative z-10`}
       >
-        {(isHome ? data?.blog?.slice(0, 3) : data?.blog)?.map(
+        {(isHome ? data?.blog?.slice(0, 4) : data?.blog)?.map(
           (blogs: any, index: number) => (
             <Link
               key={index}
               href={`/blogs/${encodeURIComponent(
                 blogs.heading.toLowerCase().replace(/\s+/g, "-")
               )}`}
-              className="group block bg-color2 relative rounded-md sm:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 pb-4 "
+              className="group block bg-color2 relative rounded-md sm:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 sm:pb-4 pb-1"
             >
               {/* ── IMAGE — top 58% ── */}
-              <div className="relative h-32 sm:h-60 overflow-hidden rounded-3xl">
+              <div className="relative h-32 sm:h-60 overflow-hidden rounded-md sm:rounded-3xl">
                 <Image
                   src={blogs?.img ?? box3}
                   alt={blogs.heading}
@@ -75,11 +75,11 @@ export default function Blogs({ isHome }: any) {
 
                 {/* Date badge — top right */}
                 {blogs?.date && (
-                  <div className="absolute top-4 right-4 bg-white text-color1 text-center sm:p-3 p-1.5 rounded-xl shadow-lg min-w-[52px] group-hover:rounded-full duration-1000 border border-gray-100">
-                    <p className="sm:text-xl text-lg font-black leading-none text-color1">
+                  <div className="absolute top-4 right-4 bg-white text-color1 text-center sm:p-3 p-1 rounded-xl shadow-lg min-w-[52px] group-hover:rounded-full duration-1000 border border-gray-100">
+                    <p className="sm:text-xl text-base font-black leading-none text-color1">
                       {blogs.date.split(" ")[0]}
                     </p>
-                    <p className="text-[10px] uppercase tracking-wider font-bold text-color2 mt-0.5">
+                    <p className="sm:text-[10px] text-[6px] uppercase tracking-wider font-bold text-color2 mt-0.5">
                       {blogs.date.split(" ")[1]}
                     </p>
                   </div>
@@ -87,11 +87,11 @@ export default function Blogs({ isHome }: any) {
               </div>
 
               {/* ── WHITE CONTENT BOX — overlaps image slightly ── */}
-              <div className="relative -mt-5 mx-3 bg-white sm:rounded-2xl rounded-md sm:p-6 p-3 space-y-3 shadow-sm border border-gray-100/80 z-10">
+              <div className="relative -mt-5 sm:mx-3 mx-1 bg-white sm:rounded-2xl rounded-md sm:p-6 p-3 sm:space-y-3 shadow-sm border border-gray-100/80 z-10">
 
                 {/* Tag */}
                 {blogs?.tag && (
-                  <span className="text-amber-500 text-xs font-bold uppercase tracking-wider">
+                  <span className="text-amber-500 text-[8px] sm:text-xs font-bold uppercase tracking-wider">
                     {blogs.tag}
                   </span>
                 )}

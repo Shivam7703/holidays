@@ -31,7 +31,7 @@ export default Buttonmain;
 export const Button = ({ text11, text12 }: any) => {
   return (
     <div
-      className="group relative flex items-center gap-3 p-2 sm:px-7 sm:py-3.5 rounded-full
+      className="group relative flex items-center gap-3 py-2 px-4 sm:px-7 sm:py-3.5 rounded-full
       font-bold text-xs sm:text-sm tracking-widest uppercase overflow-hidden cursor-pointer
       transition-all duration-500 hover:-translate-y-[2px]
       bg-color1 hover:bg-color2 text-white

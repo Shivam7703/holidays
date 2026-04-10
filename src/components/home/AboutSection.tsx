@@ -22,14 +22,14 @@ export default function AboutSection({ data }: any) {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          className="flex-1 order-2 lg:order-1 lg:px-24 md:w-[48%] w-full md:p-20 sm:p-14 p-6"
+          className="flex-1 order-2 lg:order-1 lg:px-24 md:w-[48%] w-full md:p-20 sm:p-14 p-6 max-sm:pb-0"
         >
          
 
           {/* Heading */}
           <motion.h2
             variants={textVariant({ delay: 0.2 })}
-            className="text-xl md:text-4xl xl:text-5xl font-bold text-color1 !leading-snug mb-5"
+            className="text-2xl md:text-4xl xl:text-5xl font-bold text-color1 !leading-snug mb-5"
           >
             {data?.title2}{" "}
             <span className="text-color2">{data?.title3}</span>
@@ -46,7 +46,7 @@ export default function AboutSection({ data }: any) {
           )}
 
           {/* Pointers */}
-<div className="gap-y-4 mb-10 flex flex-wrap justify-between">
+<div className="gap-y-4 sm:mb-10 mb-4 flex flex-wrap justify-between">
   {data?.pointer?.map((item: any, index: number) => (
     <motion.div
       key={item?.id}

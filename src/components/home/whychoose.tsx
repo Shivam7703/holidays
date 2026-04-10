@@ -49,7 +49,7 @@ export default function WhychooseSection() {
           </span>
 
           {/* Heading */}
-          <h2 className="font-bold text-color1 text-xl sm:text-4xl md:text-5xl leading-[1.15]">
+          <h2 className="font-bold text-color1 text-2xl sm:text-4xl md:text-5xl leading-[1.15]">
             Creating Seamless{" "}
             <span className="text-color2">Travel Experiences</span>{" "}You Can Always Trust
           </h2>
@@ -86,7 +86,7 @@ export default function WhychooseSection() {
                   </div>
                   <div>
                     <h4 className="text-color1 font-bold text-sm md:text-base">{f.title}</h4>
-                    <p className="text-gray-500 text-xs md:text-sm leading-relaxed mt-0.5">{f.desc}</p>
+                    <p className="text-gray-500 text-sm leading-relaxed mt-0.5">{f.desc}</p>
                   </div>
                 </motion.div>
               ))}

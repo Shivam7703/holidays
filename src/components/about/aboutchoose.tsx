@@ -131,7 +131,7 @@ export default function Aboutchoose() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.2 }}
-      className="w-full xl:px-32 lg:px-24 md:px-16 sm:px-10 px-6 py-16 md:py-20 overflow-hidden relative"
+      className="w-full xl:px-32 lg:px-24 md:px-16 sm:p-10 p-6 md:py-20 overflow-hidden relative"
     >
      
 
@@ -139,16 +139,16 @@ export default function Aboutchoose() {
         {/* ── LEFT CONTENT ── */}
         <motion.div
           variants={fadeIn("right", "tween", 0.2, 1)}
-          className="md:w-1/2 w-full space-y-6"
+          className="md:w-1/2 w-full space-y-4 sm:space-y-6"
         >
           {/* Heading */}
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-color1 leading-tight">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-color1 leading-tight">
             Your Trustpoint, GoFly Best for{" "}
             <span className="text-color2">Travel Agency.</span>
           </h2>
 
           {/* Description */}
-          <p className="text-gray-800 font1 md:text-lg text-base leading-relaxed ">
+          <p className="text-gray-800 font1 md:text-lg text-sm leading-relaxed ">
             At GoFly Travel Agency, we are passionate about creating exceptional travel experiences.{" "}
             <strong className="text-black font-semibold">
               Whether you&apos;re looking for a relaxing beach vacation, an adventurous trek, a luxurious getaway, or a cultural expedition.
@@ -231,7 +231,7 @@ export default function Aboutchoose() {
 <div className="w-full">
           {/* Trustpilot bar */}
           <div className="flex w-max mx-auto items-center gap-2 pt-2">
-            <span className="text-gray-700 font-semibold text-sm">Excellent!</span>
+            <span className="text-gray-700 font-semibold sm:text-sm text-xs">Excellent!</span>
             <div className="flex gap-0.5">
               {[...Array(5)].map((_, i) => (
                 <svg key={i} className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
@@ -239,7 +239,7 @@ export default function Aboutchoose() {
                 </svg>
               ))}
             </div>
-            <span className="text-gray-500 text-xs">
+            <span className="text-gray-500 sm:text-sm text-[8px]">
               5.0 Rating out of 5.0 based on{" "}
               <span className="underline text-gray-700 cursor-pointer">24K+ reviews</span>
             </span>
