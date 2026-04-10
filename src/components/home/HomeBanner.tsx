@@ -6,14 +6,14 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { FaSearch, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { banner,  bannerImage, box3 } from "@/assets";
+import { banner,  bannerImage, box2 } from "@/assets";
 import { textVariant, fadeIn, zoomIn, staggerContainer } from "@/utils/motion";
 
 export default function HomeBanner() {
 const slidercontent = [{img:banner,
   title: "Making Every Journey Worth It",
 },
-{img:box3,
+{img:box2,
  title: "Plane Best That Suit Your Needs",
 },]
 

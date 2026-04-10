@@ -216,23 +216,6 @@ function Right() {
         className="w-px h-6 bg-gray-300"
       />
 
-      {/* ── CART ── */}
-      <motion.div
-        variants={fadeIn("down", "tween", 0.85, 0.4)}
-        whileHover={{ scale: 1.15 }}
-        whileTap={{ scale: 0.9 }}
-      >
-        <Link
-          href="/cart"
-          className="relative text-color1 hover:text-color2 transition-colors duration-200 text-lg block"
-        >
-          <FaShoppingCart />
-          <span className="absolute -top-2 -right-2 w-[16px] h-[16px] rounded-full bg-[#5B9B2A] text-white text-[9px] font-medium flex items-center justify-center">
-            {cartCount}
-          </span>
-        </Link>
-      </motion.div>
-
     </motion.div>
   );
 }
