@@ -58,13 +58,13 @@ export default function CEOMessage() {
               
                 className="absolute z-[6] object-contain sm:h-60 h-44  w-auto top-[30%] -left-8"
               /> */}
-                          <div className="absolute top-3 right-0 w-[90px] h-[90px] sm:w-[130px] sm:h-[130px] md:w-[200px] md:h-[200px] rounded-full border-[3px] border-white/70 shadow-sm shadow-black/50 z-[1] bg-gradient-to-b from-indigo-400  to-blue-200 "/>
+                          {/* <div className="absolute top-3 right-0 w-[90px] h-[90px] sm:w-[130px] sm:h-[130px] md:w-[200px] md:h-[200px] rounded-full border-[3px] border-white/70 shadow-sm shadow-black/50 z-[1] bg-gradient-to-b from-indigo-400  to-blue-200 "/>
 
                   <Image
                 src={plane}
                 alt="Why choose us"
                 className="absolute z-[8] object-contain sm:h-28 w-auto h-14 top-8 right-0"
-              />
+              /> */}
 
               <Image
                 src={ceo}
