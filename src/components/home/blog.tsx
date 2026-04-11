@@ -49,7 +49,7 @@ export default function Blogs({ isHome }: any) {
 
       {/* ── GRID ── */}
       <div
-        className={`grid lg:grid-cols-3 grid-cols-2 gap-y-6 gap-3 max-w-7xl mx-auto relative z-10`}
+        className={`grid lg:grid-cols-4 grid-cols-2 gap-y-6 gap-3 max-w-7xl mx-auto relative z-10`}
       >
         {(isHome ? data?.blog?.slice(0, 4) : data?.blog)?.map(
           (blogs: any, index: number) => (

@@ -11,19 +11,19 @@ const contactInfo = [
   {
     icon: FiPhone,
     label: "Contact Us",
-    value: "+1 123 456 7890",
+    value: "+91 9818929900",
     color: "bg-[#0d6e6e]",
   },
   {
     icon: FiMail,
     label: "Send us a Mail",
-    value: "email@domain.com",
+    value: "info@holidaysbyvalueadz.com",
     color: "bg-[#c084a0]",
   },
   {
     icon: HiOutlineLocationMarker,
     label: "Address",
-    value: "785 15h Street, Office 478\nBerlin, De 81566",
+    value: "807, Bhandari House, Nehru Place,\n New Delhi, Delhi 110019",
     color: "bg-[#0d6e6e]",
   },
 ];
@@ -128,12 +128,12 @@ function Form() {
               <p className="mt-4 text-3xl font-bold italic text-gray-800">
                 Let's{" "}
                 <span className="text-amber-400 font-extrabold not-italic">Talk</span>{" "}
-                About You !
+                About Your Plan !
               </p>
             </div>
 
             {/* Traveler image */}
-            <div className="relative w-40 sm:w-52 h-72 sm:h-80 ">
+            <div className="relative w-40 sm:w-52 max-sm:hidden sm:h-80 ">
               <Image
                 src={man2}
                 alt="Traveler"

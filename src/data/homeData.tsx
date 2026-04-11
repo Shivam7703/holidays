@@ -9,16 +9,20 @@ import {
   ad1,
   ad2,
   banner,
+  cl2,
+  cl3,
+  cl4,
 } from "@/assets";
-import { FaMapLocationDot } from "react-icons/fa6";
-import { IoSearch } from "react-icons/io5";
-import { MdAttachEmail, MdWifiCalling3 } from "react-icons/md";
+import { FaBookmark, FaMapLocationDot, FaUserCheck } from "react-icons/fa6";
+import { IoAirplane, IoSearch } from "react-icons/io5";
+import { MdAttachEmail, MdOutlineMoreTime, MdOutlineSupportAgent, MdWifiCalling3 } from "react-icons/md";
 import { RiUserFollowLine } from "react-icons/ri";
 
 import { FaUsers, FaGlobe } from "react-icons/fa";
 import { MdVerified } from "react-icons/md";
 import { BiTime } from "react-icons/bi";
 import { AiFillCar } from "react-icons/ai";
+import { SiAdguard } from "react-icons/si";
 
 
 
@@ -306,19 +310,22 @@ export const aboutdata = {
       id: 2,
       heading: "Customer Satisfaction",
       text: "Focused on creating memorable journeys, comfort, and experiences that you’ll truly enjoy.",
-      icon: <RiUserFollowLine />,
+      icon: <FaUserCheck />
+,
     },
     {
       id: 3,
       heading: "Reliability",
       text: "On-time bookings, dependable support, and well-planned trips you can count on every time.",
-      icon: <IoSearch />,
+      icon: <MdOutlineMoreTime />
+,
     },
     {
       id: 4,
       heading: "Personalized Experience",
       text: "Trips tailored to your preferences, ensuring every journey feels just right for you.",
-      icon: <RiUserFollowLine />,
+      icon: <SiAdguard />
+,
     },
   ],
 };
@@ -328,19 +335,21 @@ export const advertise = {
   ads: [ad1, ad2],
   points: [
     {
-      icon: <AiFillCar />,
+      icon: <FaBookmark />,
       heading: "Quick & Easy Booking",
       text:
         "Plan and book your entire trip in just a few simple steps—fast and convenient.",
     },
     {
-      icon: <AiFillCar />,
+      icon: <IoAirplane />
+,
       heading: "Stress-Free Travel",
       text:
         "Leave the planning to us while you enjoy a smooth and relaxed journey.",
     },
     {
-      icon: <AiFillCar />,
+      icon: <MdOutlineSupportAgent />
+,
       heading: "All-in-One Travel Support",
       text:
         "From flights to stays and tours, everything you need is handled in one place.",
@@ -515,17 +524,17 @@ export const testimonialData = {
   {
     title: "Priya Mehta",
     text: "We had a wonderful experience in Dubai with great sightseeing and luxury stays. Holidays by Value ADZ planned everything perfectly, from transfers to activities, making our trip smooth, comfortable, and memorable.",
-    img: cl1,
+    img: cl3,
   },
   {
     title: "Amit Verma",
     text: "Our Himachal trip was peaceful and refreshing with beautiful views and comfortable stays. Thanks to Holidays by Value ADZ, all arrangements were seamless, and we enjoyed every destination without any confusion.",
-    img: cl1,
+    img: cl2,
   },
   {
     title: "Neha Kapoor",
     text: "Japan was an unforgettable experience with perfect planning and great support. Holidays by Value ADZ managed everything efficiently, from hotels to transport, helping us explore comfortably and enjoy every moment.",
-    img: cl1,
+    img: cl4,
   },
 ],
 };

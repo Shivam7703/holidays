@@ -11,7 +11,7 @@ import {
 import { AiFillInstagram } from "react-icons/ai";
 import { FaXTwitter, FaEnvelope } from "react-icons/fa6";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
-import { logo, patta, patta2 } from "@/assets";
+import { logo } from "@/assets";
 
 export default function Footer({ footer }: any) {
   return (
@@ -118,7 +118,7 @@ export default function Footer({ footer }: any) {
           <div className="space-y-4">
             {/* Phone */}
 
-            <a href="tel:0679513203" className="flex items-start gap-3 group">
+            <a href="tel:+919818929900" className="flex items-start gap-3 group">
               <div className="w-9 h-9 rounded-full bg-color2/10 border border-color2/20 flex items-center justify-center shrink-0 group-hover:bg-color2 transition-all duration-300">
                 <FaPhone className="text-color2 text-xs group-hover:text-white transition-colors duration-300" />
               </div>
@@ -127,7 +127,7 @@ export default function Footer({ footer }: any) {
                   Phone
                 </p>
                 <p className="text-gray-700 font1 font-medium">
-                  0679513203, 0677066361
+                 +91 9818929900
                 </p>
               </div>
             </a>
@@ -135,7 +135,7 @@ export default function Footer({ footer }: any) {
             {/* Email */}
 
             <a
-              href="mailto:info@valueadzcoreoverseas.com"
+              href="mailto:info@holidaysbyvalueadz.com"
               className="flex items-start gap-3 group"
             >
               <div className="w-9 h-9 rounded-full bg-amber-100 border border-amber-200 flex items-center justify-center shrink-0 group-hover:bg-amber-400 transition-all duration-300">
@@ -146,7 +146,7 @@ export default function Footer({ footer }: any) {
                   Email
                 </p>
                 <p className="text-gray-700 font1 font-medium break-all">
-                  info@valueadzcoreoverseas.com
+info@holidaysbyvalueadz.com
                 </p>
               </div>
             </a>
@@ -161,8 +161,7 @@ export default function Footer({ footer }: any) {
                   Address
                 </p>
                 <p className="text-gray-700 font1 leading-relaxed">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
-                  voluptate.
+                807, Bhandari House, Nehru Place, New Delhi, Delhi 110019
                 </p>
               </div>
             </div>
@@ -170,7 +169,7 @@ export default function Footer({ footer }: any) {
         </div>
       </div>
 
-      {/* ── Building silhouette strip ── */}
+      {/* ── Building silhouette strip ──
       {patta && (
         <div className="relative z-10 w-full overflow-hidden mt-4 leading-none">
           <div className="flex ">
@@ -183,14 +182,12 @@ export default function Footer({ footer }: any) {
             ))}
           </div>
         </div>
-      )}
+      )} */}
 
-      {/* ── Divider ── */}
-      <div className="relative z-10 mx-6 sm:mx-10 lg:mx-20 h-px bg-gradient-to-r from-transparent via-color2/30 to-transparent" />
 
       {/* ── Copyright bar ── */}
-      <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-3 px-6 sm:px-10 lg:px-20 py-5">
-        <p className="text-gray-500 text-xs font1 sm:font1 text-center sm:text-left">
+      <div className="relative z-10 flex bg-color1 flex-col sm:flex-row items-center justify-between gap-3 px-6 sm:px-10 lg:px-20 py-5">
+        <p className="text-gray-100 text-xs font1 sm:font1 text-center sm:text-left">
           {footer?.copyrightText ?? "© 2026 All rights reserved."}{" "}
           <a
             href="https://skywarddigitalsolutions.com"
@@ -201,7 +198,7 @@ export default function Footer({ footer }: any) {
         </p>
 
         {/* mini nav */}
-        <div className="flex items-center gap-4 text-xs text-gray-500">
+        <div className="flex items-center gap-4 text-xs text-gray-100">
           {["Privacy Policy", "Terms of Use"].map((t, i) => (
             <Link
               key={i}

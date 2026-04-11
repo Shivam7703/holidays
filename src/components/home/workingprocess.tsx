@@ -92,7 +92,7 @@ function TimelineRow({ item, i }: { item: any; i: number }) {
     >
       {/* ── Center node ── */}
       <motion.div
-        className="hidden lg:flex absolute left-[46.6%] -translate-x-1/2 flex-col items-center z-20"
+        className="hidden lg:flex absolute left-[46.5%] -translate-x-1/2 flex-col items-center z-20"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}

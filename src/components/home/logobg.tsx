@@ -1,64 +1,72 @@
 'use client'
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import Image from 'next/image'
 import { logobg } from '@/assets'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
-const letters = "Holidays".split("")
+const words = ["Holidays", "By ValueAdz"]
 
-const containerVariant = {
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren: 0.08,
-      delayChildren: 0.2,
-    },
-  },
+// Confetti particle type
+type Particle = {
+  id: number
+  x: number
+  y: number
+  color: string
+  rotate: number
+  scale: number
 }
 
-const letterVariant = {
-  hidden: {
-    y: -60,
-    opacity: 0,
-    rotateX: -90,
-    scale: 0.8,
-  },
-  show: {
-    y: 0,
-    opacity: 1,
-    rotateX: 0,
-    scale: 1,
-    transition: {
-      type: "spring",
-      duration: 1.2,
-      stiffness: 120,
-      damping: 14,
-    },
-  },
+const colors = ['#ffe066', '#ffaa00', '#ff6a00', '#fff8e7', '#c43d00', '#ffcc44', '#ff4500']
+
+function generateParticles(count: number): Particle[] {
+  return Array.from({ length: count }, (_, i) => ({
+    id: i,
+    x: Math.random() * 100,
+    y: Math.random() * 100,
+    color: colors[Math.floor(Math.random() * colors.length)],
+    rotate: Math.random() * 360,
+    scale: Math.random() * 0.8 + 0.3,
+  }))
 }
 
 export default function Logotext() {
   const wrapRef = useRef<HTMLDivElement>(null)
   const textWrapRef = useRef<HTMLDivElement>(null)
-  const lettersRef = useRef<(HTMLSpanElement | null)[]>([])
+  const [wordIndex, setWordIndex] = useState(0)
+  const [phase, setPhase] = useState<'confetti' | 'word' | 'exit'>('confetti')
 
+  // Phase cycle: confetti → word → exit → next word
+  useEffect(() => {
+    let timer: ReturnType<typeof setTimeout>
+
+    if (phase === 'confetti') {
+      timer = setTimeout(() => setPhase('word'), 900)       // confetti 900ms
+    } else if (phase === 'word') {
+      timer = setTimeout(() => setPhase('exit'), 5000)      // word visible 2.2s
+    } else if (phase === 'exit') {
+      timer = setTimeout(() => {
+        setWordIndex(prev => (prev + 1) % words.length)
+        setPhase('confetti')
+      }, 900)                                                 // exit 900ms → next word
+    } 
+
+    return () => clearTimeout(timer)
+  }, [phase])
+
+  // Mouse 3D effect
   useEffect(() => {
     const wrap = wrapRef.current
     if (!wrap) return
-
     let current = { x: 0, y: 0 }
     let target = { x: 0, y: 0 }
     let rafId: number
-
     const onMove = (e: MouseEvent) => {
       const rect = wrap.getBoundingClientRect()
       target.x = (e.clientX - rect.left - rect.width / 2) / (rect.width / 2)
       target.y = (e.clientY - rect.top - rect.height / 2) / (rect.height / 2)
     }
     const onLeave = () => { target = { x: 0, y: 0 } }
-
     const lerp = (a: number, b: number, t: number) => a + (b - a) * t
-
     const tick = () => {
       current.x = lerp(current.x, target.x, 0.06)
       current.y = lerp(current.y, target.y, 0.06)
@@ -72,7 +80,6 @@ export default function Logotext() {
       rafId = requestAnimationFrame(tick)
     }
     rafId = requestAnimationFrame(tick)
-
     wrap.addEventListener('mousemove', onMove)
     wrap.addEventListener('mouseleave', onLeave)
     return () => {
@@ -82,58 +89,43 @@ export default function Logotext() {
     }
   }, [])
 
+  const letters = words[wordIndex].split("")
+
   return (
     <div ref={wrapRef} className='w-full h-full relative'>
-
       <style>{`
-       
         @keyframes glow-pulse {
           0%, 100% {
-            filter:
-              drop-shadow(1px 1px 0px rgba(160,50,0,0.8))
-              drop-shadow(3px 3px 0px rgba(100,20,0,0.55))
-              drop-shadow(5px 5px 6px rgba(0,0,0,0.35));
+                    transform:scale(1);
+
+            
           }
           50% {
           transform:scale(1.06);
-            filter:
-              drop-shadow(1px 1px 0px rgba(180,60,0,0.9))
-              drop-shadow(3px 3px 0px rgba(120,25,0,0.65))
-              drop-shadow(5px 5px 6px rgba(0,0,0,0.4))
-              drop-shadow(0 0 22px rgba(255,170,50,0.65))
-              drop-shadow(0 0 50px rgba(255,100,0,0.3));
+            
           }
         }
-        .text-wrap-3d {
-          perspective: 700px;
-          perspective-origin: center center;
-          transition: transform 0.15s ease-out;
-          transform-style: preserve-3d;
+       
+        .letter-clip {
+          display: inline-block;
+          overflow: hidden;
+          line-height: 1.1;
         }
         .letter-span {
           display: inline-block;
           background: linear-gradient(
             175deg,
-            #fff8e7 0%,
-            #ffe066 12%,
-            #ffaa00 25%,
-            #ff6a00 40%,
-            #c43d00 55%,
-            #ff6a00 68%,
-            #ffaa00 80%,
-            #ffe066 90%,
-            #fff8e7 100%
+            #fff8e7 0%, #ffe066 12%, #ffaa00 25%,
+            #ff6a00 40%, #c43d00 55%, #ff6a00 68%,
+            #ffaa00 80%, #ffe066 90%, #fff8e7 100%
           );
           background-size: 300% auto;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
-          transform-style: preserve-3d;
           cursor: default;
-           animation: glow-pulse 2s ease-in-out infinite;
-
+          animation: glow-pulse 2s ease-in-out infinite;
         }
-      
       `}</style>
 
       <Image
@@ -142,37 +134,43 @@ export default function Logotext() {
         className='w-full h-full min-h-[40vh] object-cover'
       />
 
-      <div className='text-center absolute z-10 bottom-[18%] left-0 w-full'>
-        <div
-          ref={textWrapRef}
-          className='text-wrap-3d inline-block'
-        >
-          <motion.h2
-            variants={containerVariant}
-            initial="hidden"
-            animate="show"
-            className='uppercase md:text-[170px] text-6xl font-black tracking-wider select-none flex'
-            style={{ display: 'flex' }}
-          >
-            {letters.map((letter, i) => (
-              <motion.span
-                key={i}
-                ref={el => { lettersRef.current[i] = el }}
-                variants={letterVariant}
-                className='letter-span'
-                style={{
-                  animationDelay: `${i * 1.2}s`,
-                }}
-               
-              >
-                {letter}
-              </motion.span>
-            ))}
-          </motion.h2>
-       
+      <div className='text-center absolute z-10 bottom-[18%] left-0 w-full overflow-hidden'>
+        <div ref={textWrapRef} className='text-wrap-3d inline-block relative'>
+
+          <AnimatePresence mode="wait">
+            <motion.h2
+              key={wordIndex}
+              className='uppercase md:text-[150px] text-5xl font-black tracking-wider select-none flex justify-center flex-wrap relative'
+            >
+             
+
+              {/* ✅ Letters — ek ek karke slide up */}
+              {(phase === 'word' || phase === 'exit') && letters.map((letter, i) => (
+                <span key={i} className="letter-clip">
+                  <motion.span
+                    className='letter-span'
+                    initial={{ y: 80, opacity: 0, filter: 'blur(12px)' }}
+                    animate={
+                      phase === 'word'
+                        ? { y: 0, opacity: 1, filter: 'blur(0px)' }
+                        : { y: 0, opacity: 0, filter: 'blur(16px)' }   // ✅ blur hoke gayab
+                    }
+                    transition={{
+                      delay: phase === 'word' ? i * 0.1 : i * 0.08,
+                      duration: 0.8,
+                      ease: 'easeOut',
+                    }}
+                    style={{ animationDelay: `${i * 1}s` }}
+                  >
+                    {letter === ' ' ? '\u00A0' : letter}
+                  </motion.span>
+                </span>
+              ))}
+            </motion.h2>
+          </AnimatePresence>
+
         </div>
       </div>
-
     </div>
   )
 }

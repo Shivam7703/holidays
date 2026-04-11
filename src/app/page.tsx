@@ -13,6 +13,7 @@ import WorkProcess from "@/components/home/workingprocess";
 import Gallery from "@/components/home/gallery";
 import Package from "@/components/home/package";
 import Logotext from "@/components/home/logobg";
+import Youtubevdo from "@/components/home/youtube";
 
 export default function Home() {
   return (
@@ -28,7 +29,9 @@ export default function Home() {
 
 <WorkProcess/>
 <Gallery/>
+
 <WhychooseSection/>
+<Youtubevdo/>
 <FaqSection/>
 <Blogs isHome={true} />
 

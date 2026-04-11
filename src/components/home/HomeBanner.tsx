@@ -8,6 +8,7 @@ import { FaSearch, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { banner,  bannerImage, box2 } from "@/assets";
 import { textVariant, fadeIn, zoomIn, staggerContainer } from "@/utils/motion";
+import Link from "next/link";
 
 export default function HomeBanner() {
 const slidercontent = [{img:banner,
@@ -107,14 +108,14 @@ Handpicked destinations, smooth planning & journeys you’ll truly enjoy
           className="flex flex-wrap items-center justify-center gap-2 mt-4"
         >
           <span className="text-white/80 text-xs">Popular:</span>
-          {["Rajasthan", "Kerala", "Goa", "Himachal", "Kashmir", "Ladakh"].map((tag, i) => (
+          {["Jaipur", "Kerala", "Goa", "Dubai", "Kashmir", "Ladakh"].map((tag, i) => (
             <motion.button
               key={tag}
               variants={fadeIn("up", "tween", 1 + i * 0.08, 0.4)}
               onClick={() => setDestination(tag)}
               className="text-xs text-white/80 border border-white/60 hover:border-color2 hover:text-color2 px-3 py-1 rounded-full transition-all duration-200"
             >
-              {tag}
+             <Link href={`/destinations/${tag.toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-")}`}>{tag}</Link> 
             </motion.button>
           ))}
         </motion.div>

@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/free-mode";
-import { andman, banner, box3, china, darjeeling, dubai, goa, himanchal, hong, japan, kashmir, kerala, thailand, turkey } from "@/assets";
+import { andman, banner, box3, china, darjeeling, dubai, goa, himanchal, hong, japan, kashmir, kerala, sikkim, thailand, turkey } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,7 +14,7 @@ const destinations = [
   { name: "Kashmir", tours: kashmir },
   { name: "Kerala", tours: kerala },
   { name: "Turkey", tours: turkey },
-  { name: "Andaman & Nicobar", tours: andman },
+  { name: "Sikkim", tours: sikkim },
   { name: "Darjeeling", tours: darjeeling },
   { name: "Dubai", tours: dubai },
   { name: "Thailand", tours: thailand },

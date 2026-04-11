@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant, staggerContainer } from "@/utils/motion";
-import { cl1, cl2,  man } from "@/assets"; // apne assets use karo
+import { cl1, cl2,  cl3,  man } from "@/assets"; // apne assets use karo
 import Destslider from "./destslider";
 
 export default function Destination() {
@@ -47,7 +47,7 @@ export default function Destination() {
           >
             {/* Stacked cls */}
             <div className="flex -space-x-3">
-              {[cl1, cl2, cl1].map((src, i) => (
+              {[cl1, cl2, cl3].map((src, i) => (
                 <div
                   key={i}
                   className="w-12 h-12 rounded-full border border-color2 overflow-hidden relative"

@@ -68,7 +68,7 @@ export default function Countryslider({ data, uniqueId }: any) {
     </div>
 
     {/* ── FLOATING PRICE CARD — overlaps image ── */}
-    <div className="absolute top-44 right-5 z-20 bg-white rounded-2xl sm:p-4 p-2 shadow-xl border border-color2/15 text-center min-w-[70px]">
+    <div className="absolute top-28 md:top-44 right-5 z-20 bg-white rounded-2xl sm:p-4 p-2 shadow-xl border border-color2/15 text-center min-w-[70px]">
       <p className="text-color2 font-black text-base sm:text-xl leading-none">{card.price}</p>
       <p className="text-gray-400 text-[9px] uppercase tracking-wider font-bold mt-0.5">per person</p>
     </div>

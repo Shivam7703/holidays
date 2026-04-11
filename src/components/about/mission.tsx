@@ -6,23 +6,28 @@ import { fadeIn } from '@/utils/motion'
 import { motion } from 'motion/react'
 import { footerImage, process1 } from '@/assets';
 import { AiFillCar } from 'react-icons/ai';
+import { FaEye } from 'react-icons/fa6';
+import { PiStepsFill } from 'react-icons/pi';
+import { TbTargetArrow } from 'react-icons/tb';
 
 export default function Advertise() {
  const  points = [
       {
-        icon: <AiFillCar />,
+        icon: <TbTargetArrow />,
         heading: "Our Mission",
         text:
           "To make travel simple, affordable, and memorable by offering well-planned holiday experiences with seamless booking, transparent pricing, and personalized support for every traveler.",
       },
       {
-        icon: <AiFillCar />,
+        icon: <FaEye />
+,
         heading: "Our Vision",
         text:
           "To become a trusted travel partner known for delivering value-driven holidays, creating unforgettable journeys, and making global travel accessible to everyone.",
       },
       {
-        icon: <AiFillCar />,
+        icon: <PiStepsFill />
+,
         heading: "Our Values",
         text:
           "We believe in honesty, customer satisfaction, and quality service. Our focus is on delivering real value, building long-term relationships, and ensuring every trip is smooth, safe, and truly enjoyable.",

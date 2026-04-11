@@ -126,27 +126,27 @@ testimonials: [
   {
     title: "Rahul Sharma",
     text: "Our Goa trip was perfectly planned! From hotel stay to beach activities, everything was smooth and well-managed. Highly recommended for hassle-free travel.",
-    img: cl1,
+    
   },
   {
     title: "Priya Verma",
     text: "Amazing service and great itinerary! We explored multiple destinations without feeling rushed. The team really understands what travelers need.",
-    img: cl1,
+    
   },
   {
     title: "Amit Gupta",
     text: "Booked our honeymoon through them, and it was unforgettable. Beautiful hotels, perfect timing, and excellent support throughout the trip.",
-    img: cl1,
+    
   },
   {
     title: "Neha Singh",
     text: "Very professional team! They handled everything from flights to local sightseeing. We just enjoyed our vacation without any stress.",
-    img: cl1,
+    
   },
   {
     title: "Vikram Patel",
     text: "One of the best travel experiences we’ve had. Great coordination, friendly support, and well-curated plans for every destination we visited.",
-    img: cl1,
+    
   }
 ],
 whychoose:[{

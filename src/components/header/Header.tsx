@@ -97,7 +97,7 @@ const Header = ({ header }: any) => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className={`flex md:hidden items-center justify-between px-4 h-20 transition ${
+          className={`flex md:hidden items-center justify-between overflow-y-auto px-4 h-20 transition ${
             isAtTop ? "bg-color1" : "bg-white shadow-md"
           }`}
         >
@@ -196,11 +196,11 @@ function Right() {
         className=""
       >
         <a
-          href="tel:+911234567890"
+          href="tel:+919818929900"
           className="flex items-center gap-2 text-color1 hover:text-color2 transition-colors duration-200"
         >
           <FaPhone className="text-lg" />
-          <span className="text-base">+91 12345 67890</span>
+          <span className="text-base">+91 9818929900</span>
         </a>
       
       </motion.div>
@@ -215,11 +215,11 @@ function Right() {
         className=""
       >
       
-        <a  href="mailto:hello@example.com"
+        <a  href="mailto:info@holidaysbyvalueadz.com"
           className="flex items-center gap-2 text-color1 hover:text-color2 transition-colors duration-200"
         >
           <FaEnvelope className="text-lg" />
-          <span className="text-base">hello@example.com</span>
+          <span className="text-base">info@holidaysbyvalueadz.com</span>
         </a>
       </motion.div>
     </motion.div>
