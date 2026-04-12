@@ -97,8 +97,8 @@ const Header = ({ header }: any) => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className={`flex md:hidden items-center justify-between overflow-y-auto px-4 h-20 transition ${
-            isAtTop ? "bg-color1" : "bg-white shadow-md"
+          className={`flex md:hidden items-center justify-between px-4 h-20 transition ${
+            isAtTop ? "bg-color2" : "bg-white shadow-md"
           }`}
         >
           <Link href={header?.href || "/"}>
@@ -130,8 +130,8 @@ const Header = ({ header }: any) => {
               initial="hidden"
               animate="show"
               exit={{ x: "-100%", transition: { duration: 0.3 } }}
-              className={`fixed top-20 left-0 h-screen w-full md:hidden ${
-                isAtTop ? "bg-color1" : "bg-white"
+              className={`fixed top-20 left-0 h-screen overflow-y-scroll overflow-x-hidden w-full md:hidden ${
+                isAtTop ? "bg-color2" : "bg-white"
               }`}
             >
               <MenuMobile

@@ -45,26 +45,23 @@ export default function CEOMessage() {
         
             {/* Outer ring */}
             <div className="absolute bottom-0 right-3  sm:right-0 w-[360px] h-[360px] sm:w-[390px] sm:h-[390px] md:w-[500px] md:h-[500px] rounded-full border-[3px] border-white/70 !z-[3] bg-gradient-to-b from-orange-200 via-red-400 to-rose-200 "/>
-             {/* <Image
+                {/* <Image
                 src={bal1}
                 alt="Why choose us"
-                
                 className="absolute z-[4] animate-y object-contain sm:h-44 h-24 top-[8%] left-2 w-auto"
-              />
+                />
              
                 <Image
                 src={cloud1}
                 alt="Why choose us"
-              
                 className="absolute z-[6] object-contain sm:h-60 h-44  w-auto top-[30%] -left-8"
-              /> */}
-                          {/* <div className="absolute top-3 right-0 w-[90px] h-[90px] sm:w-[130px] sm:h-[130px] md:w-[200px] md:h-[200px] rounded-full border-[3px] border-white/70 shadow-sm shadow-black/50 z-[1] bg-gradient-to-b from-indigo-400  to-blue-200 "/>
-
+                 /> */}
+                  {/* <div className="absolute top-3 right-0 w-[90px] h-[90px] sm:w-[130px] sm:h-[130px] md:w-[200px] md:h-[200px] rounded-full border-[3px] border-white/70 shadow-sm shadow-black/50 z-[1] bg-gradient-to-b from-indigo-400  to-blue-200 "/>
                   <Image
-                src={plane}
-                alt="Why choose us"
-                className="absolute z-[8] object-contain sm:h-28 w-auto h-14 top-8 right-0"
-              /> */}
+                  src={plane}
+                  alt="Why choose us"
+                  className="absolute z-[8] object-contain sm:h-28 w-auto h-14 top-8 right-0"
+                  /> */}
 
               <Image
                 src={ceo}

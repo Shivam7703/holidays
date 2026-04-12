@@ -10,7 +10,7 @@ export default function Destination() {
         para: "Our most loved destinations are carefully selected to offer unforgettable travel experiences. From scenic mountains and peaceful beaches to vibrant cities and cultural hotspots, each place is chosen to match every traveler’s dream. Enjoy seamless planning, comfortable stays, and unique experiences that make every journey special. Whether you're looking for relaxation, adventure, or cultural charm, we bring you destinations that truly stand out and create lasting memories."
     }
   return (
-    <section className="w-full overflow-hidden  py-10 bg-white p-0 md:px-12 lg:px-20">
+    <section className="w-full overflow-hidden py-6  sm:py-10 bg-white p-0 md:px-12 lg:px-20">
      
 <div className="bg-color1 overflow-hidden md:rounded-3xl relative ">
       <div className="relative z-10 flex flex-wrap justify-between  items-center  p-6 py-8 sm:py-14">

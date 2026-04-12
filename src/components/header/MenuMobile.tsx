@@ -63,7 +63,7 @@ const MenuMobile: React.FC<MenuMobileProps> = ({
       const isOpen = openMenus[level] === id;
       const hasChildren = !!children?.length;
       const padding = ["px-4", "px-8", "px-12"][level - 1] || "px-4";
-      const hoverText = onTop ? "hover:text-color2" : "hover:text-color1";
+      const hoverText = onTop ? "hover:text-color1" : "hover:text-color2";
       const textColor =
         activeItem === item.href
           ? "text-color1"
