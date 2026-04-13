@@ -2,6 +2,10 @@ import logo from "@/assets/logo.png";
 import logo2 from "@/assets/logo-white.png";
 import box2 from "@/assets/home/box2.webp";
 import box3 from "@/assets/home/box3.webp";
+import bl1 from "@/assets/home/bl1.jpg";
+import bl2 from "@/assets/home/bl2.jpg";
+import bl4 from "@/assets/home/bl4.jpg";
+
 import ad1 from "@/assets/home/ad1.webp";
 import ad2 from "@/assets/home/ad2.webp";
 import rope from "@/assets/home/rope.png";
@@ -372,7 +376,7 @@ import japan9 from "@/assets/destination/japan9.webp";
 
 
 
-export {logobg, bannerImage,secImage,ad1,ad2,pro1,pro2,pro3,pro4,choose, bal1, bal2, cloud1, cloud2,cloud3,
+export {logobg, bannerImage,secImage,ad1,ad2,pro1,pro2,pro3,pro4,choose, bal1, bal2, cloud1, cloud2,cloud3,bl1,bl2,bl4,
     logo , logo2, banner, box2, box3,process1,aboutb,about,cl1,cl2,cl3,cl4,footerImage, plane, patta,patta2, man2,
     ceo,man, l1,l2,l3,l4,l5,l6,l7,l8,l9,l10,l11,l12,l13,rope,rope2,
   andman,  andman1, andman2, andman3, andman4, andman5, andman6, andman7, andman8, andman9,

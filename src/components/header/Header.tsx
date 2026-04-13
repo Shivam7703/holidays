@@ -130,7 +130,7 @@ const Header = ({ header }: any) => {
               initial="hidden"
               animate="show"
               exit={{ x: "-100%", transition: { duration: 0.3 } }}
-              className={`fixed top-20 left-0 h-screen overflow-y-scroll overflow-x-hidden w-full md:hidden ${
+              className={`fixed top-20 left-0 h-screen pb-16 overflow-y-scroll overflow-x-hidden w-full md:hidden ${
                 isAtTop ? "bg-color2" : "bg-white"
               }`}
             >

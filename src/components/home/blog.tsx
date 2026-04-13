@@ -56,15 +56,15 @@ export default function Blogs({ isHome }: any) {
             <Link
               key={index}
               href={`/blogs/${encodeURIComponent(
-                blogs.heading.toLowerCase().replace(/\s+/g, "-")
+                blogs.title.toLowerCase().replace(/\s+/g, "-")
               )}`}
               className="group block bg-color2 relative rounded-md sm:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 sm:pb-4 pb-1"
             >
               {/* ── IMAGE — top 58% ── */}
               <div className="relative h-32 sm:h-60 overflow-hidden rounded-md sm:rounded-3xl">
                 <Image
-                  src={blogs?.img ?? box3}
-                  alt={blogs.heading}
+                  src={blogs?.img || box3}
+                  alt={blogs.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-600"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -98,7 +98,7 @@ export default function Blogs({ isHome }: any) {
 
                 {/* Title */}
                 <h2 className="text-zinc-600 font-bold text-base sm:text-xl leading-snug line-clamp-2 group-hover:text-color1 transition-colors duration-300">
-                  {blogs.heading}
+                  {blogs.title}
                 </h2>
 
                 {/* Description — optional */}

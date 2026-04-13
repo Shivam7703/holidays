@@ -24,7 +24,7 @@ const createSlug = (title: string): string => {
 export function generateStaticParams() {
   const blogsData = blogData.blog;
   return blogsData.map((blog: any) => ({
-    slug: createSlug(blog.heading),
+    slug: createSlug(blog.title),
   }));
 }
 
@@ -32,7 +32,7 @@ export default function BlogPage({ params }: PageProps) {
   const decodedSlug = createSlug(decodeURIComponent(params.slug));
   const blogsData = blogData.blog;
   const singleBlog = blogsData.find(
-    (blog: any) => createSlug(blog.heading) === decodedSlug
+    (blog: any) => createSlug(blog.title) === decodedSlug
   );
 
   if (!singleBlog) {
@@ -42,9 +42,9 @@ export default function BlogPage({ params }: PageProps) {
   return (
     <main>
       <Banner
-        title={singleBlog.heading}
+        title={singleBlog.title}
        
-        slug={`blogs/${createSlug(singleBlog.heading)}`}
+        slug={`blogs/${createSlug(singleBlog.title)}`}
       />
       <Blogdetails data={singleBlog} />
     </main>
