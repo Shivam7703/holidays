@@ -88,6 +88,23 @@ export const navigationMenu = {
             label: "Rishikesh",
             href: "/destinations/rishikesh",
           },
+          {
+            id: 13,
+            label: "Golden Triangle",
+            href: "/destinations/golden-triangle",
+          },{
+            id: 14,
+            label: "Manali",
+            href: "/destinations/manali",
+          },{
+            id: 15,
+            label: "Mysore-Ooty",
+            href: "/destinations/mysore-ooty",
+          },{
+            id: 16,
+            label: "Jim Corbett & Nainital",
+            href: "/destinations/jim-corbett-nainital",
+          }
         ],
       },
       {
