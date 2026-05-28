@@ -372,8 +372,49 @@ import japan7 from "@/assets/destination/japan7.webp";
 import japan8 from "@/assets/destination/japan8.webp";
 import japan9 from "@/assets/destination/japan9.webp";
 
+import gt from "@/assets/destination/gt.webp";
+import gt1 from "@/assets/destination/gt1.webp";
+import gt2 from "@/assets/destination/gt2.webp";
+import gt3 from "@/assets/destination/gt3.webp";
+import gt4 from "@/assets/destination/gt4.webp";
+import gt5 from "@/assets/destination/gt5.webp";
+import gt6 from "@/assets/destination/gt6.webp";
+import gt7 from "@/assets/destination/gt7.webp";
+import gt8 from "@/assets/destination/gt8.webp";
+import gt9 from "@/assets/destination/gt9.webp";
 
+import manali from "@/assets/destination/manali.webp";
+import manali1 from "@/assets/destination/manali1.webp";
+import manali2 from "@/assets/destination/manali2.webp";
+import manali3 from "@/assets/destination/manali3.webp";
+import manali4 from "@/assets/destination/manali4.webp";
+import manali5 from "@/assets/destination/manali5.webp";
+import manali6 from "@/assets/destination/manali6.webp";
+import manali7 from "@/assets/destination/manali7.webp";
+import manali8 from "@/assets/destination/manali8.webp";
+import manali9 from "@/assets/destination/manali9.webp";
 
+import mo from "@/assets/destination/mo.webp";
+import mo1 from "@/assets/destination/mo1.webp";
+import mo2 from "@/assets/destination/mo2.webp";
+import mo3 from "@/assets/destination/mo3.webp";
+import mo4 from "@/assets/destination/mo4.webp";
+import mo5 from "@/assets/destination/mo5.webp";
+import mo6 from "@/assets/destination/mo6.webp";
+import mo7 from "@/assets/destination/mo7.webp";
+import mo8 from "@/assets/destination/mo8.webp";
+import mo9 from "@/assets/destination/mo9.webp";
+
+import jcn from "@/assets/destination/jim-corbett-nainital.webp";
+import jcn1 from "@/assets/destination/jcn1.webp";
+import jcn2 from "@/assets/destination/jcn2.webp";
+import jcn3 from "@/assets/destination/jcn3.webp";
+import jcn4 from "@/assets/destination/jcn4.webp";
+import jcn5 from "@/assets/destination/jcn5.webp";
+import jcn6 from "@/assets/destination/jcn6.webp";
+import jcn7 from "@/assets/destination/jcn7.webp";
+import jcn8 from "@/assets/destination/jcn8.webp";
+import jcn9 from "@/assets/destination/jcn9.webp";
 
 
 export {logobg, bannerImage,secImage,ad1,ad2,pro1,pro2,pro3,pro4,choose, bal1, bal2, cloud1, cloud2,cloud3,bl1,bl2,bl4,
@@ -405,5 +446,47 @@ export {logobg, bannerImage,secImage,ad1,ad2,pro1,pro2,pro3,pro4,choose, bal1, b
    azerbaijan, azerbaijan1, azerbaijan2, azerbaijan3, azerbaijan4, azerbaijan5, azerbaijan6, azerbaijan7, azerbaijan8, azerbaijan9,
    bhutan, bhutan1, bhutan2, bhutan3, bhutan4, bhutan5, bhutan6, bhutan7, bhutan8, bhutan9,
    russia, russia1, russia2, russia3, russia4, russia5, russia6, russia7, russia8, russia9,
-   japan, japan1, japan2, japan3, japan4, japan5, japan6, japan7, japan8, japan9
+   japan, japan1, japan2, japan3, japan4, japan5, japan6, japan7, japan8, japan9,  gt,
+  gt1,
+  gt2,
+  gt3,
+  gt4,
+  gt5,
+  gt6,
+  gt7,
+  gt8,
+  gt9,
+
+  manali,
+  manali1,
+  manali2,
+  manali3,
+  manali4,
+  manali5,
+  manali6,
+  manali7,
+  manali8,
+  manali9,
+
+  mo,
+  mo1,
+  mo2,
+  mo3,
+  mo4,
+  mo5,
+  mo6,
+  mo7,
+  mo8,
+  mo9,
+
+  jcn,
+  jcn1,
+  jcn2,
+  jcn3,
+  jcn4,
+  jcn5,
+  jcn6,
+  jcn7,
+  jcn8,
+  jcn9,
  }

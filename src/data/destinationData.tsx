@@ -30,9 +30,53 @@ import {  cl1,  andman1, andman2, andman3, andman4, andman5, andman6, andman7, a
      azerbaijan, azerbaijan1, azerbaijan2, azerbaijan3, azerbaijan4, azerbaijan5, azerbaijan6, azerbaijan7, azerbaijan8, azerbaijan9,
      bhutan, bhutan1, bhutan2, bhutan3, bhutan4, bhutan5, bhutan6, bhutan7, bhutan8, bhutan9,
      russia, russia1, russia2, russia3, russia4, russia5, russia6, russia7, russia8, russia9,
-     japan, japan1, japan2, japan3, japan4, japan5, japan6, japan7, japan8, japan9} from "@/assets";
+     japan, japan1, japan2, japan3, japan4, japan5, japan6, japan7, japan8, japan9,
+     gt,
+     gt1,
+     gt2,
+     gt3,
+     gt4,
+     gt5,
+     gt6,
+     gt7,
+     gt8,
+     gt9,
+     jcn,
+     jcn1,
+     jcn2,
+     jcn3,
+     jcn4,
+     jcn5,
+     jcn6,
+     jcn7,
+     jcn8,
+     jcn9,
+     manali,
+     manali1,
+     manali2,
+     manali3,
+     manali4,
+     manali5,
+     manali6,
+     manali7,
+     manali8,
+     manali9,
+     mo,
+     mo1,
+     mo2,
+     mo3,
+     mo4,
+     mo5,
+     mo6,
+     mo7,
+     mo8,
+     mo9} from "@/assets";
+import destination from "@/components/home/destination";
+import { on } from "events";
+import { a } from "motion/react-client";
 
 export const Destinationdata = [
+    // goa
     {
    img:goa,
     title: "Goa",
@@ -287,24 +331,7 @@ description: "Himachal Pradesh is a beautiful hill state in northern India, know
             img: cl1
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 }
 ,
 // Destination 2: Kashmir
@@ -427,26 +454,10 @@ description: "Kashmir, often called Paradise on Earth, is one of the most beauti
             img: cl1
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 }
 ,
+
 // Destination 3: Kerala
 {
     img: kerala,
@@ -567,24 +578,7 @@ description: "Kerala, known as God’s Own Country, is a beautiful state in sout
             img: cl1
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 }
 ,
 // Destination 4: Andaman & Nicobar Islands,
@@ -707,24 +701,7 @@ description: "The Andaman & Nicobar Islands are a tropical paradise in India, kn
             img: cl1
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 }
 ,
 // Destination 5: Sikkim
@@ -847,24 +824,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             img: cl1
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 },
 // Destination 1: Darjeeling
 {
@@ -986,24 +946,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             img: cl1
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 },
 
 // Destination 2: Leh Ladakh
@@ -1126,24 +1069,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             img: cl1
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 },
 
 // Destination 3: Jaipur
@@ -1266,26 +1192,464 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             img: cl1
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 }
 ,
+
+{
+  img: gt,
+  title: "Golden Triangle",
+  heading: "About Golden Triangle",
+  description: "The Golden Triangle is one of India's most popular travel circuits connecting Delhi, Agra, and Jaipur. Known for its rich history, royal architecture, vibrant culture, and iconic landmarks, this journey offers the perfect blend of heritage and unforgettable experiences. From magnificent forts and palaces to bustling markets and historical monuments, the Golden Triangle creates memorable experiences for every traveler.",
+
+  attraction: {
+    heading: "Top Attractions in Golden Triangle",
+    para: "Explore must-see attractions, royal palaces, historic landmarks, cultural experiences, and unforgettable sightseeing destinations.",
+    cards: [
+      {
+        img: gt1,
+        title: "Delhi",
+        description: "Delhi is India's capital city, known for its historical monuments, vibrant markets, modern attractions, and rich cultural heritage."
+      },
+      {
+        img: gt2,
+        title: "India Gate",
+        description: "India Gate is one of Delhi's most famous landmarks and a popular attraction reflecting India's history and pride."
+      },
+      {
+        img: gt3,
+        title: "Qutub Minar",
+        description: "Qutub Minar is a UNESCO World Heritage Site known for its impressive architecture and historical significance."
+      },
+      {
+        img: gt4,
+        title: "Agra",
+        description: "Agra is famous worldwide for its Mughal heritage, beautiful monuments, and timeless architectural wonders."
+      },
+      {
+        img: gt5,
+        title: "Taj Mahal",
+        description: "The Taj Mahal is one of the world's most iconic monuments, known for its beauty, history, and romantic charm."
+      },
+      {
+        img: gt6,
+        title: "Agra Fort",
+        description: "Agra Fort is a magnificent Mughal fortress featuring royal palaces, courtyards, and historical architecture."
+      },
+      {
+        img: gt7,
+        title: "Jaipur",
+        description: "Jaipur, known as the Pink City, is famous for royal palaces, colorful markets, and traditional Rajasthani culture."
+      },
+      {
+        img: gt8,
+        title: "Amber Fort",
+        description: "Amber Fort is a grand hilltop fort known for stunning architecture, royal history, and scenic surroundings."
+      },
+      {
+        img: gt9,
+        title: "Hawa Mahal",
+        description: "Hawa Mahal is Jaipur's iconic palace, famous for its unique windows and beautiful architectural design."
+      }
+    ]
+  },
+
+  topthings: {
+    heading: "Top 6 Things to Do in Golden Triangle",
+    para: "Explore the top 6 exciting things to do on your tour, offering unforgettable cultural experiences and highlights you simply can't miss.",
+    cards: [
+      {
+        title: "Explore Historic Monuments",
+        description: "Discovering forts, palaces, and heritage landmarks offers an unforgettable glimpse into India's rich history."
+      },
+      {
+        title: "Experience Royal Architecture",
+        description: "The Golden Triangle showcases magnificent Mughal and Rajput architecture across famous cities and attractions."
+      },
+      {
+        title: "Visit Traditional Markets",
+        description: "Exploring local bazaars allows travelers to enjoy handicrafts, textiles, jewelry, and authentic cultural experiences."
+      },
+      {
+        title: "Enjoy Local Cuisine",
+        description: "Delhi, Agra, and Jaipur offer delicious traditional dishes and vibrant food experiences for every traveler."
+      },
+      {
+        title: "Capture Iconic Sightseeing Views",
+        description: "From the Taj Mahal to royal forts, every destination offers memorable photography opportunities."
+      },
+      {
+        title: "Experience Cultural Heritage",
+        description: "The Golden Triangle reflects India's traditions, heritage, festivals, and royal lifestyle beautifully."
+      }
+    ]
+  },
+
+  testimonials: [
+    {
+      title: "Happy Customer",
+      text: "Our Golden Triangle tour was filled with amazing historical landmarks, cultural experiences, and unforgettable sightseeing moments. Every hotel stay and travel arrangement was managed perfectly throughout the journey."
+    },
+    {
+      title: "Happy Customer",
+      text: "Visiting Delhi, Agra, and Jaipur was a wonderful experience for our family. The itinerary was comfortable, balanced, and allowed us to enjoy every destination without any rush."
+    },
+    {
+      title: "Happy Customer",
+      text: "The transportation, hotels, and local sightseeing tours were organized professionally from start to finish. We especially loved the royal architecture and cultural atmosphere across all cities."
+    },
+    {
+      title: "Happy Customer",
+      text: "The Golden Triangle offered the perfect combination of history, culture, food, and memorable travel experiences. Every part of the trip felt smooth, relaxing, and completely hassle-free."
+    },
+    {
+      title: "Happy Customer",
+      text: "One of the most enjoyable vacations we've experienced in India. The support team was responsive, professional, and ensured we enjoyed every moment of our Golden Triangle holiday comfortably."
+    }
+  ]
+},
+
+
+
+{
+  img: manali,
+  title: "Manali",
+  heading: "About Manali",
+  description: "Manali is one of India's most loved hill stations, known for snow-covered mountains, scenic valleys, adventure activities, and peaceful natural beauty. Surrounded by the Himalayas, Manali offers the perfect mix of relaxation, adventure, and unforgettable sightseeing experiences. From charming cafes and riverside views to snow adventures and spiritual attractions, Manali creates memorable holidays for every traveler.",
+
+  attraction: {
+    heading: "Top Attractions in Manali",
+    para: "Explore must-see attractions, mountain landscapes, scenic valleys, temples, and unforgettable experiences.",
+    cards: [
+      {
+        img: manali1,
+        title: "Solang Valley",
+        description: "Solang Valley is a popular attraction known for snow activities, adventure sports, and breathtaking Himalayan views."
+      },
+      {
+        img: manali2,
+        title: "Rohtang Pass",
+        description: "Rohtang Pass offers spectacular snow-covered landscapes and unforgettable mountain experiences for travelers and adventure lovers."
+      },
+      {
+        img: manali3,
+        title: "Hadimba Temple",
+        description: "This ancient temple is surrounded by cedar forests and is famous for its peaceful atmosphere and unique architecture."
+      },
+      {
+        img: manali4,
+        title: "Mall Road",
+        description: "Mall Road is Manali's lively shopping and dining area known for local markets, cafes, and souvenirs."
+      },
+      {
+        img: manali5,
+        title: "Manu Temple",
+        description: "Manu Temple is a sacred religious site offering spiritual experiences and beautiful surroundings in Old Manali."
+      },
+      {
+        img: manali6,
+        title: "Old Manali",
+        description: "Old Manali is famous for peaceful cafes, scenic beauty, riverside views, and a relaxing mountain vibe."
+      },
+      {
+        img: manali7,
+        title: "Vashisht Hot Springs",
+        description: "Vashisht is known for natural hot water springs and traditional temples, attracting travelers seeking relaxation."
+      },
+      {
+        img: manali8,
+        title: "Jogini Waterfall",
+        description: "Jogini Waterfall is a beautiful natural attraction offering peaceful trekking experiences and scenic mountain views."
+      },
+      {
+        img: manali9,
+        title: "Beas River",
+        description: "The Beas River adds scenic charm to Manali with beautiful riverside views and adventure activities."
+      }
+    ]
+  },
+
+  topthings: {
+    heading: "Top 6 Things to Do in Manali",
+    para: "Explore the top 6 exciting things to do on your tour, offering unforgettable moments, adventure experiences, and highlights you simply can't miss.",
+    cards: [
+      {
+        title: "Enjoy Snow and Mountain Views",
+        description: "Watching snow-covered Himalayan peaks creates peaceful and unforgettable experiences in Manali."
+      },
+      {
+        title: "Experience Adventure Activities",
+        description: "Paragliding, skiing, river rafting, trekking, and snow adventures make Manali exciting for thrill seekers."
+      },
+      {
+        title: "Relax in Scenic Natural Surroundings",
+        description: "Manali's valleys, rivers, forests, and mountain landscapes offer peaceful escapes and refreshing experiences."
+      },
+      {
+        title: "Explore Local Markets and Cafes",
+        description: "Visiting Mall Road and Old Manali allows travelers to enjoy shopping, cafes, and local culture."
+      },
+      {
+        title: "Visit Temples and Spiritual Sites",
+        description: "Ancient temples in Manali reflect the region's spiritual traditions and cultural beauty."
+      },
+      {
+        title: "Capture Beautiful Himalayan Landscapes",
+        description: "Every corner of Manali offers breathtaking photography opportunities with mountains, rivers, and valleys."
+      }
+    ]
+  },
+
+  testimonials: [
+    {
+      title: "Happy Customer",
+      text: "Our Manali trip was filled with beautiful snow views, adventure activities, and peaceful mountain experiences. Every hotel stay and sightseeing arrangement was managed perfectly throughout the journey."
+    },
+    {
+      title: "Happy Customer",
+      text: "Exploring Solang Valley, Rohtang Pass, and Old Manali was an unforgettable experience for our family. The itinerary was comfortable, relaxing, and perfectly planned."
+    },
+    {
+      title: "Happy Customer",
+      text: "The transportation, hotels, and local tours were organized professionally from start to finish. We especially loved the scenic Himalayan beauty and peaceful atmosphere across Manali."
+    },
+    {
+      title: "Happy Customer",
+      text: "Manali offered the perfect combination of adventure, relaxation, nature, and unforgettable sightseeing experiences. Every part of the trip felt smooth and completely hassle-free."
+    },
+    {
+      title: "Happy Customer",
+      text: "One of the most memorable hill station vacations we've experienced. The support team was responsive, professional, and ensured we enjoyed every moment of our Manali holiday comfortably."
+    }
+  ]
+},
+
+
+{
+  img: mo,
+  title: "Mysore-Ooty",
+  heading: "About Mysore-Ooty",
+  description: "Mysore-Ooty is a perfect travel combination offering royal heritage, scenic hill station beauty, peaceful landscapes, and relaxing experiences. Mysore is known for its grand palaces, cultural charm, and historic attractions, while Ooty offers beautiful tea gardens, cool weather, lakes, and breathtaking mountain views. Together, these destinations create a refreshing and memorable holiday experience for every traveler.",
+
+  attraction: {
+    heading: "Top Attractions in Mysore-Ooty",
+    para: "Explore must-see attractions, royal landmarks, scenic valleys, gardens, lakes, and unforgettable sightseeing experiences.",
+    cards: [
+      {
+        img:mo1,
+        title: "Mysore Palace",
+        description: "Mysore Palace is one of India's most magnificent royal palaces, known for its stunning architecture and rich cultural heritage."
+      },
+      {
+        img:mo2,
+        title: "Chamundi Hills",
+        description: "Chamundi Hills offers panoramic city views and is famous for the sacred Chamundeshwari Temple."
+      },
+      {
+        img:mo3,
+        title: "Brindavan Gardens",
+        description: "Brindavan Gardens is known for beautiful landscapes, musical fountains, and relaxing evening experiences."
+      },
+      {
+        img:mo4,
+        title: "St. Philomena's Church",
+        description: "This iconic church is admired for its grand Gothic architecture and peaceful surroundings."
+      },
+      {
+        img:mo5,
+        title: "Ooty Lake",
+        description: "Ooty Lake is a popular attraction offering boating experiences and scenic natural beauty."
+      },
+      {
+        img:mo6,
+        title: "Botanical Gardens",
+        description: "The Botanical Gardens in Ooty are famous for colorful flowers, lush greenery, and peaceful walking areas."
+      },
+      {
+        img:mo7,
+        title: "Doddabetta Peak",
+        description: "Doddabetta Peak is the highest point in Ooty, offering breathtaking panoramic views of the Nilgiri Hills."
+      },
+      {
+        img:mo8,
+        title: "Tea Gardens",
+        description: "Ooty's tea plantations provide refreshing landscapes and opportunities to experience the region's famous tea culture."
+      },
+      {
+        img:mo9,
+        title: "Nilgiri Mountain Railway",
+        description: "This famous toy train journey offers scenic mountain views and unforgettable travel experiences."
+      }
+    ]
+  },
+
+  topthings: {
+    heading: "Top 6 Things to Do in Mysore-Ooty",
+    para: "Explore the top 6 exciting things to do on your tour, offering unforgettable moments, scenic beauty, and cultural experiences you simply can't miss.",
+    cards: [
+      {
+        title: "Explore Royal Heritage Sites",
+        description: "Visiting Mysore's palaces and historical landmarks offers a glimpse into royal history and cultural traditions."
+      },
+      {
+        title: "Enjoy Scenic Hill Station Views",
+        description: "Ooty's mountains, valleys, and cool weather create peaceful and refreshing holiday experiences."
+      },
+      {
+        title: "Relax Around Lakes and Gardens",
+        description: "Beautiful lakes, botanical gardens, and green surroundings offer relaxing moments for travelers."
+      },
+      {
+        title: "Experience the Famous Toy Train Ride",
+        description: "The Nilgiri Mountain Railway provides breathtaking views and memorable travel experiences through the hills."
+      },
+      {
+        title: "Visit Tea Plantations and Local Markets",
+        description: "Exploring tea gardens and local shopping areas allows travelers to enjoy authentic regional experiences."
+      },
+      {
+        title: "Capture Beautiful Nature and Architecture",
+        description: "From royal palaces to scenic landscapes, Mysore-Ooty offers endless photography opportunities."
+      }
+    ]
+  },
+
+  testimonials: [
+    {
+      title: "Happy Customer",
+      text: "Our Mysore-Ooty trip was filled with beautiful sightseeing, peaceful landscapes, and unforgettable travel experiences. Every hotel stay and local arrangement was managed perfectly throughout the journey."
+    },
+    {
+      title: "Happy Customer",
+      text: "Visiting Mysore Palace, Ooty Lake, and the tea gardens was an amazing experience for our family. The itinerary was comfortable, relaxing, and well-balanced."
+    },
+    {
+      title: "Happy Customer",
+      text: "The transportation, hotels, and sightseeing tours were organized professionally from start to finish. We especially loved the cool weather and scenic beauty across Ooty."
+    },
+    {
+      title: "Happy Customer",
+      text: "Mysore-Ooty offered the perfect combination of culture, nature, relaxation, and memorable sightseeing experiences. Every part of the journey felt smooth and completely hassle-free."
+    },
+    {
+      title: "Happy Customer",
+      text: "One of the most refreshing vacations we've experienced. The support team was responsive, professional, and ensured we enjoyed every moment of our Mysore-Ooty holiday comfortably."
+    }
+  ]
+},
+
+{
+  img: jcn,
+  title: "Jim Corbett & Nainital",
+  heading: "About Jim Corbett & Nainital",
+  description: "Jim Corbett & Nainital offer the perfect combination of wildlife adventure, scenic hill station beauty, peaceful lakes, and relaxing nature experiences. Jim Corbett is famous for jungle safaris and rich wildlife, while Nainital is known for beautiful lakes, mountain views, and pleasant weather. Together, these destinations create a refreshing and unforgettable holiday for families, couples, and nature lovers.",
+
+  attraction: {
+    heading: "Top Attractions in Jim Corbett & Nainital",
+    para: "Explore must-see attractions, scenic lakes, wildlife experiences, hill station beauty, and unforgettable sightseeing destinations.",
+    cards: [
+      {
+        img: jcn1,
+        title: "Jim Corbett National Park",
+        description: "Jim Corbett National Park is India's oldest national park, known for jungle safaris, wildlife experiences, and natural beauty."
+      },
+      {
+        img: jcn2,
+        title: "Jeep Safari",
+        description: "Jeep safaris offer exciting opportunities to explore forests and spot tigers, elephants, deer, and exotic birds."
+      },
+      {
+        img: jcn3,
+        title: "Garjia Temple",
+        description: "Garjia Temple is a famous riverside temple known for its peaceful atmosphere and scenic surroundings."
+      },
+      {
+        img: jcn4,
+        title: "Corbett Waterfall",
+        description: "Corbett Waterfall is a beautiful natural attraction surrounded by lush greenery and relaxing forest views."
+      },
+      {
+        img: jcn5,
+        title: "Naini Lake",
+        description: "Naini Lake is the heart of Nainital and a popular attraction known for boating and scenic mountain surroundings."
+      },
+      {
+        img: jcn6,
+        title: "Naina Devi Temple",
+        description: "This famous temple is an important spiritual site offering peaceful experiences and beautiful lake views."
+      },
+      {
+        img: jcn7,
+        title: "Snow View Point",
+        description: "Snow View Point offers breathtaking panoramic views of the snow-covered Himalayan ranges."
+      },
+      {
+        img: jcn8,
+        title: "Mall Road Nainital",
+        description: "Mall Road is a lively area known for shopping, cafes, local markets, and lakeside views."
+      },
+      {
+        img: jcn9,
+        title: "Eco Cave Gardens",
+        description: "Eco Cave Gardens is a fun attraction featuring natural caves, scenic walking paths, and family-friendly experiences."
+      }
+    ]
+  },
+
+  topthings: {
+    heading: "Top 6 Things to Do in Jim Corbett & Nainital",
+    para: "Explore the top 6 exciting things to do on your tour, offering unforgettable moments, adventure experiences, and highlights you simply can't miss.",
+    cards: [
+      {
+        title: "Enjoy Wildlife Jungle Safaris",
+        description: "Exploring Jim Corbett's forests through jeep safaris creates thrilling and unforgettable wildlife experiences."
+      },
+      {
+        title: "Relax Around Scenic Lakes",
+        description: "Nainital's peaceful lakes and mountain surroundings offer refreshing and relaxing holiday moments."
+      },
+      {
+        title: "Experience Nature and Mountain Views",
+        description: "Beautiful valleys, forests, and Himalayan landscapes provide breathtaking sightseeing experiences."
+      },
+      {
+        title: "Visit Spiritual and Cultural Sites",
+        description: "Temples and local attractions reflect the peaceful atmosphere and cultural beauty of the region."
+      },
+      {
+        title: "Explore Local Markets and Cafes",
+        description: "Mall Road and nearby shopping areas allow travelers to enjoy local culture, food, and shopping experiences."
+      },
+      {
+        title: "Capture Beautiful Wildlife and Landscapes",
+        description: "From jungle safaris to scenic lakes, every destination offers memorable photography opportunities."
+      }
+    ]
+  },
+
+  testimonials: [
+    {
+      title: "Happy Customer",
+      text: "Our Jim Corbett & Nainital trip was filled with exciting safaris, peaceful lakes, and beautiful mountain experiences. Every hotel stay and sightseeing activity was managed perfectly throughout the journey."
+    },
+    {
+      title: "Happy Customer",
+      text: "Exploring Jim Corbett National Park and boating at Naini Lake were unforgettable experiences for our family. The itinerary was comfortable, balanced, and very relaxing."
+    },
+    {
+      title: "Happy Customer",
+      text: "The transportation, hotels, and local tours were organized professionally from start to finish. We especially loved the peaceful weather and scenic natural beauty across both destinations."
+    },
+    {
+      title: "Happy Customer",
+      text: "Jim Corbett & Nainital offered the perfect combination of wildlife adventure, nature, relaxation, and sightseeing experiences. Every part of the journey felt smooth and completely hassle-free."
+    },
+    {
+      title: "Happy Customer",
+      text: "One of the most refreshing vacations we've experienced in Uttarakhand. The support team was responsive and professional, and ensured we enjoyed every moment of our holiday comfortably."
+    }
+  ]
+},
 // Destination 4: Agra
 {
     img: agra,
@@ -1406,24 +1770,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             img: cl1
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 }
 ,
 // Destination 5: Ranthambore
@@ -1546,24 +1893,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             img: cl1
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 },
 
 // Destination 6: Rishikesh
@@ -1686,24 +2016,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             img: cl1
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 },
 
 // Destination 1: Dubai
@@ -1821,24 +2134,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 },
 
 // Destination 2: Thailand
@@ -1956,24 +2252,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 },
 
 // Destination 3: Vietnam
@@ -2091,24 +2370,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 },
 
 // Destination 4: Maldives
@@ -2226,24 +2488,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 },
 
 // Destination 5: Hong Kong
@@ -2361,24 +2606,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 },
 
 // Destination 6: China
@@ -2496,24 +2724,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 },
 
 // Destination 7: Abu Dhabi
@@ -2631,24 +2842,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 },
 // Destination 1: Turkey
 {
@@ -2703,7 +2897,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             {
                 img: turkey9,
                 title: "Mount Ararat",
-                description: "Mount Ararat is the highest peak in Turkey and offers stunning views. It is a great destination for trekking and adventure lovers."
+                description:"Mount Ararat is the highest peak in Turkey and offers stunning views. It is a great destination for trekking and adventure lovers."
             }
         ]
     },
@@ -2765,24 +2959,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 }
 ,
 // Destination 2: Switzerland
@@ -2822,8 +2999,8 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             },
             {
                 img: switzerland6,
-                title: "Montreux",
-                description: "Montreux is a scenic town located on the shores of Lake Geneva. It is known for its beautiful surroundings and cultural attractions."
+                title:"Montreux",
+                description:"Montreux is a scenic town located on the shores of Lake Geneva. It is known for its beautiful surroundings and cultural attractions."
             },
             {
                 img: switzerland7,
@@ -2900,24 +3077,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 },
 
 // Destination 3: Almaty
@@ -3035,24 +3195,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 },
 
 // Destination 4: Georgia
@@ -3170,24 +3313,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 },
 
 // Destination 5: Azerbaijan
@@ -3305,24 +3431,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 },
 
 // Destination 6: Russia
@@ -3337,8 +3446,8 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
         cards: [
             {
                 img: russia1,
-                title: "Moscow (Red Square & Kremlin)",
-                description: "Moscow, the capital city, is known for its iconic Red Square and the Kremlin. These landmarks reflect Russia's political history and stunning architecture, making them must-visit attractions."
+                title:"Moscow (Red Square & Kremlin)",
+                description:"Moscow, the capital city, is known for its iconic Red Square and the Kremlin. These landmarks reflect Russia's political history and stunning architecture, making them must-visit attractions."
             },
             {
                 img: russia2,
@@ -3440,24 +3549,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 },
 
 // Destination 7: Bhutan
@@ -3575,24 +3667,7 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 }
 ,
 // Destination 8: Japan
@@ -3617,8 +3692,8 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             },
             {
                 img: japan3,
-                title: "Mount Fuji",
-                description: "Mount Fuji is Japan's most iconic mountain. It offers stunning views and is a popular destination for sightseeing and photography."
+                title:"Mount Fuji",
+                description:"Mount Fuji is Japan's most iconic mountain. It offers stunning views and is a popular destination for sightseeing and photography."
             },
             {
                 img: japan4,
@@ -3710,23 +3785,6 @@ description: "Sikkim is a small yet stunning state in northeast India, known for
             
         }
     ],
-    whychoose: [
-        {
-            heading: "Customized Packages:",
-            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
-        },
-        {
-            heading: "Expert Local Knowledge:",
-            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
-        },
-        {
-            heading: "Quality Accommodations:",
-            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
-        },
-        {
-            heading: "Seamless Travel Experience:",
-            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
-        }
-    ]
+  
 }
 ]

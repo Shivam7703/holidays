@@ -12,7 +12,24 @@ import DestinationAside from "./destaside";
 import { fadeUp, staggerContainer } from "@/utils/motion";
 import { bal1, bal2 } from "@/assets";
 
-
+const whychoose = [
+        {
+            heading: "Customized Packages:",
+            para: " We offer a variety of Himachal tour packages, including honeymoon specials and adventure trips, tailored to your preferences."
+        },
+        {
+            heading: "Expert Local Knowledge:",
+            para: "Our team possesses in-depth knowledge of the region, ensuring you experience hidden gems along with popular destinations."
+        },
+        {
+            heading: "Quality Accommodations:",
+            para: " Stay in top-rated hotels and resorts that offer comfort, scenic mountain views, and a relaxing environment."
+        },
+        {
+            heading: "Seamless Travel Experience:",
+            para: "From transportation to sightseeing, we handle all arrangements so you can enjoy a stress-free and memorable trip."
+        }
+    ]
 
 export default function Destdetails({ data }: any) {
   return (
@@ -326,7 +343,7 @@ export default function Destdetails({ data }: any) {
 
         {/* ── SIDEBAR ── */}
         <div className="md:w-[30%] w-full md:sticky md:top-32 h-fit space-y-5">
-          <DestinationAside data={data?.whychoose}/>
+          <DestinationAside data={whychoose}/>
         </div>
 
       </div>
