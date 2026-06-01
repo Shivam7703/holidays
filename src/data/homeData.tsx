@@ -186,67 +186,68 @@ export const navigationMenu = {
         label: "Domestic",
         href: "#",
         subNav: [
-          {
-            id: 1,
-            label: "Golden Triangle Tour",
-            href: "/packages/golden-triangle-tour",
-          },
-          {
-            id: 2,
-            label: "Jodhpur – Jaisalmer Tour",
-            href: "/packages/jodhpur-–-jaisalmer-tour",
-          },
+          // {
+          //   id: 1,
+          //   label: "Golden Triangle Tour",
+          //   href: "/packages/golden-triangle-tour",
+          // },
+          // {
+          //   id: 2,
+          //   label: "Jodhpur – Jaisalmer Tour",
+          //   href: "/packages/jodhpur-–-jaisalmer-tour",
+          // },
           {
             id: 3,
             label: "Paradise on Earth – Kashmir Tour",
-            href: "/packages/paradise-on-earth-–-kashmir-tour",
+            href: "/packages/kashmir",
           },
-          {
-            id: 4,
-            label: "The Andaman Tour",
-            href: "/packages/the-andaman-tour",
-          },
-          { id: 5, label: "Goa Tour", href: "/packages/goa-tour" },
-          {
-            id: 6,
-            label: "Ladakh Tour",
-            href: "/packages/ladakh-tour",
-          },
-          {
-            id: 7,
-            label: "South India Temple Tour 5N 6D",
-            href: "/packages/south-india-temple-tour-5n-6d",
-          },
-          {
-            id: 8,
-            label: "Exotic kerala Tour 3N 4D",
-            href: "/packages/exotic-kerala-tour-3n-4d",
-          },
-          {
-            id: 9,
-            label: "Exotic kerala Tour 7N 8D",
-            href: "/packages/exotic-kerala-tour-7n-8d",
-          },
-          {
-            id: 10,
-            label: "Darjeeling Tour",
-            href: "/packages/darjeeling-tour",
-          },
-          {
-            id: 11,
-            label: "Assam Meghalaya Tour",
-            href: "/packages/assam-meghalaya-tour",
-          },
-          {
-            id: 12,
-            label: "Dajeeling Gangtok Tour",
-            href: "/packages/darjeeling-gangtok-tour",
-          },
-          {
-            id: 13,
-            label: "South India Tour",
-            href: "/packages/south-india-tour",
-          },
+          // {
+          //   id: 4,
+          //   label: "The Andaman Tour",
+          //   href: "/packages/the-andaman-tour",
+          // },
+          // { id: 5, label: "Goa Tour", href: "/packages/goa-tour" },
+          // {
+          //   id: 6,
+          //   label: "Ladakh Tour",
+          //   href: "/packages/ladakh-tour",
+          // },
+          // {
+          //   id: 7,
+          //   label: "South India Temple Tour 5N 6D",
+          //   href: "/packages/south-india-temple-tour-5n-6d",
+          // },
+          // {
+          //   id: 8,
+          //   label: "Exotic kerala Tour 3N 4D",
+          //   href: "/packages/exotic-kerala-tour-3n-4d",
+          // },
+          // {
+          //   id: 9,
+          //   label: "Exotic kerala Tour 7N 8D",
+          //   href: "/packages/exotic-kerala-tour-7n-8d",
+          // },
+          // {
+          //   id: 10,
+          //   label: "Darjeeling Tour",
+          //   href: "/packages/darjeeling-tour",
+          // },
+          // {
+          //   id: 11,
+          //   label: "Assam Meghalaya Tour",
+          //   href: "/packages/assam-meghalaya-tour",
+          // },
+          // {
+          //   id: 12,
+          //   label: "Dajeeling Gangtok Tour",
+          //   href: "/packages/darjeeling-gangtok-tour",
+          // },
+          // {
+          //   id: 13,
+          //   label: "South India Tour",
+          //   href: "/packages/south-india-tour",
+          // },
+         
         ],
       },
       {
@@ -257,47 +258,77 @@ export const navigationMenu = {
           {
             id: 1,
             label: "Vietnam Adventure Tour",
-            href: "/packages/vietnam-adventure-tour",
+            href: "/packages/vietnam",
           },
           {
             id: 2,
             label: "Bali Discovery Trip",
-            href: "/packages/bali-discovery-trip",
+            href: "/packages/bali",
           },
-          {
+            {
             id: 3,
-            label: "Best of Turkey",
-            href: "/packages/best-of-turkey",
+            label: "Maldives",
+            href: "/packages/maldives",
           },
+          // {
+          //   id: 3,
+          //   label: "Best of Turkey",
+          //   href: "/packages/best-of-turkey",
+          // },
           {
             id: 4,
             label: "Enchanting Sri Lanka",
-            href: "/packages/enchanting-sri-lanka-tour",
+            href: "/packages/sri-lanka",
           },
-          {
-            id: 5,
-            label: "Greece Tour",
-            href: "/packages/greece-tour",
-          },
-          {
-            id: 6,
-            label: "Mesmerizing Japan",
-            href: "/packages/mesmerizing-japan",
-          },
-          {
-            id: 7,
-            label: "Thailand Tour",
-            href: "/packages/thailand-tour",
-          },
-          {
-            id: 8,
-            label: "Dubai Tour",
-            href: "/packages/dubai-tour",
-          },
-          {
-            id: 9,
-            label: "Singapore Tour",
-            href: "/packages/singapore-tour",
+          // {
+          //   id: 5,
+          //   label: "Greece Tour",
+          //   href: "/packages/greece-tour",
+          // },
+          // {
+          //   id: 6,
+          //   label: "Mesmerizing Japan",
+          //   href: "/packages/mesmerizing-japan",
+          // },
+          // {
+          //   id: 7,
+          //   label: "Thailand Tour",
+          //   href: "/packages/thailand-tour",
+          // },
+          // {
+          //   id: 8,
+          //   label: "Dubai Tour",
+          //   href: "/packages/dubai-tour",
+          // },
+          // {
+          //   id: 9,
+          //   label: "Singapore Tour",
+          //   href: "/packages/singapore-tour",
+          // },
+ {
+            id: 10,
+            label: "Almaty",
+            href: "/packages/almaty",
+          }, {
+            id: 11,
+            label: "Malaysia",
+            href: "/packages/malaysia",
+          }, {
+            id: 12,
+            label: "Baku",
+            href: "/packages/baku",
+          }, {
+            id: 13,
+            label: "Hong Kong",
+            href: "/packages/hong-kong",
+          }, {
+            id: 14,
+            label: "Macau",
+            href: "/packages/macau",
+          }, {
+            id: 15,
+            label: "HONG KONG + ZHUHAI",
+            href: "/packages/hong-kong-zhuhai",
           },
         ],
       },

@@ -63,6 +63,9 @@ import cl2 from "@/assets/home/cl2.jpg";
 
 import cl3 from "@/assets/home/cl3.jpg";
 import cl4 from "@/assets/home/cl4.jpg";
+
+
+
 // destination
 import andman from "@/assets/destination/andman.webp";
 import andman1 from "@/assets/destination/andman1.webp";
@@ -416,8 +419,16 @@ import jcn7 from "@/assets/destination/jcn7.webp";
 import jcn8 from "@/assets/destination/jcn8.webp";
 import jcn9 from "@/assets/destination/jcn9.webp";
 
+// packages
+import malaysia from "@/assets/home/malaysia.jpg";
+import baku from "@/assets/home/baku.webp";
+import srilanka from "@/assets/home/srilanka.jpg";
+import bali from "@/assets/home/bali.jpg";
+import macau from "@/assets/home/macau.jpg";
+import zhuhai from "@/assets/home/zhuhai.jpg";
 
-export {logobg, bannerImage,secImage,ad1,ad2,pro1,pro2,pro3,pro4,choose, bal1, bal2, cloud1, cloud2,cloud3,bl1,bl2,bl4,
+
+export { srilanka,bali, macau, zhuhai, logobg, bannerImage,secImage,ad1,ad2,pro1,pro2,pro3,pro4,choose, bal1, bal2, cloud1, cloud2,cloud3,bl1,bl2,bl4,
     logo , logo2, banner, box2, box3,process1,aboutb,about,cl1,cl2,cl3,cl4,footerImage, plane, patta,patta2, man2,
     ceo,man, l1,l2,l3,l4,l5,l6,l7,l8,l9,l10,l11,l12,l13,rope,rope2,
   andman,  andman1, andman2, andman3, andman4, andman5, andman6, andman7, andman8, andman9,
@@ -489,4 +500,5 @@ export {logobg, bannerImage,secImage,ad1,ad2,pro1,pro2,pro3,pro4,choose, bal1, b
   jcn7,
   jcn8,
   jcn9,
+  malaysia, baku,
  }
