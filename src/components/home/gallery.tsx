@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import "swiper/css/effect-cards";
 
-import {  gal1, gal2, gal3, gal4, } from "@/assets";
+import {  gal1, gal2, gal3, gal4 } from "@/assets";
 
 const imgs = [
   gal1,  

@@ -66,10 +66,10 @@ import cl4 from "@/assets/home/cl4.jpg";
 
 
 // gallery
-import gal1 from "@/assets/home/gal1.jpg";
-import gal2 from "@/assets/home/gal2.jpg";
-import gal3 from "@/assets/home/gal3.jpg";
-import gal4 from "@/assets/home/gal4.jpg";
+import gal1 from "@/assets/home/gal1.jpeg";
+import gal2 from "@/assets/home/gal2.jpeg";
+import gal3 from "@/assets/home/gal3.jpeg";
+import gal4 from "@/assets/home/gal4.jpeg";
 // import gal5 from "@/assets/home/gal5.jpg";
 
 
