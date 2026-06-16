@@ -11,17 +11,13 @@ import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import "swiper/css/effect-cards";
 
-import { banner, box2, box3, process1, } from "@/assets";
+import {  gal1, gal2, gal3, gal4, } from "@/assets";
 
 const imgs = [
-  { src: banner,    label: "Mountain Escape",   tag: "Adventure" },
-  { src: banner,   label: "City Lights Tour",   tag: "Urban" },
-  { src: banner,   label: "Golden Horizons",    tag: "Scenic" },
-  { src: box3,      label: "Hidden Trails",      tag: "Explore" },
-  { src: box2,      label: "Ocean Breeze",       tag: "Coastal" },
-  { src: box3,      label: "Sunset Moments",     tag: "Memories" },
-  { src: process1,     label: "New Beginnings",     tag: "Journey" },
-  { src: process1,  label: "Together Always",    tag: "Happy" },
+  gal1,  
+    gal2,  
+  gal3,   
+    gal4,
 ];
 
 export default function Gallery() {
@@ -114,8 +110,8 @@ A glimpse of the unforgettable moments and experiences shared by our happy trave
                   style={{ aspectRatio: "4/3" }}
                 >
                   <Image
-                    src={item.src}
-                    alt={item.label}
+                    src={item}
+                    alt={"gallery"}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -123,26 +119,6 @@ A glimpse of the unforgettable moments and experiences shared by our happy trave
 
                   {/* gradient overlay — always soft at bottom */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-
-                  {/* tag pill top-left */}
-                  <div className="absolute top-3 left-3 bg-white/20 backdrop-blur-md border border-white/30 text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full">
-                    {item.tag}
-                  </div>
-
-                  {/* zoom icon top-right on hover */}
-                  <div className="absolute top-3 right-3 bg-white/20 backdrop-blur-md border border-white/30 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 scale-75 group-hover:scale-100">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                    </svg>
-                  </div>
-
-                  {/* label bottom */}
-                  <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-1 group-hover:translate-y-0 transition-transform duration-300">
-                    <p className="text-white font-bold text-base tracking-tight drop-shadow">{item.label}</p>
-                    <p className="text-white/60 text-xs mt-0.5 flex items-center gap-1">
-                      <span>📍</span> Tour Gallery
-                    </p>
-                  </div>
                 </div>
               </SwiperSlide>
             ))}
@@ -173,12 +149,7 @@ A glimpse of the unforgettable moments and experiences shared by our happy trave
               <span className="text-white/40 text-sm font-medium">
                 {currentIndex + 1} <span className="text-white/20">/</span> {imgs.length}
               </span>
-              <span className="text-white font-semibold text-sm">
-                {imgs[currentIndex].label}
-              </span>
-              <span className="bg-white/10 text-white/70 text-[10px] font-bold tracking-widest uppercase px-2 py-0.5 rounded-full">
-                {imgs[currentIndex].tag}
-              </span>
+             
             </div>
             <button title="slide"
               onClick={() => setLightboxOpen(false)}
@@ -207,8 +178,8 @@ A glimpse of the unforgettable moments and experiences shared by our happy trave
                   <SwiperSlide key={index} className="flex items-center justify-center">
                     <div className="relative w-full h-full max-w-5xl mx-auto" style={{ maxHeight: "70vh" }}>
                       <Image
-                        src={item.src}
-                        alt={item.label}
+                        src={item}
+                        alt={"Our Gallery"}
                         fill
                         className="object-contain"
                         priority={index === currentIndex}
@@ -252,7 +223,7 @@ A glimpse of the unforgettable moments and experiences shared by our happy trave
                           : "opacity-40 hover:opacity-70"
                       }`}
                     >
-                      <Image src={item.src} alt={item.label} fill className="object-cover" sizes="80px" />
+                      <Image src={item} alt={"Gallery Imgs"} fill className="object-cover" sizes="80px" />
                     </div>
                   </SwiperSlide>
                 ))}

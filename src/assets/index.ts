@@ -65,6 +65,14 @@ import cl3 from "@/assets/home/cl3.jpg";
 import cl4 from "@/assets/home/cl4.jpg";
 
 
+// gallery
+import gal1 from "@/assets/home/gal1.jpg";
+import gal2 from "@/assets/home/gal2.jpg";
+import gal3 from "@/assets/home/gal3.jpg";
+import gal4 from "@/assets/home/gal4.jpg";
+// import gal5 from "@/assets/home/gal5.jpg";
+
+
 
 // destination
 import andman from "@/assets/destination/andman.webp";
@@ -430,7 +438,7 @@ import zhuhai from "@/assets/home/zhuhai.jpg";
 
 export { srilanka,bali, macau, zhuhai, logobg, bannerImage,secImage,ad1,ad2,pro1,pro2,pro3,pro4,choose, bal1, bal2, cloud1, cloud2,cloud3,bl1,bl2,bl4,
     logo , logo2, banner, box2, box3,process1,aboutb,about,cl1,cl2,cl3,cl4,footerImage, plane, patta,patta2, man2,
-    ceo,man, l1,l2,l3,l4,l5,l6,l7,l8,l9,l10,l11,l12,l13,rope,rope2,
+    ceo,man, l1,l2,l3,l4,l5,l6,l7,l8,l9,l10,l11,l12,l13,rope,rope2,gal1, gal2, gal3, gal4, 
   andman,  andman1, andman2, andman3, andman4, andman5, andman6, andman7, andman8, andman9,
   sikkim, sikkim1, sikkim2, sikkim3, sikkim4, sikkim5, sikkim6, sikkim7, sikkim8, sikkim9,
  goa, goa1, goa2, goa3, goa4, goa5, goa6, goa7, goa8, goa9,
