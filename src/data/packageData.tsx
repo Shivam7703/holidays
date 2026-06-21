@@ -3,7 +3,8 @@ import { almaty, baku, bali, hong, kashmir, macau, malaysia, maldive4, srilanka,
 export const Packagedata = [
     {
   title: "ALMATY",
-  duration: "5N6D",
+  cat:"international",
+duration: "5N6D",
   img: almaty,
   "allPricingVariants": {
     "currency": "INR",
@@ -72,22 +73,23 @@ export const Packagedata = [
   },
   "faqs": [
     {
-      "question": "Is Almaty safe for tourists?",
-      "answer": "Yes, Almaty is considered a safe destination for international travelers. The city has a welcoming atmosphere, reliable public facilities, and tourist-friendly attractions. As with any destination, visitors should take basic precautions, keep valuables secure, and follow local guidelines while exploring popular areas."
+      que: "Is Almaty safe for tourists?",
+      ans: "Yes, Almaty is considered a safe destination for international travelers. The city has a welcoming atmosphere, reliable public facilities, and tourist-friendly attractions. As with any destination, visitors should take basic precautions, keep valuables secure, and follow local guidelines while exploring popular areas."
     },
     {
-      "question": "What is the best time to visit Almaty?",
-      "answer": "The best time to visit Almaty is between April and October when the weather is pleasant and ideal for sightseeing. Spring offers beautiful blooming landscapes, while summer is perfect for outdoor excursions. Winter is also popular among travelers who wish to enjoy snow-covered mountains and skiing activities."
+      que: "What is the best time to visit Almaty?",
+      ans: "The best time to visit Almaty is between April and October when the weather is pleasant and ideal for sightseeing. Spring offers beautiful blooming landscapes, while summer is perfect for outdoor excursions. Winter is also popular among travelers who wish to enjoy snow-covered mountains and skiing activities."
     },
     {
-      "question": "Do Indian travelers require a visa for Kazakhstan?",
-      "answer": "Visa requirements may vary depending on the latest immigration policies. Travelers are advised to check the current visa regulations before planning their trip. It is recommended to carry all necessary travel documents and ensure passport validity for a hassle-free journey."
+      que: "Do Indian travelers require a visa for Kazakhstan?",
+      ans: "Visa requirements may vary depending on the latest immigration policies. Travelers are advised to check the current visa regulations before planning their trip. It is recommended to carry all necessary travel documents and ensure passport validity for a hassle-free journey."
     }
   ]
 },
 {
   title: "MALDIVES",
-  duration: "5N6D",
+    cat:"international",
+duration: "5N6D",
   img: maldive4,
   "allPricingVariants": {
     "currency": "INR",
@@ -157,22 +159,23 @@ export const Packagedata = [
   },
   "faqs": [
     {
-      "question": "What is the best time to visit the Maldives?",
-      "answer": "The Maldives can be visited throughout the year, but the most popular period is between November and April when the weather is generally sunny and dry. This season offers ideal conditions for beach activities, snorkeling, and water sports."
+      que: "What is the best time to visit the Maldives?",
+      ans: "The Maldives can be visited throughout the year, but the most popular period is between November and April when the weather is generally sunny and dry. This season offers ideal conditions for beach activities, snorkeling, and water sports."
     },
     {
-      "question": "Is the Maldives only for honeymooners?",
-      "answer": "Not at all. While the Maldives is famous for romantic getaways, it is also a fantastic destination for families, solo travelers, and groups of friends. Many resorts feature family villas, kids' clubs, adventure activities, and entertainment options suitable for all age groups."
+      que: "Is the Maldives only for honeymooners?",
+      ans: "Not at all. While the Maldives is famous for romantic getaways, it is also a fantastic destination for families, solo travelers, and groups of friends. Many resorts feature family villas, kids' clubs, adventure activities, and entertainment options suitable for all age groups."
     },
     {
-      "question": "What makes the Maldives different from other beach destinations?",
-      "answer": "The Maldives offers a unique island resort experience where each resort is located on its own private island. Crystal-clear lagoons, overwater villas, vibrant coral reefs, and unmatched privacy create an exclusive tropical escape that is difficult to find anywhere else in the world."
+      que: "What makes the Maldives different from other beach destinations?",
+      ans: "The Maldives offers a unique island resort experience where each resort is located on its own private island. Crystal-clear lagoons, overwater villas, vibrant coral reefs, and unmatched privacy create an exclusive tropical escape that is difficult to find anywhere else in the world."
     }
   ]
 },
 {
   title: "MALAYSIA",
-  duration: "5N6D",
+    cat:"international",
+duration: "5N6D",
   img: malaysia,
   "allPricingVariants": {
     "currency": "INR",
@@ -242,22 +245,23 @@ export const Packagedata = [
   },
   "faqs": [
     {
-      "question": "Is Malaysia a good destination for first-time international travelers?",
-      "answer": "Yes, Malaysia is one of the most traveler-friendly destinations in Asia. Its excellent infrastructure, diverse attractions, affordable shopping, delicious food, and widespread use of English make it an ideal choice for first-time international travelers."
+      que: "Is Malaysia a good destination for first-time international travelers?",
+      ans: "Yes, Malaysia is one of the most traveler-friendly destinations in Asia. Its excellent infrastructure, diverse attractions, affordable shopping, delicious food, and widespread use of English make it an ideal choice for first-time international travelers."
     },
     {
-      "question": "What is Malaysia famous for besides the Petronas Towers?",
-      "answer": "Malaysia is known for its cultural diversity, tropical islands, vibrant street food, modern shopping malls, rainforests, and attractions such as Genting Highlands, Batu Caves, Langkawi, and Penang. It offers a unique mix of nature, adventure, and urban experiences."
+      que: "What is Malaysia famous for besides the Petronas Towers?",
+      ans: "Malaysia is known for its cultural diversity, tropical islands, vibrant street food, modern shopping malls, rainforests, and attractions such as Genting Highlands, Batu Caves, Langkawi, and Penang. It offers a unique mix of nature, adventure, and urban experiences."
     },
     {
-      "question": "Can I find Indian food easily in Malaysia?",
-      "answer": "Absolutely. Malaysia has a large Indian community, and visitors can easily find authentic Indian restaurants across major cities. From South Indian breakfasts to North Indian curries and vegetarian options, food choices are plentiful and widely available throughout the country."
+      que: "Can I find Indian food easily in Malaysia?",
+      ans: "Absolutely. Malaysia has a large Indian community, and visitors can easily find authentic Indian restaurants across major cities. From South Indian breakfasts to North Indian curries and vegetarian options, food choices are plentiful and widely available throughout the country."
     }
   ]
 },
 {
   title: "KASHMIR",
-  duration: "5N6D",
+    cat:"domestic",
+duration: "5N6D",
   img: kashmir,
   "allPricingVariants": {
     "currency": "INR",
@@ -328,22 +332,23 @@ export const Packagedata = [
   },
   "faqs": [
     {
-      "question": "Which part of Kashmir is best for first-time visitors?",
-      "answer": "For first-time travelers, Srinagar, Gulmarg, and Pahalgam offer the best introduction to Kashmir. These destinations combine scenic landscapes, famous attractions, local culture, and a variety of activities, making them ideal for a well-rounded holiday."
+      que: "Which part of Kashmir is best for first-time visitors?",
+      ans: "For first-time travelers, Srinagar, Gulmarg, and Pahalgam offer the best introduction to Kashmir. These destinations combine scenic landscapes, famous attractions, local culture, and a variety of activities, making them ideal for a well-rounded holiday."
     },
     {
-      "question": "Is Kashmir suitable for a family vacation?",
-      "answer": "Yes, Kashmir is a great destination for families. The region offers comfortable accommodations, easy sightseeing options, beautiful natural surroundings, and activities suitable for travelers of all ages, from children to senior citizens."
+      que: "Is Kashmir suitable for a family vacation?",
+      ans: "Yes, Kashmir is a great destination for families. The region offers comfortable accommodations, easy sightseeing options, beautiful natural surroundings, and activities suitable for travelers of all ages, from children to senior citizens."
     },
     {
-      "question": "What makes Gulmarg one of the most visited places in Kashmir?",
-      "answer": "Gulmarg is famous for its vast meadows, snow-covered peaks, and one of the world's highest cable car rides. Whether visiting in summer or winter, it remains a favorite destination for sightseeing, photography, and outdoor activities."
+      que: "What makes Gulmarg one of the most visited places in Kashmir?",
+      ans: "Gulmarg is famous for its vast meadows, snow-covered peaks, and one of the world's highest cable car rides. Whether visiting in summer or winter, it remains a favorite destination for sightseeing, photography, and outdoor activities."
     }
   ]
 },
 {
   title: "BAKU",
-  duration: "5N6D",
+    cat:"international",
+duration: "5N6D",
   img: baku,
   "allPricingVariants": {
     "currency": "INR",
@@ -415,22 +420,23 @@ export const Packagedata = [
   },
   "faqs": [
     {
-      "question": "Why is Baku becoming one of the fastest-growing tourist destinations?",
-      "answer": "Baku offers a unique combination of history, modern architecture, seaside attractions, shopping, and cultural experiences. Visitors can enjoy ancient landmarks and futuristic buildings within the same city, making it a distinctive destination compared to many traditional European and Asian cities."
+      que: "Why is Baku becoming one of the fastest-growing tourist destinations?",
+      ans: "Baku offers a unique combination of history, modern architecture, seaside attractions, shopping, and cultural experiences. Visitors can enjoy ancient landmarks and futuristic buildings within the same city, making it a distinctive destination compared to many traditional European and Asian cities."
     },
     {
-      "question": "What makes the Mud Volcanoes of Azerbaijan special?",
-      "answer": "Azerbaijan is home to nearly half of the world's mud volcanoes. These natural formations create unusual landscapes that attract travelers from around the world. The site offers a completely different sightseeing experience compared to mountains, beaches, or city attractions."
+      que: "What makes the Mud Volcanoes of Azerbaijan special?",
+      ans: "Azerbaijan is home to nearly half of the world's mud volcanoes. These natural formations create unusual landscapes that attract travelers from around the world. The site offers a completely different sightseeing experience compared to mountains, beaches, or city attractions."
     },
     {
-      "question": "Is Baku suitable for families and first-time international travelers?",
-      "answer": "Yes, Baku is known for its clean streets, modern infrastructure, comfortable transportation, and family-friendly attractions. The city's combination of historical sites, parks, waterfront areas, shopping centers, and cultural landmarks makes it suitable for travelers of all ages."
+      que: "Is Baku suitable for families and first-time international travelers?",
+      ans: "Yes, Baku is known for its clean streets, modern infrastructure, comfortable transportation, and family-friendly attractions. The city's combination of historical sites, parks, waterfront areas, shopping centers, and cultural landmarks makes it suitable for travelers of all ages."
     }
   ]
 },
 {
   title: "SRI LANKA",
-  duration: "5N6D",
+    cat:"international",
+duration: "5N6D",
   img: srilanka,
   "allPricingVariants": {
     "currency": "INR",
@@ -502,22 +508,23 @@ export const Packagedata = [
   },
   "faqs": [
     {
-      "question": "Why is Sri Lanka often called the \"Mini World of Asia\"?",
-      "answer": "Sri Lanka offers a remarkable variety of attractions within a relatively small area. Travelers can visit mountains, beaches, tea plantations, wildlife parks, historical sites, and modern cities all within a single trip, making it one of the most diverse destinations in Asia."
+      que: "Why is Sri Lanka often called the \"Mini World of Asia\"?",
+      ans: "Sri Lanka offers a remarkable variety of attractions within a relatively small area. Travelers can visit mountains, beaches, tea plantations, wildlife parks, historical sites, and modern cities all within a single trip, making it one of the most diverse destinations in Asia."
     },
     {
-      "question": "Is Sri Lanka a good destination for couples as well as families?",
-      "answer": "Yes, Sri Lanka appeals to a wide range of travelers. Couples enjoy the scenic beaches, hill stations, and luxury resorts, while families appreciate the wildlife parks, cultural attractions, and family-friendly accommodations available throughout the country."
+      que: "Is Sri Lanka a good destination for couples as well as families?",
+      ans: "Yes, Sri Lanka appeals to a wide range of travelers. Couples enjoy the scenic beaches, hill stations, and luxury resorts, while families appreciate the wildlife parks, cultural attractions, and family-friendly accommodations available throughout the country."
     },
     {
-      "question": "What makes Sri Lankan tea regions worth visiting?",
-      "answer": "The tea-growing regions around Nuwara Eliya are known for their rolling green landscapes, cool climate, and beautiful viewpoints. Visiting tea estates provides insight into one of Sri Lanka's most famous industries while offering some of the country's most picturesque scenery."
+      que: "What makes Sri Lankan tea regions worth visiting?",
+      ans: "The tea-growing regions around Nuwara Eliya are known for their rolling green landscapes, cool climate, and beautiful viewpoints. Visiting tea estates provides insight into one of Sri Lanka's most famous industries while offering some of the country's most picturesque scenery."
     }
   ]
 },
 {
   title: "HONG KONG",
-  duration: "5N6D",
+    cat:"international",
+duration: "5N6D",
   img: hong,
   "allPricingVariants": {
     "currency": "INR",
@@ -589,22 +596,23 @@ export const Packagedata = [
   },
   "faqs": [
     {
-      "question": "Why is Victoria Peak considered a must-visit attraction in Hong Kong?",
-      "answer": "Victoria Peak offers some of the most impressive views in Asia. From the top, visitors can enjoy panoramic views of Hong Kong's skyscrapers, Victoria Harbour, surrounding islands, and mountain landscapes, making it one of the city's most photographed locations."
+      que: "Why is Victoria Peak considered a must-visit attraction in Hong Kong?",
+      ans: "Victoria Peak offers some of the most impressive views in Asia. From the top, visitors can enjoy panoramic views of Hong Kong's skyscrapers, Victoria Harbour, surrounding islands, and mountain landscapes, making it one of the city's most photographed locations."
     },
     {
-      "question": "Is Hong Kong only known for shopping?",
-      "answer": "While shopping is a major attraction, Hong Kong offers much more. Visitors can enjoy theme parks, cultural sites, scenic viewpoints, waterfront attractions, museums, local food markets, and a vibrant mix of modern and traditional experiences throughout the city."
+      que: "Is Hong Kong only known for shopping?",
+      ans: "While shopping is a major attraction, Hong Kong offers much more. Visitors can enjoy theme parks, cultural sites, scenic viewpoints, waterfront attractions, museums, local food markets, and a vibrant mix of modern and traditional experiences throughout the city."
     },
     {
-      "question": "What makes Hong Kong Disneyland different from other Disney parks?",
-      "answer": "Hong Kong Disneyland combines classic Disney attractions with unique features inspired by local culture and Asian themes. Its compact layout, shorter travel distances between attractions, and family-friendly atmosphere make it especially enjoyable for travelers visiting Asia."
+      que: "What makes Hong Kong Disneyland different from other Disney parks?",
+      ans: "Hong Kong Disneyland combines classic Disney attractions with unique features inspired by local culture and Asian themes. Its compact layout, shorter travel distances between attractions, and family-friendly atmosphere make it especially enjoyable for travelers visiting Asia."
     }
   ]
 },
 {
   title: "VIETNAM",
-  duration: "5N6D",
+    cat:"international",
+duration: "5N6D",
   img: vietnam,
   "allPricingVariants": {
     "currency": "INR",
@@ -678,22 +686,23 @@ export const Packagedata = [
   },
   "faqs": [
     {
-      "question": "Why is Ha Long Bay one of Vietnam's most visited attractions?",
-      "answer": "Ha Long Bay is famous for its thousands of limestone islands rising from emerald waters. The combination of scenic landscapes, caves, and cruising opportunities makes it one of the most photographed and visited destinations in Southeast Asia."
+      que: "Why is Ha Long Bay one of Vietnam's most visited attractions?",
+      ans: "Ha Long Bay is famous for its thousands of limestone islands rising from emerald waters. The combination of scenic landscapes, caves, and cruising opportunities makes it one of the most photographed and visited destinations in Southeast Asia."
     },
     {
-      "question": "Is Vietnam suitable for travelers who enjoy both cities and beaches?",
-      "answer": "Yes, Vietnam offers a great balance of urban attractions and coastal destinations. Travelers can enjoy cultural landmarks and city life in Hanoi and Ho Chi Minh City while also spending time on beautiful islands and beaches like Phu Quoc."
+      que: "Is Vietnam suitable for travelers who enjoy both cities and beaches?",
+      ans: "Yes, Vietnam offers a great balance of urban attractions and coastal destinations. Travelers can enjoy cultural landmarks and city life in Hanoi and Ho Chi Minh City while also spending time on beautiful islands and beaches like Phu Quoc."
     },
     {
-      "question": "What makes Vietnamese food popular among international travelers?",
-      "answer": "Vietnamese cuisine is known for its fresh ingredients, balanced flavors, and variety of dishes. Popular foods such as Pho, Banh Mi, spring rolls, and seafood specialties are enjoyed by visitors from around the world."
+      que: "What makes Vietnamese food popular among international travelers?",
+      ans: "Vietnamese cuisine is known for its fresh ingredients, balanced flavors, and variety of dishes. Popular foods such as Pho, Banh Mi, spring rolls, and seafood specialties are enjoyed by visitors from around the world."
     }
   ]
 },
 {
   title: "BALI",
-  duration: "5N6D",
+    cat:"international",
+duration: "5N6D",
   img: bali,
   "allPricingVariants": {
     "currency": "INR",
@@ -765,22 +774,23 @@ export const Packagedata = [
   },
   "faqs": [
     {
-      "question": "Why is Bali one of the most popular holiday destinations in Asia?",
-      "answer": "Bali offers a combination of beaches, temples, mountains, rice terraces, shopping areas, and cultural attractions. This variety allows travelers to enjoy relaxation, sightseeing, and outdoor activities all within a single destination."
+      que: "Why is Bali one of the most popular holiday destinations in Asia?",
+      ans: "Bali offers a combination of beaches, temples, mountains, rice terraces, shopping areas, and cultural attractions. This variety allows travelers to enjoy relaxation, sightseeing, and outdoor activities all within a single destination."
     },
     {
-      "question": "Which area of Bali is best for first-time visitors?",
-      "answer": "Many first-time visitors choose to stay near Kuta, Seminyak, or Ubud. These areas provide easy access to beaches, shopping, dining options, cultural attractions, and popular sightseeing locations."
+      que: "Which area of Bali is best for first-time visitors?",
+      ans: "Many first-time visitors choose to stay near Kuta, Seminyak, or Ubud. These areas provide easy access to beaches, shopping, dining options, cultural attractions, and popular sightseeing locations."
     },
     {
-      "question": "Is Bali suitable for families, couples, and groups?",
-      "answer": "Yes, Bali caters to all types of travelers. Families enjoy resorts and attractions, couples appreciate the scenic locations and private stays, while groups often visit for beach activities, nightlife, and sightseeing opportunities."
+      que: "Is Bali suitable for families, couples, and groups?",
+      ans: "Yes, Bali caters to all types of travelers. Families enjoy resorts and attractions, couples appreciate the scenic locations and private stays, while groups often visit for beach activities, nightlife, and sightseeing opportunities."
     }
   ]
 },
 {
   title: "MACAU",
-  duration: "5N6D",
+    cat:"international",
+duration: "5N6D",
   img: macau,
   "allPricingVariants": {
     "currency": "INR",
@@ -852,22 +862,23 @@ export const Packagedata = [
   },
   "faqs": [
     {
-      "question": "Why is Macau often called the Entertainment Capital of Asia?",
-      "answer": "Macau is known for its large-scale entertainment complexes, luxury resorts, live performances, shopping districts, and vibrant nightlife. Visitors can enjoy a variety of attractions beyond its famous casinos, making it popular among all types of travelers."
+      que: "Why is Macau often called the Entertainment Capital of Asia?",
+      ans: "Macau is known for its large-scale entertainment complexes, luxury resorts, live performances, shopping districts, and vibrant nightlife. Visitors can enjoy a variety of attractions beyond its famous casinos, making it popular among all types of travelers."
     },
     {
-      "question": "What makes Macau different from other Asian cities?",
-      "answer": "Macau's unique Portuguese and Chinese heritage is reflected in its architecture, cuisine, public squares, and historical landmarks. This cultural combination gives the city a character that is unlike any other destination in Asia."
+      que: "What makes Macau different from other Asian cities?",
+      ans: "Macau's unique Portuguese and Chinese heritage is reflected in its architecture, cuisine, public squares, and historical landmarks. This cultural combination gives the city a character that is unlike any other destination in Asia."
     },
     {
-      "question": "Is Macau worth visiting even if I am not interested in casinos?",
-      "answer": "Absolutely. Macau offers historical attractions, waterfront areas, cultural landmarks, shopping centers, family-friendly entertainment, and excellent dining experiences, making it enjoyable for every type of traveler."
+      que: "Is Macau worth visiting even if I am not interested in casinos?",
+      ans: "Absolutely. Macau offers historical attractions, waterfront areas, cultural landmarks, shopping centers, family-friendly entertainment, and excellent dining experiences, making it enjoyable for every type of traveler."
     }
   ]
 },
 {
   title: "HONG KONG + ZHUHAI",
-  duration: "5N6D",
+    cat:"international",
+duration: "5N6D",
   img: zhuhai,
   "allPricingVariants": {
     "currency": "INR",
@@ -940,16 +951,16 @@ export const Packagedata = [
   },
   "faqs": [
     {
-      "question": "What makes the Hong Kong–Zhuhai–Macau Bridge a unique experience?",
-      "answer": "The Hong Kong–Zhuhai–Macau Bridge is one of the world's longest sea-crossing bridges, offering stunning views of the South China Sea and connecting three major cities in the Pearl River Delta region."
+      que: "What makes the Hong Kong–Zhuhai–Macau Bridge a unique experience?",
+      ans: "The Hong Kong–Zhuhai–Macau Bridge is one of the world's longest sea-crossing bridges, offering stunning views of the South China Sea and connecting three major cities in the Pearl River Delta region."
     },
     {
-      "question": "Why is the Hong Kong–Zhuhai–Macau Bridge so famous?",  
-      "answer": "The bridge is one of the longest sea-crossing bridge systems in the world and is considered a remarkable engineering achievement. Traveling across it has become an attraction in itself for many visitors."
+      que: "Why is the Hong Kong–Zhuhai–Macau Bridge so famous?",  
+      ans: "The bridge is one of the longest sea-crossing bridge systems in the world and is considered a remarkable engineering achievement. Traveling across it has become an attraction in itself for many visitors."
     },
     {
-      "question": "Is this package suitable for travelers looking for a balanced holiday?",
-      "answer": "Yes. The itinerary combines sightseeing, shopping, leisure time, waterfront attractions, and cultural experiences, making it ideal for couples, families, and groups seeking variety during their trip."
+      que: "Is this package suitable for travelers looking for a balanced holiday?",
+      ans: "Yes. The itinerary combines sightseeing, shopping, leisure time, waterfront attractions, and cultural experiences, making it ideal for couples, families, and groups seeking variety during their trip."
     }]
 }
 ]

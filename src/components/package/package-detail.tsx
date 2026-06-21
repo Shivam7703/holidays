@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { FaClock, FaCheckCircle, FaTimesCircle, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { IoHelpCircle } from 'react-icons/io5';
+import Faq from '../global/faqs';
 
 function PackageDetail({ data }: any) {
   if (!data) return <div className="text-center py-10 text-gray-500">Loading package details...</div>;
@@ -48,12 +49,12 @@ function PackageDetail({ data }: any) {
               <h1 className="text-3xl md:text-4xl font-black text-slate-900 uppercase tracking-tight">
                 {data.title}
               </h1>
-              <p className="text-slate-500 text-sm mt-1">Experience the ultimate cultural & adventure hub</p>
+              <p className="text-slate-500 text-sm sm:text-base mt-1">Experience the ultimate cultural & adventure hub</p>
             </div>
 
             {/* Overview Section */}
             <section className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-              <h2 className="text-lg font-bold mb-3 text-slate-900 border-l-4 border-teal-500 pl-2">Overview</h2>
+              <h2 className="text-lg sm:text-xl font-bold mb-3 text-slate-900 border-l-4 border-teal-500 pl-2">Overview</h2>
               <p className="text-slate-600 leading-relaxed text-sm md:text-base">
                 {data.description}
               </p>
@@ -61,7 +62,7 @@ function PackageDetail({ data }: any) {
 
             {/* Tour Highlights Section */}
             <section className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-              <h2 className="text-lg font-bold mb-4 text-slate-900 border-l-4 border-teal-500 pl-2">Tour Highlights</h2>
+              <h2 className="text-lg sm:text-xl font-bold mb-4 text-slate-900 border-l-4 border-teal-500 pl-2">Tour Highlights</h2>
               <ul className="space-y-3">
                 {data.highlights?.map((highlight: string, index: number) => (
                   <li key={index} className="flex gap-3 text-slate-600 items-start text-sm md:text-base">
@@ -76,19 +77,19 @@ function PackageDetail({ data }: any) {
 
             {/* Day Wise Itinerary Section */}
             <section className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-              <h2 className="text-lg font-bold mb-5 text-slate-900 border-l-4 border-teal-500 pl-2">Day Wise Itinerary</h2>
+              <h2 className="text-lg  sm:text-xl font-bold mb-5 text-slate-900 border-l-4 border-teal-500 pl-2">Day Wise Itinerary</h2>
               <div className="relative border-l-2 border-teal-100 ml-3 space-y-6">
                 {data.itinerary?.map((item: any, index: number) => (
                   <div key={index} className="relative pl-6">
                     <div className="absolute -left-[7px] top-1.5 bg-teal-500 border-4 border-white h-3.5 w-3.5 rounded-full shadow-sm" />
                     <div>
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="text-[10px] font-bold text-teal-600 uppercase tracking-widest bg-teal-50 px-1.5 py-0.5 rounded">
+                        <span className="text-sm font-medium text-teal-600 uppercase tracking-widest bg-teal-50 px-1.5 py-0.5 rounded">
                           {item.day}
                         </span>
-                        <h3 className="text-sm font-bold text-slate-900">{item.title}</h3>
+                        <h3 className="text-base font-bold text-slate-900">{item.title}</h3>
                       </div>
-                      <p className="text-slate-500 text-xs md:text-sm leading-relaxed">{item.details}</p>
+                      <p className="text-slate-500 text-sm md:text-base leading-relaxed">{item.details}</p>
                     </div>
                   </div>
                 ))}
@@ -98,12 +99,12 @@ function PackageDetail({ data }: any) {
             {/* Inclusions & Exclusions */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-white p-5 rounded-2xl shadow-sm border border-slate-100">
-                <h3 className="text-sm font-bold text-slate-900 mb-3 flex items-center gap-2">
+                <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-3 flex items-center gap-2">
                   <FaCheckCircle className="text-emerald-500" size={14} /> Inclusions
                 </h3>
                 <ul className="space-y-2">
                   {data.includesAndExcludes?.includes?.map((inc: string, idx: number) => (
-                    <li key={idx} className="text-xs md:text-sm text-slate-600 flex gap-2 items-start">
+                    <li key={idx} className="text-sm md:text-base text-slate-600 flex gap-2 items-start">
                       <span className="text-emerald-500 font-bold">•</span>
                       <span>{inc}</span>
                     </li>
@@ -112,12 +113,12 @@ function PackageDetail({ data }: any) {
               </div>
 
               <div className="bg-white p-5 rounded-2xl shadow-sm border border-slate-100">
-                <h3 className="text-sm font-bold text-slate-900 mb-3 flex items-center gap-2">
+                <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-3 flex items-center gap-2">
                   <FaTimesCircle className="text-rose-500" size={14} /> Exclusions
                 </h3>
                 <ul className="space-y-2">
                   {data.includesAndExcludes?.excludes?.map((exc: string, idx: number) => (
-                    <li key={idx} className="text-xs md:text-sm text-slate-600 flex gap-2 items-start">
+                    <li key={idx} className="text-sm md:text-base text-slate-600 flex gap-2 items-start">
                       <span className="text-rose-500 font-bold">•</span>
                       <span>{exc}</span>
                     </li>
@@ -132,22 +133,9 @@ function PackageDetail({ data }: any) {
                 <IoHelpCircle className="text-indigo-500" size={20} /> FAQs
               </h2>
               <div className="space-y-3">
-                {data.faqs?.map((faq: any, index: number) => (
-                  <div key={index} className="border border-slate-100 rounded-xl overflow-hidden">
-                    <button
-                      onClick={() => toggleFaq(index)}
-                      className="w-full flex items-center justify-between p-3.5 bg-slate-50/50 hover:bg-slate-50 transition-colors text-left"
-                    >
-                      <span className="font-semibold text-slate-800 text-xs md:text-sm">{faq.question}</span>
-                      {openFaq === index ? <FaChevronUp size={10} className="text-slate-500" /> : <FaChevronDown size={10} className="text-slate-500" />}
-                    </button>
-                    {openFaq === index && (
-                      <div className="p-3.5 bg-white border-t border-slate-50 text-slate-600 text-xs md:text-sm leading-relaxed">
-                        {faq.answer}
-                      </div>
-                    )}
-                  </div>
-                ))}
+                {data.faqs && 
+                <Faq data={data.faqs} />
+                }
               </div>
             </section>
 

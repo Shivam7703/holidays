@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { motion, stagger } from "framer-motion";
+import { motion } from "framer-motion";
 import { FaCheckCircle, FaStar } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
