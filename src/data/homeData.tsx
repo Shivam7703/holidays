@@ -327,7 +327,7 @@ export const navigationMenu = {
             href: "/packages/macau",
           }, {
             id: 15,
-            label: "HONG KONG + ZHUHAI",
+            label: "Hong Kong + Zhuhai",
             href: "/packages/hong-kong-zhuhai",
           },
         ],
@@ -676,33 +676,42 @@ export const footer = {
   list2: {
     title: "Tour Packages",
     links: [
-     {
-            id: 1,
-            label: "Himachal Pradesh",
-            href: "/destinations/himachal-pradesh",
+    
+         {id:1,
+             label: "Bali Discovery Trip",
+            href: "/packages/bali",
           },
-          {
-            id: 2,
-            label: "Andaman & Nicobar",
-            href: "/destinations/andaman-nicobar-islands",
-          },
-          { id: 3, label: "Kashmir", href: "/destinations/kashmir" },
-         {
-            id: 4,
+            {
+            id: 3,
             label: "Maldives",
-            href: "/destinations/maldives",
+            href: "/packages/maldives",
           },
+         
           {
-            id: 5,
+            id: 4,
+            label: "Enchanting Sri Lanka",
+            href: "/packages/sri-lanka",
+          },
+         
+ {
+            id: 10,
+            label: "Almaty",
+            href: "/packages/almaty",
+          }, {
+            id: 13,
             label: "Hong Kong",
-            href: "/destinations/hong-kong",
+            href: "/packages/hong-kong",
+          }, {
+            id: 14,
+            label: "Macau",
+            href: "/packages/macau",
+          }, {
+            id: 15,
+            label: "Hong Kong + Zhuhai",
+            href: "/packages/hong-kong-zhuhai",
           },
-          { id: 6, label: "Turkey", href: "/destinations/turkey" },
-          {
-            id: 7,
-            label: "China",
-            href: "/destinations/china",
-          }, ],
+
+       ],
   },
 
   newLetter: {

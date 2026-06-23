@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { banner } from "@/assets";
+import { banner, japan, kashmir } from "@/assets";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 
 function useIsMobile() {
@@ -194,8 +194,6 @@ export default function Aboutchoose() {
             </div>
           </div>
         </motion.div>
-  
-
     <motion.div
       ref={ref}
       variants={fadeIn("left", "tween", 0.2, 1)}
@@ -207,7 +205,7 @@ export default function Aboutchoose() {
         className="relative h-[80%] w-[45%] rounded-t-full overflow-hidden shadow-xl"
       >
         <Image
-          src={banner}
+          src={japan}
           alt="Beach destination"
           fill
           className="object-cover w-full h-full object-center"
@@ -220,7 +218,7 @@ export default function Aboutchoose() {
         className="relative h-[80%] mb-[20%] w-[45%] rounded-t-full overflow-hidden shadow-xl"
       >
         <Image
-          src={banner}
+          src={kashmir}
           alt="Waterfall adventure"
           fill
           className="object-cover w-full h-full object-center"

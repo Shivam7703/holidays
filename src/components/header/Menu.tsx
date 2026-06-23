@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
-import { navigationMenu } from "@/data/homeData";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { usePathname } from "next/navigation";
 
@@ -22,32 +21,30 @@ export function FormatHref(url: any) {
 }
 
 const Menu = ({ Isprimary, Items }: any) => {
-  const [activeItem, setActiveItem] = useState<string | null>(null);
-
+  const [activePath, setActivePath] = useState<string>("");
   const pathname = usePathname();
 
   useEffect(() => {
-    const lastSegment = pathname?.split("/").filter(Boolean).pop();
-    let path = lastSegment || "home";
-
-    setActiveItem(path);
+    // Pura pathname set karein taaki exact match ho
+    setActivePath(pathname || "");
   }, [pathname]);
 
+  // Helper to check if link is active
+  const isActive = (href: string) => {
+    return activePath === FormatHref(href);
+  };
+
   return (
-    <ul
-      className={`hidden items-center justify-between lg:gap-x-0 md:gap-x-0 font-medium w-full mx-auto md:flex`}
-    >
+    <ul className={`hidden items-center justify-between lg:gap-x-0 md:gap-x-0 font-medium w-full mx-auto md:flex`}>
       {Items.map((item: any) => (
         <li key={item?.id} className="group relative transition-all">
           <Link
             title={item?.label}
             href={item?.href || "#"}
-            className={`p-2 flex justify-center  items-center gap-1 text-base py-3  cursor-pointer
+            className={`p-2 flex justify-center items-center gap-1 text-base py-3 cursor-pointer
               relative overflow-hidden transition-all duration-300 hover:bg-white/30 rounded-xl
               ${
-                activeItem ===
-                  (FormatHref(item.href).split("/").filter(Boolean).pop() ||
-                    "home") && Isprimary
+                isActive(item.href) && Isprimary
                   ? "text-color1 bg-white/30"
                   : Isprimary
                   ? "text-color1"
@@ -57,15 +54,13 @@ const Menu = ({ Isprimary, Items }: any) => {
             <span className="transition-all duration-300 hover:scale-105">
               {item?.label}
             </span>
-         
           </Link>
 
-          {/* ── First-level dropdown ── */}
+          {/* First-level dropdown */}
           {item.subNav && (
             <div
               className="absolute w-max -left-2 top-[100%] z-[70] hidden flex-col
-              rounded-xl bg-white border border-white/10
-              py-2 shadow-[0_16px_40px_rgba(0,0,0,0.4)]
+              rounded-xl bg-white border border-white/10 py-2 shadow-[0_16px_40px_rgba(0,0,0,0.4)]
               transition-all group-hover:flex
               before:absolute before:-top-2 before:left-6 before:w-4 before:h-4
               before:bg-white before:rotate-45 before:border-l before:border-t
@@ -81,29 +76,20 @@ const Menu = ({ Isprimary, Items }: any) => {
                       transition-all duration-200 cursor-pointer
                       hover:bg-zinc-700 hover:text-white rounded-lg mx-1 
                       ${
-                        activeItem ===
-                        (FormatHref(nav.href)
-                          .split("/")
-                          .filter(Boolean)
-                          .pop() || "home")
+                        isActive(nav.href)
                           ? "bg-color1 text-white rounded-lg mx-1"
                           : "text-color1/80"
                       }`}
                     style={{ width: "calc(100% - 8px)" }}
                   >
-                    {/* left gold accent bar */}
-                    <span
-                      className="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-0
-                      bg-color2 rounded-full transition-all duration-200
-                      group-hover/navlink:h-[60%]"
-                    />
+                    <span className="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-0 bg-color2 rounded-full transition-all duration-200 group-hover/navlink:h-[60%]" />
                     <span className="whitespace-nowrap pl-2">{nav.label}</span>
                     {nav?.subNav && nav.subNav.length !== 0 && (
                       <MdKeyboardArrowRight className="text-lg text-color2 transition-transform duration-200 group-hover/subnav:translate-x-0.5" />
                     )}
                   </Link>
 
-                  {/* ── Second-level dropdown ── */}
+                  {/* Second-level dropdown */}
                   {nav.subNav && (
                     <div
                       className="absolute left-[calc(100%)] top-0 z-[70] hidden flex-col
@@ -112,10 +98,7 @@ const Menu = ({ Isprimary, Items }: any) => {
                       transition-all group-hover/subnav:flex max-h-[500px]"
                     >
                       {nav.subNav.map((subNav: any) => (
-                        <div
-                          key={subNav.id}
-                          className="group/subsubnav relative"
-                        >
+                        <div key={subNav.id} className="group/subsubnav relative">
                           <Link
                             title={subNav?.label}
                             href={FormatHref(subNav.href)}
@@ -124,30 +107,20 @@ const Menu = ({ Isprimary, Items }: any) => {
                               transition-all duration-200 cursor-pointer
                               hover:bg-zinc-700 hover:text-white rounded-lg mx-1
                               ${
-                                activeItem ===
-                                (FormatHref(subNav.href)
-                                  .split("/")
-                                  .filter(Boolean)
-                                  .pop() || "home")
-                                  ? "bg-color1 text-white rounded-lg "
+                                isActive(subNav.href)
+                                  ? "bg-color1 text-white rounded-lg"
                                   : "text-color1/80"
                               }`}
                             style={{ width: "calc(100% - 8px)" }}
                           >
-                            <span
-                              className="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-0
-                              bg-color2 rounded-full transition-all duration-200
-                              group-hover/sublink:h-[60%]"
-                            />
-                            <span className="whitespace-nowrap pl-2">
-                              {subNav.label}
-                            </span>
+                            <span className="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-0 bg-color2 rounded-full transition-all duration-200 group-hover/sublink:h-[60%]" />
+                            <span className="whitespace-nowrap pl-2">{subNav.label}</span>
                             {subNav?.subNavv && subNav.subNavv.length !== 0 && (
                               <MdKeyboardArrowRight className="text-lg text-color2 transition-transform duration-200 group-hover/subsubnav:translate-x-0.5" />
                             )}
                           </Link>
 
-                          {/* ── Third-level dropdown ── */}
+                          {/* Third-level dropdown */}
                           {subNav.subNavv && subNav.subNavv.length > 0 && (
                             <div
                               className="absolute left-[calc(100% - 8px)] top-0 z-[70] hidden flex-col
@@ -166,25 +139,15 @@ const Menu = ({ Isprimary, Items }: any) => {
                                     transition-all duration-200 cursor-pointer
                                     hover:bg-zinc-700 hover:text-white rounded-lg mx-1
                                     ${
-                                      activeItem ===
-                                      (FormatHref(subSubNav.href)
-                                        .split("/")
-                                        .filter(Boolean)
-                                        .pop() || "home")
+                                      isActive(subSubNav.href)
                                         ? "bg-color1 text-white rounded-lg mx-1"
                                         : "text-color1/80"
                                     }`}
                                   style={{ width: "calc(100% - 8px)" }}
                                 >
-                                  <span
-                                    className="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-0
-                                    bg-color2 rounded-full transition-all duration-200
-                                    group-hover/deeplink:h-[60%]"
-                                  />
+                                  <span className="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-0 bg-color2 rounded-full transition-all duration-200 group-hover/deeplink:h-[60%]" />
                                   <span className="w-1.5 h-1.5 rounded-full bg-color2/60 flex-shrink-0 ml-1" />
-                                  <span className="whitespace-nowrap">
-                                    {subSubNav.label}
-                                  </span>
+                                  <span className="whitespace-nowrap">{subSubNav.label}</span>
                                 </Link>
                               ))}
                             </div>
@@ -204,10 +167,3 @@ const Menu = ({ Isprimary, Items }: any) => {
 };
 
 export default Menu;
-
-
-
-
-
-
-// ]RV*71(O/=|KHu:w
