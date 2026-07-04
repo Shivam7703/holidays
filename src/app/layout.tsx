@@ -10,8 +10,8 @@ import { footer } from "@/data/homeData";
  */
 
 export const metadata: Metadata = {
-  title: "ValueAdz",
-  description: "Premium Tour & Travel Agency ",
+  title: "Holidays By ValueAdz",
+  description: "Best Tour & Travel Agency in India. We provide best travel packages for domestic and international tours.",
 };
 
 export default function RootLayout({
