@@ -127,7 +127,7 @@ export default function Footer({ footer }: any) {
                   Phone
                 </p>
                 <p className="text-gray-700 font1 font-medium">
-                 +91 9818929900
+                  +91 9818929900
                 </p>
               </div>
             </a>
@@ -135,7 +135,7 @@ export default function Footer({ footer }: any) {
             {/* Email */}
 
             <a
-              href="mailto:info@holidaysbyvalueadz.com"
+              href="mailto:info@valueadz.ae"
               className="flex items-start gap-3 group"
             >
               <div className="w-9 h-9 rounded-full bg-amber-100 border border-amber-200 flex items-center justify-center shrink-0 group-hover:bg-amber-400 transition-all duration-300">
@@ -146,7 +146,7 @@ export default function Footer({ footer }: any) {
                   Email
                 </p>
                 <p className="text-gray-700 font1 font-medium break-all">
-info@holidaysbyvalueadz.com
+                  info@valueadz.ae
                 </p>
               </div>
             </a>
@@ -156,12 +156,19 @@ info@holidaysbyvalueadz.com
               <div className="w-9 h-9 rounded-full bg-color1/10 border border-color1/20 flex items-center justify-center shrink-0">
                 <FaLocationDot className="text-color1 text-xs" />
               </div>
-              <div>
+              <div className="text-sm">
                 <p className="text-[10px] uppercase tracking-widest text-color1 font-bold">
                   Address
                 </p>
                 <p className="text-gray-700 font1 leading-relaxed">
-                807, Bhandari House, Nehru Place, New Delhi, Delhi 110019
+                  <strong>Delhi:</strong> 807, Bhandari House, Nehru Place, New Delhi, Delhi 110019
+                </p>
+                <p className="text-gray-700 font1 leading-relaxed">
+                  <strong>Bengaluru:</strong> 1st Floor Circuit the Fore
+                  Carmelaram, Ambedkar Nagar, Chikkabellandur, Bengaluru, Karnataka 560035
+                  Newar Wipro SEZ Sarjapur
+                </p><p className="text-gray-700 font1 leading-relaxed">
+                  <strong>UAE:</strong> Offices110, 1st Floor, Al-Wadha Building, Deira, Dubai.
                 </p>
               </div>
             </div>

@@ -16,7 +16,7 @@ const config: Config = {
       },
       colors: {
    color1:"#066168",
-   color2:"#FFAA0D",
+   color2:"#F5821F",
    color3:"#85D200",
    color4:"#ffce5b",
    color5:"#2B3944"

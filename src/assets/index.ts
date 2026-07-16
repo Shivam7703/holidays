@@ -56,6 +56,8 @@ import aboutb from "@/assets/home/aboutb.webp";
 
 import banner from "@/assets/home/Bannner1.webp";
 import about from "@/assets/home/about.png";
+import pop from "@/assets/home/pop.jpg";
+
 
 import ceo from "@/assets/home/ceo.png";
 import cl1 from "@/assets/home/cl1.jpg";
@@ -436,7 +438,7 @@ import macau from "@/assets/home/macau.jpg";
 import zhuhai from "@/assets/home/zhuhai.jpg";
 
 
-export { srilanka,bali, macau, zhuhai, logobg, bannerImage,secImage,ad1,ad2,pro1,pro2,pro3,pro4,choose, bal1, bal2, cloud1, cloud2,cloud3,bl1,bl2,bl4,
+export {pop, srilanka,bali, macau, zhuhai, logobg, bannerImage,secImage,ad1,ad2,pro1,pro2,pro3,pro4,choose, bal1, bal2, cloud1, cloud2,cloud3,bl1,bl2,bl4,
     logo , logo2, banner, box2, box3,process1,aboutb,about,cl1,cl2,cl3,cl4,footerImage, plane, patta,patta2, man2,
     ceo,man, l1,l2,l3,l4,l5,l6,l7,l8,l9,l10,l11,l12,l13,rope,rope2,gal1, gal2, gal3, gal4, 
   andman,  andman1, andman2, andman3, andman4, andman5, andman6, andman7, andman8, andman9,

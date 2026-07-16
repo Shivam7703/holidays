@@ -97,9 +97,8 @@ const Header = ({ header }: any) => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className={`flex md:hidden items-center justify-between px-4 h-20 transition ${
-            isAtTop ? "bg-color2" : "bg-white shadow-md"
-          }`}
+          className={`flex md:hidden items-center justify-between px-4 h-20 transition ${isAtTop ? "bg-color2" : "bg-white shadow-md"
+            }`}
         >
           <Link href={header?.href || "/"}>
             <Image
@@ -130,9 +129,8 @@ const Header = ({ header }: any) => {
               initial="hidden"
               animate="show"
               exit={{ x: "-100%", transition: { duration: 0.3 } }}
-              className={`fixed top-20 left-0 h-screen pb-16 overflow-y-scroll overflow-x-hidden w-full md:hidden ${
-                isAtTop ? "bg-color2" : "bg-white"
-              }`}
+              className={`fixed top-20 left-0 h-screen pb-16 overflow-y-scroll overflow-x-hidden w-full md:hidden ${isAtTop ? "bg-color2" : "bg-white"
+                }`}
             >
               <MenuMobile
                 onTop={isAtTop}
@@ -155,9 +153,9 @@ function Right() {
 
   const socialLinks = [
     { href: "https://facebook.com", icon: <FaFacebookF /> },
-    { href: "https://x.com",        icon: <FaXTwitter /> },
+    { href: "https://x.com", icon: <FaXTwitter /> },
     { href: "https://linkedin.com", icon: <FaLinkedinIn /> },
-    { href: "https://instagram.com",icon: <FaInstagram /> },
+    { href: "https://instagram.com", icon: <FaInstagram /> },
   ];
 
   return (
@@ -202,24 +200,24 @@ function Right() {
           <FaPhone className="text-lg" />
           <span className="text-base">+91 9818929900</span>
         </a>
-      
+
       </motion.div>
 
-        <motion.div
+      <motion.div
         variants={fadeIn("down", "tween", 0.8, 0.4)}
         className="w-px h-6 bg-gray-300"
       />
 
-<motion.div
+      <motion.div
         variants={fadeIn("down", "tween", 0.65, 0.5)}
         className=""
       >
-      
-        <a  href="mailto:info@holidaysbyvalueadz.com"
+
+        <a href="mailto:info@valueadz.ae"
           className="flex items-center gap-2 text-color1 hover:text-color2 transition-colors duration-200"
         >
           <FaEnvelope className="text-lg" />
-          <span className="text-base">info@holidaysbyvalueadz.com</span>
+          <span className="text-base">info@valueadz.ae</span>
         </a>
       </motion.div>
     </motion.div>

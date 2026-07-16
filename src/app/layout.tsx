@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/Footer";
 import { footer } from "@/data/homeData";
+import Popups from "@/components/global/pop";
 
 /**
  * Cormorant Garamond — editorial serif for headings
@@ -25,6 +26,7 @@ export default function RootLayout({
         className={`w-full max-w-screen  relative`}
       >
         <Header />
+        <Popups/>
         {children}
         <Footer footer={footer} />
       </body>

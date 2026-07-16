@@ -128,11 +128,12 @@ function TimelineRow({ item, i }: { item: any; i: number }) {
         <div className="relative w-full h-56 sm:h-96">
 
 <div
-  className="absolute group inset-0 h-9 w-9 z-0 rounded-full top-1/2 left-[45%] max-sm:hidden bg-red-700"
+  className="absolute group inset-0 h-9 w-9 z-0 rounded-full top-1/2 left-[45%] max-sm:hidden bg-black/70 "
   style={{
     boxShadow: "0 0 12px 10px rgba(0,0,0,0.7), 0 0 80px 40px rgba(0,0,0,0.5), 0 0 160px 80px rgba(0,0,0,0.4), 0 0 300px 150px rgba(0,0,0,0.1)",
   }}
-/>       <Image
+/>      
+ <Image
             src={item.img}
             alt={item.heading}
             fill

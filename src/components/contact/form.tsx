@@ -17,13 +17,18 @@ const contactInfo = [
   {
     icon: FiMail,
     label: "Send us a Mail",
-    value: "info@holidaysbyvalueadz.com",
+    value: "info@valueadz.ae",
     color: "bg-[#c084a0]",
   },
   {
     icon: HiOutlineLocationMarker,
-    label: "Address",
-    value: "807, Bhandari House, Nehru Place,\n New Delhi, Delhi 110019",
+    label: "Our Offices",
+    // Array format for better control
+    value: [
+      { city: "Delhi", addr: "807, Bhandari House, Nehru Place, 110019" },
+      { city: "Bengaluru", addr: "1st Floor, Circuit the Fore, Sarjapur, 560035" },
+      { city: "UAE", addr: "Offices 110, 1st Floor, Al-Wadha Building, Deira, Dubai" }
+    ],
     color: "bg-[#0d6e6e]",
   },
 ];
@@ -100,25 +105,38 @@ function Form() {
           </div>
 
           {/* Contact info cards + traveler image */}
-          <div className="flex md:mt-14 gap-4 flex-1">
+          <div className="flex md:mt-10 gap-4 flex-1">
             {/* Info list */}
-            <div className="flex flex-col md:gap-8 gap-5 flex-1">
+            <div className="flex font-sans flex-col md:gap-8 gap-5 flex-1">
               {contactInfo.map((info, i) => {
                 const Icon = info.icon;
                 return (
-                  <div key={i} className="flex items-center gap-4">
+                  <div key={i} className="flex items-start gap-4">
                     {/* Circle icon */}
-                    <div
-                      className={`w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0 ${info.color}`}
-                    >
+                    <div className={`w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0 ${info.color}`}>
                       <Icon className="text-white text-xl" />
                     </div>
+
                     {/* Text */}
-                    <div>
+                    <div className="w-full">
                       <p className="text-gray-400 md:text-lg font-medium">{info.label}</p>
-                      <p className="text-gray-800 font-bold text-lg leading-snug whitespace-pre-line">
-                        {info.value}
-                      </p>
+
+                      {/* Check if value is array (for addresses) or string */}
+                      {Array.isArray(info.value) ? (
+                        <div className="mt-2 space-y-1">
+                          {info.value.map((loc, idx) => (
+                            <div key={idx}>
+                              <p className="text-color1 font-bold text-sm md:text-base">
+                                {loc.city}: <span className=" text-gray-800">{loc.addr}</span>
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      ) : (
+                        <p className="text-gray-800 font-bold text-lg leading-snug">
+                          {info.value}
+                        </p>
+                      )}
                     </div>
                   </div>
                 );
@@ -126,9 +144,7 @@ function Form() {
 
               {/* Bottom tagline */}
               <p className="mt-4 text-3xl font-bold italic text-gray-800">
-                Let's{" "}
-                <span className="text-amber-400 font-extrabold not-italic">Talk</span>{" "}
-                About Your Plan !
+                Let's <span className="text-amber-400 font-extrabold not-italic">Talk</span> About Your Plan !
               </p>
             </div>
 
