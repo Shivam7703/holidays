@@ -7,7 +7,7 @@ import { GiAirplaneDeparture } from 'react-icons/gi';
 import { logo, logo2, pop } from '@/assets';
 
 const WHATSAPP_NUMBER = '919818929900';
-const WHATSAPP_MESSAGE = "Hi Travelista Tours! I'd like to know more about your travel packages.";
+const WHATSAPP_MESSAGE = "Hi HolidaysbyValueAdz! I'd like to know more about your travel packages.";
 
 export default function Popups() {
   const [isFormOpen, setIsFormOpen] = useState(false);

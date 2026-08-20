@@ -81,10 +81,10 @@ export default function Destdetails({ data }: any) {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <h2 className="text-2xl sm:text-3xl z-[3] font-bold text-zinc-800 border-l-4 border-amber-500 pl-4">
+            <h2 className="text-2xl sm:text-3xl z-[3] font-bold text-zinc-900 border-l-4 border-amber-500 pl-4">
               {data?.heading}
             </h2>
-            <p className="text-zinc-600 leading-relaxed text-base sm:text-lg">
+            <p className="text-zinc-800 leading-relaxed text-base sm:text-lg">
               {data?.description}
             </p>
           </motion.div>
@@ -102,7 +102,7 @@ export default function Destdetails({ data }: any) {
                 <h2 className="text-2xl sm:text-3xl  font-bold text-zinc-800 border-l-4 border-amber-500 pl-4">
                   {data.attraction.heading}
                 </h2>
-                <p className="text-zinc-500 text-sm sm:text-base pl-5">
+                <p className="text-zinc-700 text-sm sm:text-base pl-5">
                   {data.attraction.para}
                 </p>
               </div>
@@ -132,7 +132,7 @@ export default function Destdetails({ data }: any) {
                     </div>
                     {/* Card body */}
                     <div className="p-4">
-                      <p className="text-zinc-600 text-sm leading-relaxed">
+                      <p className="text-zinc-700 text-sm sm:text-base leading-relaxed">
                         {card.description}
                       </p>
                     </div>
@@ -154,10 +154,10 @@ export default function Destdetails({ data }: any) {
               className="space-y-6"
             >
               <div className="space-y-2">
-                <h2 className="text-2xl sm:text-3xl font-bold text-zinc-800 border-l-4 border-amber-500 pl-4">
+                <h2 className="text-2xl sm:text-3xl font-bold text-zinc-900 border-l-4 border-amber-500 pl-4">
                   {data.topthings.heading}
                 </h2>
-                <p className="text-zinc-500 text-sm sm:text-base pl-5">
+                <p className="text-zinc-700 text-sm sm:text-base pl-5">
                   {data.topthings.para}
                 </p>
               </div>
@@ -177,10 +177,10 @@ export default function Destdetails({ data }: any) {
                       {i + 1}
                     </div>
                     <div className="space-y-1">
-                      <h3 className="font-bold text-zinc-800 group-hover:text-amber-600 transition-colors duration-300">
+                      <h3 className="font-bold text-zinc-900 group-hover:text-amber-600 transition-colors duration-300">
                         {card.title}
                       </h3>
-                      <p className="text-zinc-500 text-sm leading-relaxed">
+                      <p className="text-zinc-700 text-sm sm:text-base leading-relaxed">
                         {card.description}
                       </p>
                     </div>
@@ -217,30 +217,15 @@ export default function Destdetails({ data }: any) {
                       {/* Stars */}
                       <div className="flex gap-1">
                         {[...Array(5)].map((_, s) => (
-                          <FaStar key={s} className="text-amber-400 text-sm" />
+                          <FaStar key={s} className="text-amber-400 text-sm " />
                         ))}
                       </div>
                       {/* Text */}
-                      <p className="text-zinc-600 italic text-sm leading-relaxed">
+                      <p className="text-zinc-800 sm:text-[16px] italic text-sm leading-relaxed">
                         "{t.text}"
                       </p>
                       {/* Author */}
-                      {/* <div className="flex items-center gap-3 pt-2 border-t border-zinc-100">
-                        <div className="relative w-10 h-10 rounded-full overflow-hidden ring-2 ring-amber-300">
-                          <Image
-                            src={t.img}
-                            alt={"test"}
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                        <div>
-                          <p className="font-semibold text-zinc-800 text-sm">
-                            {t.title}
-                          </p>
-                          <p className="text-xs text-zinc-400">Verified Traveller</p>
-                        </div>
-                      </div> */}
+                    
                     </div>
                   </SwiperSlide>
                 ))}

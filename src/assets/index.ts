@@ -436,6 +436,541 @@ import srilanka from "@/assets/home/srilanka.jpg";
 import bali from "@/assets/home/bali.jpg";
 import macau from "@/assets/home/macau.jpg";
 import zhuhai from "@/assets/home/zhuhai.jpg";
+// Amritsar
+import amrit from "@/assets/dest2/amrit.webp";
+import amrit1 from "@/assets/dest2/amrit1.webp";
+import amrit2 from "@/assets/dest2/amrit2.webp";
+import amrit3 from "@/assets/dest2/amrit3.webp";
+import amrit4 from "@/assets/dest2/amrit4.webp";
+import amrit5 from "@/assets/dest2/amrit5.webp";
+import amrit6 from "@/assets/dest2/amrit6.webp";
+import amrit7 from "@/assets/dest2/amrit7.webp";
+import amrit8 from "@/assets/dest2/amrit8.webp";
+import amrit9 from "@/assets/dest2/amrit9.webp";
+
+// Australia
+import aus from "@/assets/dest2/australia.webp";
+import aus1 from "@/assets/dest2/aus1.webp";
+import aus2 from "@/assets/dest2/aus2.webp";
+import aus3 from "@/assets/dest2/aus3.webp";
+import aus4 from "@/assets/dest2/aus4.webp";
+import aus5 from "@/assets/dest2/aus5.webp";
+import aus6 from "@/assets/dest2/aus6.webp";
+import aus7 from "@/assets/dest2/aus7.webp";
+import aus8 from "@/assets/dest2/aus8.webp";
+import aus9 from "@/assets/dest2/aus9.webp";
+
+// Bahamas
+import baha from "@/assets/dest2/bahamas.webp";
+import baha1 from "@/assets/dest2/baha1.webp";
+import baha2 from "@/assets/dest2/baha2.webp";
+import baha3 from "@/assets/dest2/baha3.webp";
+import baha4 from "@/assets/dest2/baha4.webp";
+import baha5 from "@/assets/dest2/baha5.webp";
+import baha6 from "@/assets/dest2/baha6.webp";
+import baha7 from "@/assets/dest2/baha7.webp";
+import baha8 from "@/assets/dest2/baha8.webp";
+import baha9 from "@/assets/dest2/baha9.webp";
+
+// Bahrain
+import bahr from "@/assets/dest2/bahrain.webp";
+import bahr1 from "@/assets/dest2/bahr1.webp";
+import bahr2 from "@/assets/dest2/bahr2.webp";
+import bahr3 from "@/assets/dest2/bahr3.webp";
+import bahr4 from "@/assets/dest2/bahr4.webp";
+import bahr5 from "@/assets/dest2/bahr5.webp";
+import bahr6 from "@/assets/dest2/bahr6.webp";
+import bahr7 from "@/assets/dest2/bahr7.webp";
+import bahr8 from "@/assets/dest2/bahr8.webp";
+import bahr9 from "@/assets/dest2/bahr9.webp";
+
+// Bengaluru
+import ben from "@/assets/dest2/bengluru.webp";
+import ben1 from "@/assets/dest2/ben1.webp";
+import ben2 from "@/assets/dest2/ben2.webp";
+import ben3 from "@/assets/dest2/ben3.webp";
+import ben4 from "@/assets/dest2/ben4.webp";
+import ben5 from "@/assets/dest2/ben5.webp";
+import ben6 from "@/assets/dest2/ben6.webp";
+import ben7 from "@/assets/dest2/ben7.webp";
+import ben8 from "@/assets/dest2/ben8.webp";
+import ben9 from "@/assets/dest2/ben9.webp";
+import ben10 from "@/assets/dest2/ben10.webp";
+
+// Bhubaneswar
+import bhu from "@/assets/dest2/bhub.webp";
+import bhu1 from "@/assets/dest2/bhu1.webp";
+import bhu2 from "@/assets/dest2/bhu2.webp";
+import bhu3 from "@/assets/dest2/bhu3.webp";
+import bhu4 from "@/assets/dest2/bhu4.webp";
+import bhu5 from "@/assets/dest2/bhu5.webp";
+import bhu6 from "@/assets/dest2/bhu6.webp";
+import bhu7 from "@/assets/dest2/bhu7.webp";
+import bhu8 from "@/assets/dest2/bhu8.webp";
+import bhu9 from "@/assets/dest2/bhu9.webp";
+
+// Brazil
+import braz from "@/assets/dest2/brazil.webp";
+import braz1 from "@/assets/dest2/braj1.webp";
+import braz2 from "@/assets/dest2/braj2.webp";
+import braz3 from "@/assets/dest2/braj3.webp";
+import braz4 from "@/assets/dest2/braj4.webp";
+import braz5 from "@/assets/dest2/braj5.webp";
+import braz6 from "@/assets/dest2/braj6.webp";
+import braz7 from "@/assets/dest2/braj7.webp";
+import braz8 from "@/assets/dest2/braj8.webp";
+import braz9 from "@/assets/dest2/braj9.webp";
+
+// Canada
+import can from "@/assets/dest2/canada.webp";
+import can1 from "@/assets/dest2/can1.webp";
+import can2 from "@/assets/dest2/can2.webp";
+import can3 from "@/assets/dest2/can3.webp";
+import can4 from "@/assets/dest2/can4.webp";
+import can5 from "@/assets/dest2/can5.webp";
+import can6 from "@/assets/dest2/can6.webp";
+import can7 from "@/assets/dest2/can7.webp";
+import can8 from "@/assets/dest2/can8.webp";
+import can9 from "@/assets/dest2/can9.webp";
+
+// Chandigarh
+import chandigarh from "@/assets/dest2/chandigarh.webp";
+import chandigarh1 from "@/assets/dest2/chandigarh1.webp";
+import chandigarh2 from "@/assets/dest2/chandigarh2.webp";
+import chandigarh3 from "@/assets/dest2/chandigarh3.webp";
+import chandigarh4 from "@/assets/dest2/chandigarh4.webp";
+import chandigarh5 from "@/assets/dest2/chandigarh5.webp";
+import chandigarh6 from "@/assets/dest2/chandigarh6.webp";
+import chandigarh7 from "@/assets/dest2/chandigarh7.webp";
+import chandigarh8 from "@/assets/dest2/chandigarh8.webp";
+import chandigarh9 from "@/assets/dest2/chandigarh9.webp";
+
+// Chennai
+import chen from "@/assets/dest2/chennai.webp";
+import chen1 from "@/assets/dest2/chen1.webp";
+import chen2 from "@/assets/dest2/chen2.webp";
+import chen3 from "@/assets/dest2/chen3.webp";
+import chen4 from "@/assets/dest2/chen4.webp";
+import chen5 from "@/assets/dest2/chen5.webp";
+import chen6 from "@/assets/dest2/chen6.webp";
+import chen7 from "@/assets/dest2/chen7.webp";
+import chen8 from "@/assets/dest2/chen8.webp";
+import chen9 from "@/assets/dest2/chen9.webp";
+import chen10 from "@/assets/dest2/chen10.webp";
+
+// Gangtok
+import gang from "@/assets/dest2/gangtok.webp";
+import gang1 from "@/assets/dest2/gang1.webp";
+import gang2 from "@/assets/dest2/gang2.webp";
+import gang3 from "@/assets/dest2/gang3.webp";
+import gang4 from "@/assets/dest2/gang4.webp";
+import gang5 from "@/assets/dest2/gang5.webp";
+import gang6 from "@/assets/dest2/gang6.webp";
+import gang7 from "@/assets/dest2/gang7.webp";
+import gang8 from "@/assets/dest2/gang8.webp";
+import gang9 from "@/assets/dest2/gang9.webp";
+import gang10 from "@/assets/dest2/gang10.webp";
+
+// Hampi
+import hampi from "@/assets/dest2/hampi.webp";
+import hampi1 from "@/assets/dest2/hampi1.webp";
+import hampi2 from "@/assets/dest2/hampi2.webp";
+import hampi3 from "@/assets/dest2/hampi3.webp";
+import hampi4 from "@/assets/dest2/hampi4.webp";
+import hampi5 from "@/assets/dest2/hampi5.webp";
+import hampi6 from "@/assets/dest2/hampi6.webp";
+import hampi7 from "@/assets/dest2/hampi7.webp";
+import hampi8 from "@/assets/dest2/hampi8.webp";
+import hampi9 from "@/assets/dest2/hampi9.webp";
+import hampi10 from "@/assets/dest2/hampi10.webp";
+
+// Iceland
+import ice from "@/assets/dest2/ice.webp";
+import ice1 from "@/assets/dest2/ice1.webp";
+import ice2 from "@/assets/dest2/ice2.webp";
+import ice3 from "@/assets/dest2/ice3.webp";
+import ice4 from "@/assets/dest2/ice4.webp";
+import ice5 from "@/assets/dest2/ice5.webp";
+import ice6 from "@/assets/dest2/ice6.webp";
+import ice7 from "@/assets/dest2/ice7.webp";
+import ice8 from "@/assets/dest2/ice8.webp";
+import ice9 from "@/assets/dest2/ice9.webp";
+
+// Italy
+import ital from "@/assets/dest2/italy.webp";
+import ital1 from "@/assets/dest2/ital1.webp";
+import ital2 from "@/assets/dest2/ital2.webp";
+import ital3 from "@/assets/dest2/ital3.webp";
+import ital4 from "@/assets/dest2/ital4.webp";
+import ital5 from "@/assets/dest2/ital5.webp";
+import ital6 from "@/assets/dest2/ital6.webp";
+import ital7 from "@/assets/dest2/ital7.webp";
+import ital8 from "@/assets/dest2/ital8.webp";
+import ital9 from "@/assets/dest2/ital9.webp";
+
+// Jaisalmer
+import jaisalmer from "@/assets/dest2/jaisalmer.webp";
+import jaisalmer1 from "@/assets/dest2/jaisalmer1.webp";
+import jaisalmer2 from "@/assets/dest2/jaisalmer2.webp";
+import jaisalmer3 from "@/assets/dest2/jaisalmer3.webp";
+import jaisalmer4 from "@/assets/dest2/jaisalmer4.webp";
+import jaisalmer5 from "@/assets/dest2/jaisalmer5.webp";
+import jaisalmer6 from "@/assets/dest2/jaisalmer6.webp";
+import jaisalmer7 from "@/assets/dest2/jaisalmer7.webp";
+import jaisalmer8 from "@/assets/dest2/jaisalmer8.webp";
+import jaisalmer9 from "@/assets/dest2/jaisalmer9.webp";
+import jaisalmer10 from "@/assets/dest2/jaisalmer10.webp";
+
+// Jodhpur
+import jodh from "@/assets/dest2/jodhpur.webp";
+import jodh1 from "@/assets/dest2/jodh1.webp";
+import jodh2 from "@/assets/dest2/jodh2.webp";
+import jodh3 from "@/assets/dest2/jodh3.webp";
+import jodh4 from "@/assets/dest2/jodh4.webp";
+import jodh5 from "@/assets/dest2/jodh5.webp";
+import jodh6 from "@/assets/dest2/jodh6.webp";
+import jodh7 from "@/assets/dest2/jodh7.webp";
+import jodh8 from "@/assets/dest2/jodh8.webp";
+import jodh9 from "@/assets/dest2/jodh9.webp";
+import jodh10 from "@/assets/dest2/jodh10.webp";
+
+// Kazakhstan
+import kazakh from "@/assets/dest2/kazakh.webp";
+import kazakh1 from "@/assets/dest2/kazakh1.webp";
+import kazakh2 from "@/assets/dest2/kazakh2.webp";
+import kazakh3 from "@/assets/dest2/kazakh3.webp";
+import kazakh4 from "@/assets/dest2/kazakh4.webp";
+import kazakh5 from "@/assets/dest2/kazakh5.webp";
+import kazakh6 from "@/assets/dest2/kazakh6.webp";
+import kazakh7 from "@/assets/dest2/kazakh7.webp";
+import kazakh8 from "@/assets/dest2/kazakh8.webp";
+import kazakh9 from "@/assets/dest2/kazakh9.webp";
+
+// Kodaikanal
+import kodaikanal from "@/assets/dest2/kodaikanal.webp";
+import kodaikanal1 from "@/assets/dest2/kodaikanal1.webp";
+import kodaikanal2 from "@/assets/dest2/kodaikanal2.webp";
+import kodaikanal3 from "@/assets/dest2/kodaikanal3.webp";
+import kodaikanal4 from "@/assets/dest2/kodaikanal4.webp";
+import kodaikanal5 from "@/assets/dest2/kodaikanal5.webp";
+import kodaikanal6 from "@/assets/dest2/kodaikanal6.webp";
+import kodaikanal7 from "@/assets/dest2/kodaikanal7.webp";
+import kodaikanal8 from "@/assets/dest2/kodaikanal8.webp";
+import kodaikanal9 from "@/assets/dest2/kodaikanal9.webp";
+
+// Lakshadweep (till 8)
+import lax from "@/assets/dest2/laxdeep.webp";
+import lax1 from "@/assets/dest2/lax1.webp";
+import lax2 from "@/assets/dest2/lax2.webp";
+import lax3 from "@/assets/dest2/lax3.webp";
+import lax4 from "@/assets/dest2/lax4.webp";
+import lax5 from "@/assets/dest2/lax5.webp";
+import lax6 from "@/assets/dest2/lax6.webp";
+import lax7 from "@/assets/dest2/lax7.webp";
+import lax8 from "@/assets/dest2/lax8.webp";
+
+// Lonavala
+import lona from "@/assets/dest2/lonavla.webp";
+import lona1 from "@/assets/dest2/lona1.webp";
+import lona2 from "@/assets/dest2/lona2.webp";
+import lona3 from "@/assets/dest2/lona3.webp";
+import lona4 from "@/assets/dest2/lona4.webp";
+import lona5 from "@/assets/dest2/lona5.webp";
+import lona6 from "@/assets/dest2/lona6.webp";
+import lona7 from "@/assets/dest2/lona7.webp";
+import lona8 from "@/assets/dest2/lona8.webp";
+import lona9 from "@/assets/dest2/lona9.webp";
+import lona10 from "@/assets/dest2/lona10.webp";
+
+// Macau
+import mac from "@/assets/dest2/macau.webp";
+import mac1 from "@/assets/dest2/mac1.webp";
+import mac2 from "@/assets/dest2/mac2.webp";
+import mac3 from "@/assets/dest2/mac3.webp";
+import mac4 from "@/assets/dest2/mac4.webp";
+import mac5 from "@/assets/dest2/mac5.webp";
+import mac6 from "@/assets/dest2/mac6.webp";
+import mac7 from "@/assets/dest2/mac7.webp";
+import mac8 from "@/assets/dest2/mac8.webp";
+import mac9 from "@/assets/dest2/mac9.webp";
+
+// Mahabaleshwar
+import mahablesh from "@/assets/dest2/mahablesh.webp";
+import mahablesh1 from "@/assets/dest2/mahablesh1.webp";
+import mahablesh2 from "@/assets/dest2/mahablesh2.webp";
+import mahablesh3 from "@/assets/dest2/mahablesh3.webp";
+import mahablesh4 from "@/assets/dest2/mahablesh4.webp";
+import mahablesh5 from "@/assets/dest2/mahablesh5.webp";
+import mahablesh6 from "@/assets/dest2/mahablesh6.webp";
+import mahablesh7 from "@/assets/dest2/mahablesh7.webp";
+import mahablesh8 from "@/assets/dest2/mahablesh8.webp";
+import mahablesh9 from "@/assets/dest2/mahablesh9.webp";
+import mahablesh10 from "@/assets/dest2/mahablesh10.webp";
+
+// Mauritius
+import maur from "@/assets/dest2/mauritius.webp";
+import maur1 from "@/assets/dest2/maur1.webp";
+import maur2 from "@/assets/dest2/maur2.webp";
+import maur3 from "@/assets/dest2/maur3.webp";
+import maur4 from "@/assets/dest2/maur4.webp";
+import maur5 from "@/assets/dest2/maur5.webp";
+import maur6 from "@/assets/dest2/maur6.webp";
+import maur7 from "@/assets/dest2/maur7.webp";
+import maur8 from "@/assets/dest2/maur8.webp";
+import maur9 from "@/assets/dest2/maur9.webp";
+
+// Munnar
+import munnar from "@/assets/dest2/munnar.webp";
+import munnar1 from "@/assets/dest2/munnar1.webp";
+import munnar2 from "@/assets/dest2/munnar2.webp";
+import munnar3 from "@/assets/dest2/munnar3.webp";
+import munnar4 from "@/assets/dest2/munnar4.webp";
+import munnar5 from "@/assets/dest2/munnar5.webp";
+import munnar6 from "@/assets/dest2/munnar6.webp";
+import munnar7 from "@/assets/dest2/munnar7.webp";
+import munnar8 from "@/assets/dest2/munnar8.webp";
+import munnar9 from "@/assets/dest2/munnar9.webp";
+import munnar10 from "@/assets/dest2/munnar10.webp";
+
+// Mussoorie
+import mussorie from "@/assets/dest2/mussorie.webp";
+import mussorie1 from "@/assets/dest2/mussorie1.webp";
+import mussorie2 from "@/assets/dest2/mussorie2.webp";
+import mussorie3 from "@/assets/dest2/mussorie3.webp";
+import mussorie4 from "@/assets/dest2/mussorie4.webp";
+import mussorie5 from "@/assets/dest2/mussorie5.webp";
+import mussorie6 from "@/assets/dest2/mussorie6.webp";
+import mussorie7 from "@/assets/dest2/mussorie7.webp";
+import mussorie8 from "@/assets/dest2/mussorie8.webp";
+import mussorie9 from "@/assets/dest2/mussorie9.webp";
+
+// Nepal
+import nepal from "@/assets/dest2/nepal.webp";
+import nepal1 from "@/assets/dest2/nepal1.webp";
+import nepal2 from "@/assets/dest2/nepal2.webp";
+import nepal3 from "@/assets/dest2/nepal3.webp";
+import nepal4 from "@/assets/dest2/nepal4.webp";
+import nepal5 from "@/assets/dest2/nepal5.webp";
+import nepal6 from "@/assets/dest2/nepal6.webp";
+import nepal7 from "@/assets/dest2/nepal7.webp";
+import nepal8 from "@/assets/dest2/nepal8.webp";
+import nepal9 from "@/assets/dest2/nepal9.webp";
+
+// Netherlands
+import neth from "@/assets/dest2/netherland.webp";
+import neth1 from "@/assets/dest2/neth1.webp";
+import neth2 from "@/assets/dest2/neth2.webp";
+import neth3 from "@/assets/dest2/neth3.webp";
+import neth4 from "@/assets/dest2/neth4.webp";
+import neth5 from "@/assets/dest2/neth5.webp";
+import neth6 from "@/assets/dest2/neth6.webp";
+import neth7 from "@/assets/dest2/neth7.webp";
+import neth8 from "@/assets/dest2/neth8.webp";
+import neth9 from "@/assets/dest2/neth9.webp";
+
+// Oman
+import oman from "@/assets/dest2/oman.webp";
+import oman1 from "@/assets/dest2/oman1.webp";
+import oman2 from "@/assets/dest2/oman2.webp";
+import oman3 from "@/assets/dest2/oman3.webp";
+import oman4 from "@/assets/dest2/oman4.webp";
+import oman5 from "@/assets/dest2/oman5.webp";
+import oman6 from "@/assets/dest2/oman6.webp";
+import oman7 from "@/assets/dest2/oman7.webp";
+import oman8 from "@/assets/dest2/oman8.webp";
+import oman9 from "@/assets/dest2/oman9.webp";
+
+// Paris
+import paris from "@/assets/dest2/paris.webp";
+import paris1 from "@/assets/dest2/paris1.webp";
+import paris2 from "@/assets/dest2/paris2.webp";
+import paris3 from "@/assets/dest2/paris3.webp";
+import paris4 from "@/assets/dest2/paris4.webp";
+import paris5 from "@/assets/dest2/paris5.webp";
+import paris6 from "@/assets/dest2/paris6.webp";
+import paris7 from "@/assets/dest2/paris7.webp";
+import paris8 from "@/assets/dest2/paris8.webp";
+import paris9 from "@/assets/dest2/paris9.webp";
+
+// Peru
+import per from "@/assets/dest2/peru.webp";
+import per1 from "@/assets/dest2/per1.webp";
+import per2 from "@/assets/dest2/per2.webp";
+import per3 from "@/assets/dest2/per3.webp";
+import per4 from "@/assets/dest2/per4.webp";
+import per5 from "@/assets/dest2/per5.webp";
+import per6 from "@/assets/dest2/per6.webp";
+import per7 from "@/assets/dest2/per7.webp";
+import per8 from "@/assets/dest2/per8.webp";
+import per9 from "@/assets/dest2/per9.webp";
+
+// Pondicherry
+import pond from "@/assets/dest2/pondichery.webp";
+import pond1 from "@/assets/dest2/pond1.webp";
+import pond2 from "@/assets/dest2/pond2.webp";
+import pond3 from "@/assets/dest2/pond3.webp";
+import pond4 from "@/assets/dest2/pond4.webp";
+import pond5 from "@/assets/dest2/pond5.webp";
+import pond6 from "@/assets/dest2/pond6.webp";
+import pond7 from "@/assets/dest2/pond7.webp";
+import pond8 from "@/assets/dest2/pond8.webp";
+import pond9 from "@/assets/dest2/pond9.webp";
+
+// Rajasthan
+import raj from "@/assets/dest2/rajasthan.webp";
+import raj1 from "@/assets/dest2/raj1.webp";
+import raj2 from "@/assets/dest2/raj2.webp";
+import raj3 from "@/assets/dest2/raj3.webp";
+import raj4 from "@/assets/dest2/raj4.webp";
+import raj5 from "@/assets/dest2/raj5.webp";
+import raj6 from "@/assets/dest2/raj6.webp";
+import raj7 from "@/assets/dest2/raj7.webp";
+import raj8 from "@/assets/dest2/raj8.webp";
+import raj9 from "@/assets/dest2/raj9.webp";
+
+// Shillong
+import shil from "@/assets/dest2/shillong.webp";
+import shil1 from "@/assets/dest2/shil1.webp";
+import shil2 from "@/assets/dest2/shil2.webp";
+import shil3 from "@/assets/dest2/shil3.webp";
+import shil4 from "@/assets/dest2/shil4.webp";
+import shil5 from "@/assets/dest2/shil5.webp";
+import shil6 from "@/assets/dest2/shil6.webp";
+import shil7 from "@/assets/dest2/shil7.webp";
+import shil8 from "@/assets/dest2/shil8.webp";
+import shil9 from "@/assets/dest2/shil9.webp";
+
+// Shimla
+import shimla from "@/assets/dest2/shimla.webp";
+import shimla1 from "@/assets/dest2/shimla1.webp";
+import shimla2 from "@/assets/dest2/shimla2.webp";
+import shimla3 from "@/assets/dest2/shimla3.webp";
+import shimla4 from "@/assets/dest2/shimla4.webp";
+import shimla5 from "@/assets/dest2/shimla5.webp";
+import shimla6 from "@/assets/dest2/shimla6.webp";
+import shimla7 from "@/assets/dest2/shimla7.webp";
+import shimla8 from "@/assets/dest2/shimla8.webp";
+
+// Singapore
+import singa from "@/assets/dest2/singa.webp";
+import singa1 from "@/assets/dest2/singa1.webp";
+import singa2 from "@/assets/dest2/singa2.webp";
+import singa3 from "@/assets/dest2/singa3.webp";
+import singa4 from "@/assets/dest2/singa4.webp";
+import singa5 from "@/assets/dest2/singa5.webp";
+import singa6 from "@/assets/dest2/singa6.webp";
+import singa7 from "@/assets/dest2/singa7.webp";
+import singa8 from "@/assets/dest2/singa8.webp";
+import singa9 from "@/assets/dest2/singa9.webp";
+
+// South Korea
+import sk from "@/assets/dest2/southk.webp";
+import sk1 from "@/assets/dest2/sk1.webp";
+import sk2 from "@/assets/dest2/sk2.webp";
+import sk3 from "@/assets/dest2/sk3.webp";
+import sk4 from "@/assets/dest2/sk4.webp";
+import sk5 from "@/assets/dest2/sk5.webp";
+import sk6 from "@/assets/dest2/sk6.webp";
+import sk7 from "@/assets/dest2/sk7.webp";
+import sk8 from "@/assets/dest2/sk8.webp";
+import sk9 from "@/assets/dest2/sk9.webp";
+
+// Spain
+import spa from "@/assets/dest2/spain.webp";
+import spa1 from "@/assets/dest2/spa1.webp";
+import spa2 from "@/assets/dest2/spa2.webp";
+import spa3 from "@/assets/dest2/spa3.webp";
+import spa4 from "@/assets/dest2/spa4.webp";
+import spa5 from "@/assets/dest2/spa5.webp";
+import spa6 from "@/assets/dest2/spa6.webp";
+import spa7 from "@/assets/dest2/spa7.webp";
+import spa8 from "@/assets/dest2/spa8.webp";
+import spa9 from "@/assets/dest2/spa9.webp";
+
+// Spiti
+import spiti from "@/assets/dest2/spiti.webp";
+import spiti1 from "@/assets/dest2/spiti2.webp";
+import spiti2 from "@/assets/dest2/spiti3.webp";
+import spiti3 from "@/assets/dest2/spiti4.webp";
+import spiti4 from "@/assets/dest2/spiti5.webp";
+import spiti5 from "@/assets/dest2/spiti6.webp";
+import spiti6 from "@/assets/dest2/spiti7.webp";
+import spiti7 from "@/assets/dest2/spiti8.webp";
+import spiti8 from "@/assets/dest2/spiti9.webp";
+import spiti9 from "@/assets/dest2/spiti10.webp";
+
+// Tanzania
+import tanz from "@/assets/dest2/tanz.webp";
+import tanz1 from "@/assets/dest2/tanz1.webp";
+import tanz2 from "@/assets/dest2/tanz2.webp";
+import tanz3 from "@/assets/dest2/tanz3.webp";
+import tanz4 from "@/assets/dest2/tanz4.webp";
+import tanz5 from "@/assets/dest2/tanz5.webp";
+import tanz6 from "@/assets/dest2/tanz6.webp";
+import tanz7 from "@/assets/dest2/tanz7.webp";
+import tanz8 from "@/assets/dest2/tanz8.webp";
+import tanz9 from "@/assets/dest2/tanz9.webp";
+
+// Tirupati
+import tir from "@/assets/dest2/tiru.webp";
+import tir1 from "@/assets/dest2/tir1.webp";
+import tir2 from "@/assets/dest2/tir2.webp";
+import tir3 from "@/assets/dest2/tir3.webp";
+import tir4 from "@/assets/dest2/tir4.webp";
+import tir5 from "@/assets/dest2/tir5.webp";
+import tir6 from "@/assets/dest2/tir6.webp";
+import tir7 from "@/assets/dest2/tir7.webp";
+import tir8 from "@/assets/dest2/tir8.webp";
+import tir9 from "@/assets/dest2/tir9.webp";
+
+// Udaipur
+import udaipur from "@/assets/dest2/udaipur.webp";
+import udaipur1 from "@/assets/dest2/udaipur1.webp";
+import udaipur2 from "@/assets/dest2/udaipur2.webp";
+import udaipur3 from "@/assets/dest2/udaipur3.webp";
+import udaipur4 from "@/assets/dest2/udaipur4.webp";
+import udaipur5 from "@/assets/dest2/udaipur5.webp";
+import udaipur6 from "@/assets/dest2/udaipur6.webp";
+import udaipur7 from "@/assets/dest2/udaipur7.webp";
+import udaipur8 from "@/assets/dest2/udaipur8.webp";
+import udaipur9 from "@/assets/dest2/udaipur9.webp";
+import udaipur10 from "@/assets/dest2/udaipur10.webp";
+
+// Ujjain
+import uj from "@/assets/dest2/ujjain.webp";
+import uj1 from "@/assets/dest2/uj1.webp";
+import uj2 from "@/assets/dest2/uj2.webp";
+import uj3 from "@/assets/dest2/uj3.webp";
+import uj4 from "@/assets/dest2/uj4.webp";
+import uj5 from "@/assets/dest2/uj5.webp";
+import uj6 from "@/assets/dest2/uj6.webp";
+import uj7 from "@/assets/dest2/uj7.webp";
+import uj8 from "@/assets/dest2/uj8.webp";
+import uj9 from "@/assets/dest2/uj9.webp";
+
+// UK
+import uk from "@/assets/dest2/uk.webp";
+import uk1 from "@/assets/dest2/uk1.webp";
+import uk2 from "@/assets/dest2/uk2.webp";
+import uk3 from "@/assets/dest2/uk3.webp";
+import uk4 from "@/assets/dest2/uk4.webp";
+import uk5 from "@/assets/dest2/uk5.webp";
+import uk6 from "@/assets/dest2/uk6.webp";
+import uk7 from "@/assets/dest2/uk7.webp";
+import uk8 from "@/assets/dest2/uk8.webp";
+import uk9 from "@/assets/dest2/uk9.webp";
+
+// Varanasi
+import vns from "@/assets/dest2/varanasi.webp";
+import vns1 from "@/assets/dest2/vns1.webp";
+import vns2 from "@/assets/dest2/vns2.webp";
+import vns3 from "@/assets/dest2/vns3.webp";
+import vns4 from "@/assets/dest2/vns4.webp";
+import vns5 from "@/assets/dest2/vns5.webp";
+import vns6 from "@/assets/dest2/vns6.webp";
+import vns7 from "@/assets/dest2/vns7.webp";
+import vns8 from "@/assets/dest2/vns8.webp";
+import vns9 from "@/assets/dest2/vns9.webp";
 
 
 export {pop, srilanka,bali, macau, zhuhai, logobg, bannerImage,secImage,ad1,ad2,pro1,pro2,pro3,pro4,choose, bal1, bal2, cloud1, cloud2,cloud3,bl1,bl2,bl4,
@@ -510,5 +1045,91 @@ export {pop, srilanka,bali, macau, zhuhai, logobg, bannerImage,secImage,ad1,ad2,
   jcn7,
   jcn8,
   jcn9,
-  malaysia, baku,
+  malaysia, baku, amrit, amrit1, amrit2, amrit3, amrit4, amrit5, amrit6, amrit7, amrit8, amrit9,
+  // Australia
+  aus, aus1, aus2, aus3, aus4, aus5, aus6, aus7, aus8, aus9,
+  // Bahamas
+  baha, baha1, baha2, baha3, baha4, baha5, baha6, baha7, baha8, baha9,
+  // Bahrain
+  bahr, bahr1, bahr2, bahr3, bahr4, bahr5, bahr6, bahr7, bahr8, bahr9,
+  // Bengaluru
+  ben, ben1, ben2, ben3, ben4, ben5, ben6, ben7, ben8, ben9, ben10,
+  // Bhubaneswar
+  bhu, bhu1, bhu2, bhu3, bhu4, bhu5, bhu6, bhu7, bhu8, bhu9,
+  // Brazil
+  braz, braz1, braz2, braz3, braz4, braz5, braz6, braz7, braz8, braz9,
+  // Canada
+  can, can1, can2, can3, can4, can5, can6, can7, can8, can9,
+  // Chandigarh
+  chandigarh, chandigarh1, chandigarh2, chandigarh3, chandigarh4, chandigarh5, chandigarh6, chandigarh7, chandigarh8, chandigarh9,
+  // Chennai
+  chen, chen1, chen2, chen3, chen4, chen5, chen6, chen7, chen8, chen9, chen10,
+  // Gangtok
+  gang, gang1, gang2, gang3, gang4, gang5, gang6, gang7, gang8, gang9, gang10,
+  // Hampi
+  hampi, hampi1, hampi2, hampi3, hampi4, hampi5, hampi6, hampi7, hampi8, hampi9, hampi10,
+  // Iceland
+  ice, ice1, ice2, ice3, ice4, ice5, ice6, ice7, ice8, ice9,
+  // Italy
+  ital, ital1, ital2, ital3, ital4, ital5, ital6, ital7, ital8, ital9,
+  // Jaisalmer
+  jaisalmer, jaisalmer1, jaisalmer2, jaisalmer3, jaisalmer4, jaisalmer5, jaisalmer6, jaisalmer7, jaisalmer8, jaisalmer9, jaisalmer10,
+  // Jodhpur
+  jodh, jodh1, jodh2, jodh3, jodh4, jodh5, jodh6, jodh7, jodh8, jodh9, jodh10,
+  // Kazakhstan
+  kazakh, kazakh1, kazakh2, kazakh3, kazakh4, kazakh5, kazakh6, kazakh7, kazakh8, kazakh9,
+  // Kodaikanal
+  kodaikanal, kodaikanal1, kodaikanal2, kodaikanal3, kodaikanal4, kodaikanal5, kodaikanal6, kodaikanal7, kodaikanal8, kodaikanal9,
+  // Lakshadweep
+  lax, lax1, lax2, lax3, lax4, lax5, lax6, lax7, lax8,
+  // Lonavala
+  lona, lona1, lona2, lona3, lona4, lona5, lona6, lona7, lona8, lona9, lona10,
+  // Macau
+  mac, mac1, mac2, mac3, mac4, mac5, mac6, mac7, mac8, mac9,
+  // Mahabaleshwar
+  mahablesh, mahablesh1, mahablesh2, mahablesh3, mahablesh4, mahablesh5, mahablesh6, mahablesh7, mahablesh8, mahablesh9, mahablesh10,
+  // Mauritius
+  maur, maur1, maur2, maur3, maur4, maur5, maur6, maur7, maur8, maur9,
+  // Munnar
+  munnar, munnar1, munnar2, munnar3, munnar4, munnar5, munnar6, munnar7, munnar8, munnar9, munnar10,
+  // Mussoorie
+  mussorie, mussorie1, mussorie2, mussorie3, mussorie4, mussorie5, mussorie6, mussorie7, mussorie8, mussorie9,
+  // Nepal
+  nepal, nepal1, nepal2, nepal3, nepal4, nepal5, nepal6, nepal7, nepal8, nepal9,
+  // Netherlands
+  neth, neth1, neth2, neth3, neth4, neth5, neth6, neth7, neth8, neth9,
+  // Oman
+  oman, oman1, oman2, oman3, oman4, oman5, oman6, oman7, oman8, oman9,
+  // Paris
+  paris, paris1, paris2, paris3, paris4, paris5, paris6, paris7, paris8, paris9,
+  // Peru
+  per, per1, per2, per3, per4, per5, per6, per7, per8, per9,
+  // Pondicherry
+  pond, pond1, pond2, pond3, pond4, pond5, pond6, pond7, pond8, pond9,
+  // Rajasthan
+  raj, raj1, raj2, raj3, raj4, raj5, raj6, raj7, raj8, raj9,
+  // Shillong
+  shil, shil1, shil2, shil3, shil4, shil5, shil6, shil7, shil8, shil9,
+  // Shimla
+  shimla, shimla1, shimla2, shimla3, shimla4, shimla5, shimla6, shimla7, shimla8, 
+  // Singapore
+  singa, singa1, singa2, singa3, singa4, singa5, singa6, singa7, singa8, singa9,
+  // South Korea
+  sk, sk1, sk2, sk3, sk4, sk5, sk6, sk7, sk8, sk9,
+  // Spain
+  spa, spa1, spa2, spa3, spa4, spa5, spa6, spa7, spa8, spa9,
+  // Spiti
+  spiti, spiti1, spiti2, spiti3, spiti4, spiti5, spiti6, spiti7, spiti8, spiti9,
+  // Tanzania
+  tanz, tanz1, tanz2, tanz3, tanz4, tanz5, tanz6, tanz7, tanz8, tanz9,
+  // Tirupati
+  tir, tir1, tir2, tir3, tir4, tir5, tir6, tir7, tir8, tir9,
+  // Udaipur
+  udaipur, udaipur1, udaipur2, udaipur3, udaipur4, udaipur5, udaipur6, udaipur7, udaipur8, udaipur9, udaipur10,
+  // Ujjain
+  uj, uj1, uj2, uj3, uj4, uj5, uj6, uj7, uj8, uj9,
+  // UK
+  uk, uk1, uk2, uk3, uk4, uk5, uk6, uk7, uk8, uk9,
+  // Varanasi
+  vns, vns1, vns2, vns3, vns4, vns5, vns6, vns7, vns8, vns9
  }

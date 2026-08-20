@@ -147,7 +147,7 @@ export default function DestinationAside({ data }: any) {
         </div>
 
         {/* Bottom padding */}
-        <div className="bg-white mx-3 mb-3 h-2 rounded-b-2xl" />
+        <div className=" mx-3 mb-3 " />
       </motion.div>
 
       {/* ── WHY CHOOSE US ── */}
@@ -188,8 +188,8 @@ export default function DestinationAside({ data }: any) {
               <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300">
                 <FaChevronRight className="text-white text-[7px]" />
               </span>
-              <p className="text-xs text-zinc-600 leading-relaxed">
-                <span className="font-bold text-zinc-800">{da.heading} </span>
+              <p className="text-[16px] font-medium text-zinc-700 leading-relaxed">
+                <span className="font-extrabold text-zinc-900">{da.heading} </span>
                 {da.para}
               </p>
             </motion.div>

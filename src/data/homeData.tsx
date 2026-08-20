@@ -96,15 +96,137 @@ export const navigationMenu = {
             id: 14,
             label: "Manali",
             href: "/destinations/manali",
-          },{
-            id: 15,
-            label: "Mysore-Ooty",
-            href: "/destinations/mysore-ooty",
-          },{
-            id: 16,
-            label: "Jim Corbett & Nainital",
-            href: "/destinations/jim-corbett-nainital",
-          }
+          },
+          {
+    id: 15,
+    label: "Mysore-Ooty",
+    href: "/destinations/mysore-ooty",
+  },
+  {
+    id: 16,
+    label: "Jim Corbett & Nainital",
+    href: "/destinations/jim-corbett-nainital",
+  },
+  {
+    id: 17,
+    label: "Mussoorie",
+    href: "/destinations/mussoorie",
+  },
+  {
+    id: 18,
+    label: "Shimla",
+    href: "/destinations/shimla",
+  },
+  {
+    id: 19,
+    label: "Spiti Valley",
+    href: "/destinations/spiti-valley",
+  },
+  {
+    id: 20,
+    label: "Chandigarh",
+    href: "/destinations/chandigarh",
+  },
+  {
+    id: 21,
+    label: "Rajasthan",
+    href: "/destinations/rajasthan",
+  },
+  {
+    id: 22,
+    label: "Ujjain",
+    href: "/destinations/ujjain",
+  },
+  {
+    id: 23,
+    label: "Lakshadweep",
+    href: "/destinations/lakshadweep",
+  },
+  {
+    id: 24,
+    label: "Tirupati",
+    href: "/destinations/tirupati",
+  },
+  {
+    id: 25,
+    label: "Shillong",
+    href: "/destinations/shillong",
+  },
+  {
+    id: 26,
+    label: "Bhubaneswar",
+    href: "/destinations/bhubaneswar",
+  },
+  {
+    id: 27,
+    label: "Bengaluru",
+    href: "/destinations/bengaluru",
+  },
+  {
+    id: 28,
+    label: "Gangtok",
+    href: "/destinations/gangtok",
+  },
+  {
+    id: 29,
+    label: "Pondicherry",
+    href: "/destinations/pondicherry",
+  },
+  {
+    id: 30,
+    label: "Chennai",
+    href: "/destinations/chennai",
+  },
+  {
+    id: 31,
+    label: "Lonavala",
+    href: "/destinations/lonavala",
+  },
+  {
+    id: 32,
+    label: "Hampi",
+    href: "/destinations/hampi",
+  },
+  {
+    id: 33,
+    label: "Jaisalmer",
+    href: "/destinations/jaisalmer",
+  },
+  {
+    id: 34,
+    label: "Jodhpur",
+    href: "/destinations/jodhpur",
+  },
+  {
+    id: 35,
+    label: "Udaipur",
+    href: "/destinations/udaipur",
+  },
+  {
+    id: 36,
+    label: "Kodaikanal",
+    href: "/destinations/kodaikanal",
+  },
+  {
+    id: 37,
+    label: "Munnar",
+    href: "/destinations/munnar",
+  },
+  {
+    id: 38,
+    label: "Varanasi",
+    href: "/destinations/varanasi",
+  },
+  {
+    id: 39,
+    label: "Mahabaleshwar",
+    href: "/destinations/mahabaleshwar",
+  },
+  {
+    id: 40,
+    label: "Amritsar",
+    href: "/destinations/amritsar",
+  },
         ],
       },
       {
@@ -166,12 +288,112 @@ export const navigationMenu = {
             label: "Bhutan",
             href: "/destinations/bhutan",
           },
-          {
-            id: 15,
-            label: "Russia",
-            href: "/destinations/russia",
-          },
-          { id: 16, label: "Japan", href: "/destinations/japan" },
+  {
+    id: 15,
+    label: "Russia",
+    href: "/destinations/russia",
+  },
+  {
+    id: 16,
+    label: "Japan",
+    href: "/destinations/japan",
+  },
+  {
+    id: 17,
+    label: "Paris",
+    href: "/destinations/paris",
+  },
+  {
+    id: 18,
+    label: "Spain",
+    href: "/destinations/spain",
+  },
+  {
+    id: 19,
+    label: "Italy",
+    href: "/destinations/italy",
+  },
+  {
+    id: 20,
+    label: "United Kingdom",
+    href: "/destinations/united-kingdom",
+  },
+  {
+    id: 21,
+    label: "Mauritius",
+    href: "/destinations/mauritius",
+  },
+  {
+    id: 22,
+    label: "Tanzania",
+    href: "/destinations/tanzania",
+  },
+  {
+    id: 23,
+    label: "Macau",
+    href: "/destinations/macau",
+  },
+  {
+    id: 24,
+    label: "South Korea",
+    href: "/destinations/south-korea",
+  },
+  {
+    id: 25,
+    label: "Netherlands",
+    href: "/destinations/netherlands",
+  },
+  {
+    id: 26,
+    label: "Singapore",
+    href: "/destinations/singapore",
+  },
+  {
+    id: 27,
+    label: "Iceland",
+    href: "/destinations/iceland",
+  },
+  {
+    id: 28,
+    label: "Nepal",
+    href: "/destinations/nepal",
+  },
+  {
+    id: 29,
+    label: "Australia",
+    href: "/destinations/australia",
+  },
+  {
+    id: 30,
+    label: "Peru",
+    href: "/destinations/peru",
+  },
+  {
+    id: 31,
+    label: "Oman",
+    href: "/destinations/oman",
+  },
+  {
+    id: 32,
+    label: "Bahrain",
+    href: "/destinations/bahrain",
+  },
+  {
+    id: 33,
+    label: "Brazil",
+    href: "/destinations/brazil",
+  },
+  {
+    id: 34,
+    label: "Kazakhstan",
+    href: "/destinations/kazakhstan",
+  },
+  {
+    id: 35,
+    label: "The Bahamas",
+    href: "/destinations/the-bahamas",
+  },
+                     
         ],
       },
     ],
