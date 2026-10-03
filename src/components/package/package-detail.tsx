@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { FaClock, FaCheckCircle, FaTimesCircle, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { IoHelpCircle } from 'react-icons/io5';
 import Faq from '../global/faqs';
+import Link from 'next/link';
 
 function PackageDetail({ data }: any) {
   if (!data) return <div className="text-center py-10 text-gray-500">Loading package details...</div>;
@@ -187,12 +188,12 @@ function PackageDetail({ data }: any) {
 
               {/* Booking Action Buttons */}
               <div className="pt-2 space-y-2">
-                <button className="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3.5 px-4 rounded-xl transition-colors shadow-sm tracking-wide text-xs uppercase">
+                <Link href="/contact-us" className="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3.5 px-4 rounded-xl transition-colors shadow-sm tracking-wide text-xs uppercase">
                   Proceed To Book
-                </button>
-                <button className="w-full bg-white hover:bg-slate-50 text-slate-700 font-bold py-3 px-4 border border-slate-200 rounded-xl transition-colors text-xs uppercase">
+                </Link>
+                <Link href="/contact-us" className="w-full bg-white hover:bg-slate-50 text-slate-700 font-bold py-3 px-4 border border-slate-200 rounded-xl transition-colors text-xs uppercase">
                   Enquire Now
-                </button>
+                </Link>
               </div>
 
             </div>

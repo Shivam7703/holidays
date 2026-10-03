@@ -247,8 +247,8 @@ export default function DestinationAside({ data }: any) {
         </div>
         <div>
           <p className="text-[10px] text-zinc-700 font-semibold uppercase tracking-widest">Call Us Directly</p>
-          <a href="tel:+11234567890" className="text-zinc-800 font-bold text-sm hover:text-blue-600 transition-colors duration-200">
-            +1 123 456 7890
+          <a href="tel:++91 9818929900" className="text-zinc-800 font-bold text-sm hover:text-blue-600 transition-colors duration-200">
+            +91 9818929900
           </a>
         </div>
         <div className="ml-auto w-2 h-2 rounded-full bg-color1 animate-pulse" />
