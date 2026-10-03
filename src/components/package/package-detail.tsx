@@ -187,7 +187,7 @@ function PackageDetail({ data }: any) {
               </div>
 
               {/* Booking Action Buttons */}
-              <div className="pt-2 space-y-2">
+              <div className="pt-2 flex flex-col gap-3">
                 <Link href="/contact-us" className="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3.5 px-4 rounded-xl transition-colors shadow-sm tracking-wide text-xs uppercase">
                   Proceed To Book
                 </Link>
